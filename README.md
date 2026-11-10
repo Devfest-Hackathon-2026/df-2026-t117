@@ -268,7 +268,7 @@ flowchart LR
 | **Firebase Remote Config** | 行動ルールのしきい値（`rules_version`・`margin_ample_m`・`huge_min_elev_m`・`stale_threshold_min`）を配る | ルールの見直しをアプリの更新なしで配れる。取得できないときや値が配られていないときは、アプリに入れた既定値で動くので、通信が切れても案内は止まらない | アプリ側は実装済み（PR #23）。テンプレート（`tools/remote-config/`）を Firebase に公開していない間は既定値で動く。どちらで動いているかはデモパネルの「行動ルール」に出る（`Remote Config` / `キャッシュ` / `既定値`） |
 | **Gemini（Vertex AI）＋Cloud Translation API** | ビルド時の翻訳チェック `tools/i18n-check`。アプリの誘導の文と警報の用語を、英語の原文から Vertex AI の Gemini（`gemini-3.5-flash`）で訳し直してアプリの訳と比べ、結果を [docs/i18n-review.md](docs/i18n-review.md) に書き出す。Cloud Translation で逆翻訳して確かめる段階も持つ | 同じモデルで逆翻訳すると誤りの傾向も同じになるため、別のエンジンで確かめる（D12）。**ビルド時のレポートだけ**で、アプリの文や音声は自動では変えず、実行時に AI に文を作らせない。最終的な判断は人（本番ではネイティブの確認と気象庁の多言語辞書）が行う | 実行済み（PR #24）: 88 件 × 4 言語を点検し、要修正 0 件・改善の余地 23 件。**Cloud Translation の逆翻訳は、API を有効にしていないため未実施**（判定は Gemini だけ） |
 | **ARCore**（任意） | 対応端末なら平面検出で床に矢印を固定 | AR の標準。デモ端末（Android 16 の実機）は ARCore 非対応なので、カメラ＋コンパス方式を主にし、ARCore は対応端末だけの上乗せにした | 実装済み。対応端末では未確認 |
-| **Google Fonts（Noto Sans ほか）** | Web のモックの文字（本文の Noto Sans と、見出し用の欧文フォント） | 5 言語（日・簡体中・韓・アラビア）の字形をそろえられる。Flutter アプリには Noto Sans / JP / SC / KR / Arabic の可変フォントを同梱し、通信なしでも文字化けしない（docs/third-party.md 3.1） | Web は CDN から配信、Flutter は同梱 |
+| **Google Fonts（Noto Sans ほか）** | Web のモックの文字（本文の Noto Sans と、見出し用の欧文フォント） | 5 言語（日・簡体中・韓・アラビア）の字形をそろえられる。Flutter アプリには Noto Sans / JP / SC / KR / Arabic の可変フォントを同梱し、通信なしでも文字化けしない | Web は CDN から配信、Flutter は同梱 |
 
 ### 本番で使う予定のもの（ハッカソン版には入れていない）
 
@@ -379,7 +379,6 @@ mocks/evacuate/        最初に作った Web のモック（ブラウザで動�
 tools/voice/           Chirp 3 HD で音声ファイルを作るスクリプト（H6）
 tools/remote-config/   Remote Config のテンプレート（行動ルールのしきい値）と公開のスクリプト
 tools/i18n-check/      Gemini＋Cloud Translation でのビルド時の翻訳チェック（レポートは docs/i18n-review.md）
-docs/third-party.md    第三者の素材とライセンスの一覧
 ```
 
 ## 10. 制限と今後
@@ -410,4 +409,4 @@ docs/third-party.md    第三者の素材とライセンスの一覧
 
 ## ライセンス
 
-コードは [MIT License](LICENSE) です。使っている第三者のソフトウェア・フォント・素材は [docs/third-party.md](docs/third-party.md) にまとめています。
+コードは [MIT License](LICENSE) です。同梱した Noto フォントは SIL Open Font License 1.1 で、ライセンス文は `apps/ar_guide/assets/fonts/` にあります。依存パッケージのライセンスは、アプリ内のライセンス表示で確認できます。警報の電文の形式と津波予報区のコードは、気象庁防災情報 XML フォーマット（出典: 気象庁）に従っています。

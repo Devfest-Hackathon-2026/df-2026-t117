@@ -40,7 +40,7 @@ flutter:
     - assets/fonts/OFL-NotoSansCJK.txt
     - assets/fonts/OFL-NotoSansArabic.txt
   # Bundled Noto (architecture D15). Variable fonts (wght 100-900) from google/fonts, OFL-1.1; the
-  # license texts sit next to them. Families and order: lib/src/fonts.dart. See docs/third-party.md.
+  # license texts sit next to them. Families and order: lib/src/fonts.dart.
   fonts:
     - family: NotoSans
       fonts:

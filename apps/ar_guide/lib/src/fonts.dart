@@ -1,6 +1,6 @@
 // Bundled Noto fonts (architecture D15: no runtime download, so text never turns into tofu offline).
-// Files: assets/fonts/ (variable TTFs from google/fonts, OFL-1.1), declared in pubspec.yaml. See
-// docs/third-party.md. Flutter maps `fontWeight` onto the variable `wght` axis, so the w400-w900 used
+// Files: assets/fonts/ (variable TTFs from google/fonts, OFL-1.1), declared in pubspec.yaml; license
+// texts sit next to them. Flutter maps `fontWeight` onto the variable `wght` axis, so the w400-w900 used
 // by the screens all come from these files.
 //
 // The family order follows the web's per-language stacks (mocks/evacuate/src/styles/tokens.css):
