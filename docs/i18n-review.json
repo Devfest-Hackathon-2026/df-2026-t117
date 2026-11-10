@@ -1,0 +1,3884 @@
+{
+  "generatedAt": "2026-11-10T00:59:00.217Z",
+  "model": "gemini-3.5-flash",
+  "location": "global",
+  "backTranslation": {
+    "available": false,
+    "error": "HTTP 403: プロジェクトで translate.googleapis.com が有効になっていない"
+  },
+  "judged": true,
+  "items": [
+    {
+      "key": "s01.protect",
+      "file": "apps/ar_guide/lib/app/screens/s01.dart",
+      "where": "S01 ロック画面の通知（災害名のあとに出る最優先の指示）",
+      "en": "Protect your head",
+      "langs": {
+        "ja": {
+          "current": "頭を守れ",
+          "gemini": "頭を守って",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "「頭を守れ」は緊急時の命令形として適切。"
+        },
+        "zh-Hans": {
+          "current": "保护头部",
+          "gemini": "保护头部",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "머리를 보호하세요",
+          "gemini": "머리를 보호하세요",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "احمِ رأسك",
+          "gemini": "احمِ رأسك",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "s01.car",
+      "file": "apps/ar_guide/lib/app/screens/s01.dart",
+      "where": "S01 ロック画面の通知（災害名のあとに出る最優先の指示）",
+      "en": "Pull over. Stay inside.",
+      "langs": {
+        "ja": {
+          "current": "停車。車内で待つ。",
+          "gemini": "車を左に寄せて停車。車内で待機。",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "簡潔で緊急時に適している。Geminiは少し長い。"
+        },
+        "zh-Hans": {
+          "current": "靠边停车，留在车内",
+          "gemini": "靠边停车。留在车内。",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": "どちらも正確で、緊急時の指示として適切。"
+        },
+        "ko": {
+          "current": "정차하고 차 안에 머무르세요",
+          "gemini": "차를 세우십시오. 차 안에 머무르십시오.",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "gemini",
+          "reason": "Geminiの方がより簡潔で命令調（〜십시오）であり、緊迫感が伝わる。"
+        },
+        "ar": {
+          "current": "توقف وابقَ في السيارة",
+          "gemini": "انحز جانباً وتوقف. ابقَ في الداخل.",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "minor",
+          "better": "gemini",
+          "reason": "currentは「Pull over（路肩に寄せる）」のニュアンスが抜けている。"
+        }
+      }
+    },
+    {
+      "key": "s01.outdoors",
+      "file": "apps/ar_guide/lib/app/screens/s01.dart",
+      "where": "S01 ロック画面の通知（災害名のあとに出る最優先の指示）",
+      "en": "Protect your head",
+      "langs": {
+        "ja": {
+          "current": "頭を守れ",
+          "gemini": "頭を守って",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "緊急時の命令形として「頭を守れ」は適切。"
+        },
+        "zh-Hans": {
+          "current": "保护头部",
+          "gemini": "保护头部",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "머리를 보호하세요",
+          "gemini": "머리를 보호하세요",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "احمِ رأسك",
+          "gemini": "احمِ رأسك",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "s01.goNow",
+      "file": "apps/ar_guide/lib/app/screens/s01.dart",
+      "where": "S01 ロック画面の通知（災害名のあとに出る最優先の指示）",
+      "en": "Go uphill NOW",
+      "langs": {
+        "ja": {
+          "current": "今すぐ高台へ",
+          "gemini": "今すぐ高台へ！",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "立即去高处",
+          "gemini": "立刻往高处避难！",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "currentの方が簡潔で、ロック画面の通知に適している。"
+        },
+        "ko": {
+          "current": "지금 바로 높은 곳으로",
+          "gemini": "지금 즉시 고지대로 대피하십시오!",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "currentの方が簡潔で、ロック画面の通知に適している。"
+        },
+        "ar": {
+          "current": "اصعد إلى مكان مرتفع الآن",
+          "gemini": "اتجه إلى المرتفعات فورًا!",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "gemini",
+          "reason": "geminiの方が「今すぐ（فورًا）」が強調され、より自然。"
+        }
+      }
+    },
+    {
+      "key": "s01.go",
+      "file": "apps/ar_guide/lib/app/screens/s01.dart",
+      "where": "S01 ロック画面の通知（災害名のあとに出る最優先の指示）",
+      "en": "Go uphill",
+      "langs": {
+        "ja": {
+          "current": "高台へ",
+          "gemini": "高台へ",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "去高处",
+          "gemini": "往高处走",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "簡潔で緊急時に適している。"
+        },
+        "ko": {
+          "current": "높은 곳으로",
+          "gemini": "높은 곳으로 가십시오",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "体言止めで簡潔であり、緊急時の通知に適している。"
+        },
+        "ar": {
+          "current": "اصعد إلى مكان مرتفع",
+          "gemini": "اتجه إلى مكان مرتفع",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "現在の訳で「高い場所へ登れ」と正しく表現されている。"
+        }
+      }
+    },
+    {
+      "key": "s01.stay",
+      "file": "apps/ar_guide/lib/app/screens/s01.dart",
+      "where": "S01 ロック画面の通知（災害名のあとに出る最優先の指示）",
+      "en": "Stay here",
+      "langs": {
+        "ja": {
+          "current": "ここで待機",
+          "gemini": "その場に留まって",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "「ここで待機」は簡潔で、ロック画面の通知として適切です。"
+        },
+        "zh-Hans": {
+          "current": "留在这里",
+          "gemini": "留在原地",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": "どちらも「ここに留まる」という意味で、簡潔で分かりやすいです。"
+        },
+        "ko": {
+          "current": "여기에 머무르세요",
+          "gemini": "그 자리에 머무르십시오",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "「여기에 머무르세요」は丁寧かつ簡潔で、避難指示として適切です。"
+        },
+        "ar": {
+          "current": "ابقَ هنا",
+          "gemini": "ابقَ في مكانك",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "「ابقَ هنا」は簡潔な命令形で、緊急時の指示として最適です。"
+        }
+      }
+    },
+    {
+      "key": "s01.check",
+      "file": "apps/ar_guide/lib/app/screens/s01.dart",
+      "where": "S01 ロック画面の通知（災害名のあとに出る最優先の指示）",
+      "en": "Check updates",
+      "langs": {
+        "ja": {
+          "current": "情報を確認",
+          "gemini": "最新情報を確認",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "gemini",
+          "reason": "geminiの方が「最新」のニュアンスが含まれておりより正確。"
+        },
+        "zh-Hans": {
+          "current": "查看最新信息",
+          "gemini": "查看最新信息",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "정보를 확인하세요",
+          "gemini": "업데이트 확인",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "gemini",
+          "reason": "geminiの方が簡潔で、ロック画面の通知として適している。"
+        },
+        "ar": {
+          "current": "تحقق من التحديثات",
+          "gemini": "تحقق من التحديثات",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "s02.indoors",
+      "file": "apps/ar_guide/lib/app/screens/s02.dart",
+      "where": "S02 地震の画面（屋内 / 屋外 / 車内）",
+      "en": "Protect your head",
+      "langs": {
+        "ja": {
+          "current": "頭を守れ",
+          "gemini": "頭を守って",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "緊急時の命令形として「頭を守れ」は適切。"
+        },
+        "zh-Hans": {
+          "current": "保护头部",
+          "gemini": "保护头部",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "머리를 보호하세요",
+          "gemini": "머리를 보호하십시오",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "丁寧な命令形として「보호하세요」は適切。"
+        },
+        "ar": {
+          "current": "احمِ رأسك",
+          "gemini": "احمِ رأسك",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "s02.outdoors",
+      "file": "apps/ar_guide/lib/app/screens/s02.dart",
+      "where": "S02 地震の画面（屋内 / 屋外 / 車内）",
+      "en": "Protect your head",
+      "langs": {
+        "ja": {
+          "current": "頭を守れ",
+          "gemini": "頭を守って",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "「頭を守れ」は緊急時の命令形として適切。"
+        },
+        "zh-Hans": {
+          "current": "保护头部",
+          "gemini": "保护头部",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "머리를 보호하세요",
+          "gemini": "머리를 보호하십시오",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": "どちらも適切だが、currentの丁寧な命令形でも問題ない。"
+        },
+        "ar": {
+          "current": "احمِ رأسك",
+          "gemini": "احمِ رأسك",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "s02.outdoorsSub",
+      "file": "apps/ar_guide/lib/app/screens/s02.dart",
+      "where": "S02 地震の画面（屋内 / 屋外 / 車内）",
+      "en": "Stay away from buildings",
+      "langs": {
+        "ja": {
+          "current": "建物から離れる",
+          "gemini": "建物から離れて",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "「離れる」の方が体言止めに近く、緊急時の指示として簡潔で良い。"
+        },
+        "zh-Hans": {
+          "current": "远离建筑物",
+          "gemini": "远离建筑物",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "건물에서 떨어지세요",
+          "gemini": "건물에서 떨어지십시오",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "currentの丁寧な命令形（~세요）は自然で、緊迫した状況でも適切。"
+        },
+        "ar": {
+          "current": "ابتعد عن المباني",
+          "gemini": "ابتعد عن المباني",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "s02.car",
+      "file": "apps/ar_guide/lib/app/screens/s02.dart",
+      "where": "S02 地震の画面（屋内 / 屋外 / 車内）",
+      "en": "Pull over. Stay inside.",
+      "langs": {
+        "ja": {
+          "current": "停車。車内で待つ。",
+          "gemini": "車を左に寄せて停車。車内で待機。",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "簡潔で緊急時に適した表現になっている。"
+        },
+        "zh-Hans": {
+          "current": "靠边停车，留在车内。",
+          "gemini": "靠边停车。留在车内。",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": "どちらも正確で自然な中国語表現。"
+        },
+        "ko": {
+          "current": "정차하고 차 안에 머무르세요.",
+          "gemini": "차를 길가에 대십시오. 차 안에 머무르십시오.",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "自然で分かりやすい表現になっている。"
+        },
+        "ar": {
+          "current": "توقف وابقَ في السيارة.",
+          "gemini": "اركن السيارة جانباً. ابقَ في الداخل.",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "簡潔で分かりやすく、車内にとどまる意味が伝わる。"
+        }
+      }
+    },
+    {
+      "key": "s02.carSub",
+      "file": "apps/ar_guide/lib/app/screens/s02.dart",
+      "where": "S02 地震の画面（屋内 / 屋外 / 車内）",
+      "en": "Wait until the shaking stops",
+      "langs": {
+        "ja": {
+          "current": "揺れがおさまるまで",
+          "gemini": "揺れが収まるまで待つ",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "minor",
+          "better": "gemini",
+          "reason": "「待つ」などの動詞がないため、geminiの方が明確。"
+        },
+        "zh-Hans": {
+          "current": "等到摇晃停止",
+          "gemini": "等摇晃停止",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "흔들림이 멈출 때까지",
+          "gemini": "흔들림이 멈출 때까지 기다리십시오",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "minor",
+          "better": "gemini",
+          "reason": "「待つ」に相当する動詞が抜けているため、geminiの方が良い。"
+        },
+        "ar": {
+          "current": "حتى يتوقف الاهتزاز",
+          "gemini": "انتظر حتى يتوقف الاهتزاز",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "minor",
+          "better": "gemini",
+          "reason": "「待て」という動詞が抜けており、geminiの方が正確。"
+        }
+      }
+    },
+    {
+      "key": "s02.switchSituation",
+      "file": "apps/ar_guide/lib/app/screens/s02.dart",
+      "where": "S02 地震の画面（屋内 / 屋外 / 車内）",
+      "en": "Change situation",
+      "langs": {
+        "ja": {
+          "current": "状況を切り替え",
+          "gemini": "状況を変更",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "切换场景",
+          "gemini": "更改状况",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "アプリの画面切り替え（屋内/屋外等）として「切换场景」は適切。"
+        },
+        "ko": {
+          "current": "상황 전환",
+          "gemini": "상황 변경",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": ""
+        },
+        "ar": {
+          "current": "تغيير الحالة",
+          "gemini": "تغيير الوضع",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "s03.headline",
+      "file": "apps/ar_guide/lib/app/screens/s03.dart",
+      "where": "S03 津波の避難誘導（高台へ向かう）",
+      "en": "Go uphill.",
+      "langs": {
+        "ja": {
+          "current": "高台へ。",
+          "gemini": "高台へ",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "去高处。",
+          "gemini": "往高处走",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "높은 곳으로.",
+          "gemini": "높은 곳으로 가십시오",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": ""
+        },
+        "ar": {
+          "current": "اصعد إلى مكان مرتفع.",
+          "gemini": "اصعد إلى مكان مرتفع",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "s03.now",
+      "file": "apps/ar_guide/lib/app/screens/s03.dart",
+      "where": "S03 津波の避難誘導（高台へ向かう）",
+      "en": "NOW",
+      "langs": {
+        "ja": {
+          "current": "今すぐ",
+          "gemini": "今すぐ",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "立即",
+          "gemini": "立刻",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "지금 바로",
+          "gemini": "지금 당장",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "الآن",
+          "gemini": "الآن",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "s03.leaveCar",
+      "file": "apps/ar_guide/lib/app/screens/s03.dart",
+      "where": "S03 津波の避難誘導（高台へ向かう）",
+      "en": "Leave the car. Go on foot.",
+      "langs": {
+        "ja": {
+          "current": "車を降りて、歩いて避難。",
+          "gemini": "車を置いて、歩いて避難してください。",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "「車を降りて」の方が直感的で、体言止めも緊迫感がある。"
+        },
+        "zh-Hans": {
+          "current": "下车，步行避难。",
+          "gemini": "弃车步行。",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "gemini",
+          "reason": "Geminiの「弃车步行」の方が簡潔で、緊急時の表示に適している。"
+        },
+        "ko": {
+          "current": "차에서 내려 걸어서 대피하세요.",
+          "gemini": "차를 두고 걸어서 대피하십시오.",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "gemini",
+          "reason": "「車を置いて（차를 두고）」の方が「Leave the car」のニュアンスに近い。"
+        },
+        "ar": {
+          "current": "اترك السيارة وامشِ.",
+          "gemini": "اترك السيارة. اذهب سيرًا على الأقدام.",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "現行訳の方が簡潔で、緊急時の指示として分かりやすい。"
+        }
+      }
+    },
+    {
+      "key": "s05.headline",
+      "file": "apps/ar_guide/lib/app/screens/s05.dart",
+      "where": "S05 津波の保存済みガイド（オフライン）",
+      "en": "Go uphill.",
+      "langs": {
+        "ja": {
+          "current": "高台へ。",
+          "gemini": "高台へ",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "去高处。",
+          "gemini": "往高处走",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "높은 곳으로.",
+          "gemini": "높은 곳으로 가십시오.",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": ""
+        },
+        "ar": {
+          "current": "اصعد إلى مكان مرتفع.",
+          "gemini": "اصعد إلى مكان مرتفع.",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "s05.guide",
+      "file": "apps/ar_guide/lib/app/screens/s05.dart",
+      "where": "S05 津波の保存済みガイド（オフライン）",
+      "en": "TSUNAMI GUIDE",
+      "langs": {
+        "ja": {
+          "current": "津波ガイド",
+          "gemini": "津波ガイド",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "海啸指南",
+          "gemini": "海啸指南",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "쓰나미 안내",
+          "gemini": "지진해일 가이드",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "韓国語では쓰나미（津波）も広く使われており、currentで問題ありません。"
+        },
+        "ar": {
+          "current": "دليل التسونامي",
+          "gemini": "دليل التسونامي",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "s05.leaveCar",
+      "file": "apps/ar_guide/lib/app/screens/s05.dart",
+      "where": "S05 津波の保存済みガイド（オフライン）",
+      "en": "Leave the car. Go on foot.",
+      "langs": {
+        "ja": {
+          "current": "車を降りて、歩いて避難。",
+          "gemini": "車を置いて、歩いて避難してください。",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "「車を降りて」のほうが直感的で、体言止めも緊急時に適している。"
+        },
+        "zh-Hans": {
+          "current": "下车，步行避难。",
+          "gemini": "弃车步行。",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "現行訳は簡潔で分かりやすい。Geminiの「弃车」はやや硬い。"
+        },
+        "ko": {
+          "current": "차에서 내려 걸어서 대피하세요.",
+          "gemini": "차를 두고 걸어서 대피하십시오.",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "現行訳は自然で、避難の指示として十分に機能している。"
+        },
+        "ar": {
+          "current": "اترك السيارة وامشِ.",
+          "gemini": "اترك السيارة. اذهب سيرًا على الأقدام.",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "現行訳は簡潔で、緊急時の指示として非常に分かりやすい。"
+        }
+      }
+    },
+    {
+      "key": "s06.headline",
+      "file": "apps/ar_guide/lib/app/screens/s06.dart",
+      "where": "S06 高台に着いた画面（ここで待機）",
+      "en": "Stay here.",
+      "langs": {
+        "ja": {
+          "current": "ここで待機。",
+          "gemini": "ここで待機してください",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "「ここで待機。」は簡潔で、緊急時の指示として適切です。"
+        },
+        "zh-Hans": {
+          "current": "留在这里。",
+          "gemini": "在此停留",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": "どちらも「ここに留まる」という意味を正しく伝えています。"
+        },
+        "ko": {
+          "current": "여기에 머무르세요.",
+          "gemini": "이곳에 머무르십시오",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": "どちらも適切に翻訳されています。"
+        },
+        "ar": {
+          "current": "ابقَ هنا.",
+          "gemini": "ابقَ هنا",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": "どちらも「ここに留まれ」という命令形を正しく表現しています。"
+        }
+      }
+    },
+    {
+      "key": "s06.active",
+      "file": "apps/ar_guide/lib/app/screens/s06.dart",
+      "where": "S06 高台に着いた画面（ここで待機）",
+      "en": "ACTIVE",
+      "langs": {
+        "ja": {
+          "current": "発表中",
+          "gemini": "作動中",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "警報などが「発表中」であることを示すため、currentが適切。"
+        },
+        "zh-Hans": {
+          "current": "生效中",
+          "gemini": "运行中",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "警報が有効であることを示す「生效中」が適切。"
+        },
+        "ko": {
+          "current": "발령 중",
+          "gemini": "작동 중",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "警報が発令されている状態を示す「발령 중」が適切。"
+        },
+        "ar": {
+          "current": "ساري",
+          "gemini": "نشط",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "警報などが有効・発令中であることを示す「ساري」が適切。"
+        }
+      }
+    },
+    {
+      "key": "guideDict.goHigher",
+      "file": "apps/ar_guide/lib/app/i18n/guide_strings.dart",
+      "where": "誘導画面の共通の指示",
+      "en": "Go higher.",
+      "langs": {
+        "ja": {
+          "current": "もっと高い所へ。",
+          "gemini": "さらに高いところへ",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "去更高处。",
+          "gemini": "往更高处",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": ""
+        },
+        "ko": {
+          "current": "더 높은 곳으로.",
+          "gemini": "더 높은 곳으로 가십시오",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": ""
+        },
+        "ar": {
+          "current": "اصعد إلى مكان أعلى.",
+          "gemini": "اصعد إلى مكان أعلى",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "guideDict.followSigns",
+      "file": "apps/ar_guide/lib/app/i18n/guide_strings.dart",
+      "where": "誘導画面の共通の指示",
+      "en": "Follow the blue evacuation signs",
+      "langs": {
+        "ja": {
+          "current": "青い津波避難の標識に従う",
+          "gemini": "青い避難標識に従ってください",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "minor",
+          "better": "gemini",
+          "reason": "「従う」より「従ってください」や「進んでください」が自然。"
+        },
+        "zh-Hans": {
+          "current": "跟随蓝色海啸避难标志",
+          "gemini": "沿蓝色避难标志前进",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "「海啸避难标志」は具体的で分かりやすい。"
+        },
+        "ko": {
+          "current": "파란색 쓰나미 대피 표지판을 따라가세요",
+          "gemini": "파란색 대피 표지판을 따라가십시오",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "「쓰나미 대피 표지판」と具体的に訳されており適切。"
+        },
+        "ar": {
+          "current": "اتبع لافتات الإخلاء الزرقاء",
+          "gemini": "اتبع لافتات الإخلاء الزرقاء",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "guideDict.setLocation",
+      "file": "apps/ar_guide/lib/app/i18n/guide_strings.dart",
+      "where": "誘導画面の共通の指示",
+      "en": "Set location",
+      "langs": {
+        "ja": {
+          "current": "現在地を設定",
+          "gemini": "位置を設定",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "「現在地を設定」の方がアプリの文脈として自然です。"
+        },
+        "zh-Hans": {
+          "current": "设置位置",
+          "gemini": "设置位置",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "위치 설정",
+          "gemini": "위치 설정",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "حدد الموقع",
+          "gemini": "تعيين الموقع",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": "どちらも「位置を設定」を意味し、適切です。"
+        }
+      }
+    },
+    {
+      "key": "bandDict.upgrade",
+      "file": "apps/ar_guide/lib/app/i18n/guide_strings.dart",
+      "where": "警報の格上げ・格下げの帯",
+      "en": "UPGRADED",
+      "langs": {
+        "ja": {
+          "current": "格上げ",
+          "gemini": "格上げ",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "已升级",
+          "gemini": "升级",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "「已升级」（アップグレードされた）は状態を示し適切。"
+        },
+        "ko": {
+          "current": "격상",
+          "gemini": "격상",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "رُفع المستوى",
+          "gemini": "ترقية",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "「レベルが引き上げられた」を意味する現行訳が適切。"
+        }
+      }
+    },
+    {
+      "key": "bandDict.raise",
+      "file": "apps/ar_guide/lib/app/i18n/guide_strings.dart",
+      "where": "警報の格上げ・格下げの帯",
+      "en": "HEIGHT RAISED",
+      "langs": {
+        "ja": {
+          "current": "高さ引き上げ",
+          "gemini": "予想高さ引き上げ",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "「高さ引き上げ」で簡潔に伝わり問題ありません。"
+        },
+        "zh-Hans": {
+          "current": "预计高度上调",
+          "gemini": "预测高度上调",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": "「预计高度上调」で意味が正確に伝わります。"
+        },
+        "ko": {
+          "current": "예상 높이 상향",
+          "gemini": "예상 높이 상향",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": "「예상 높이 상향」で正確に翻訳されています。"
+        },
+        "ar": {
+          "current": "رُفع الارتفاع المتوقع",
+          "gemini": "زيادة الارتفاع المتوقع",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "gemini",
+          "reason": "geminiの名詞句（高さの引き上げ）の方が帯の表示として自然です。"
+        }
+      }
+    },
+    {
+      "key": "bandDict.downgrade",
+      "file": "apps/ar_guide/lib/app/i18n/guide_strings.dart",
+      "where": "警報の格上げ・格下げの帯",
+      "en": "DOWNGRADED",
+      "langs": {
+        "ja": {
+          "current": "格下げ",
+          "gemini": "格下げ",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "已降级",
+          "gemini": "降级",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "격하",
+          "gemini": "하향 조정",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "minor",
+          "better": "gemini",
+          "reason": "「격하」より「하향 조정（下向調整）」の方が自然です。"
+        },
+        "ar": {
+          "current": "خُفض المستوى",
+          "gemini": "تخفيض الدرجة",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "bandDict.expected",
+      "file": "apps/ar_guide/lib/app/i18n/guide_strings.dart",
+      "where": "警報の格上げ・格下げの帯",
+      "en": "Expected {h}",
+      "langs": {
+        "ja": {
+          "current": "予想 {h}",
+          "gemini": "予想される高さ {h}",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "「予想 {h}」で簡潔かつ十分に意味が伝わる。"
+        },
+        "zh-Hans": {
+          "current": "预计 {h}",
+          "gemini": "预测高度 {h}",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "「预计 {h}」で簡潔かつ十分に意味が伝わる。"
+        },
+        "ko": {
+          "current": "예상 {h}",
+          "gemini": "예상 높이 {h}",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "「예상 {h}」で簡潔かつ十分に意味が伝わる。"
+        },
+        "ar": {
+          "current": "المتوقع {h}",
+          "gemini": "الارتفاع المتوقع {h}",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "「المتوقع {h}」で簡潔かつ十分に意味が伝わる。"
+        }
+      }
+    },
+    {
+      "key": "bandDict.keepGoing",
+      "file": "apps/ar_guide/lib/app/i18n/guide_strings.dart",
+      "where": "警報の格上げ・格下げの帯",
+      "en": "Keep going to high ground",
+      "langs": {
+        "ja": {
+          "current": "このまま高台へ",
+          "gemini": "引き続き高台へ避難してください",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "短く緊迫感があり、アプリの帯表示として最適です。"
+        },
+        "zh-Hans": {
+          "current": "继续前往高处",
+          "gemini": "继续向高处避难",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": "どちらも簡潔で意味が正しく伝わります。"
+        },
+        "ko": {
+          "current": "계속 높은 곳으로 가세요",
+          "gemini": "계속해서 높은 곳으로 대피하십시오",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "currentの方が簡潔で、緊迫した状況に適しています。"
+        },
+        "ar": {
+          "current": "واصل التوجه إلى مكان مرتفع",
+          "gemini": "استمروا في التوجه إلى المرتفعات",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "currentは単数形（命令形）で簡潔に表現されており適切です。"
+        }
+      }
+    },
+    {
+      "key": "bandDict.stayAll",
+      "file": "apps/ar_guide/lib/app/i18n/guide_strings.dart",
+      "where": "警報の格上げ・格下げの帯",
+      "en": "Stay until all alerts are lifted",
+      "langs": {
+        "ja": {
+          "current": "すべて解除されるまで待機",
+          "gemini": "すべての警報が解除されるまでその場にとどまってください",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "アプリの帯表示として、簡潔な現行訳が適している。"
+        },
+        "zh-Hans": {
+          "current": "在全部警报解除前请留在此处",
+          "gemini": "在所有警报解除前，请留在原地",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": "どちらも正確で自然な翻訳。"
+        },
+        "ko": {
+          "current": "모든 경보가 해제될 때까지 머무르세요",
+          "gemini": "모든 경보가 해제될 때까지 머무르십시오",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": "丁寧さの度合いが異なるのみで、どちらも問題ない。"
+        },
+        "ar": {
+          "current": "ابقَ حتى تُرفع جميع التنبيهات",
+          "gemini": "ابقَ في مكانك حتى إلغاء جميع التحذيرات",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "gemini",
+          "reason": "Geminiの方が「その場にとどまる」という意味が明確。"
+        }
+      }
+    },
+    {
+      "key": "cardDict.title",
+      "file": "apps/ar_guide/lib/app/i18n/guide_strings.dart",
+      "where": "S06 の「ここで待つ理由」カード",
+      "en": "Why here",
+      "langs": {
+        "ja": {
+          "current": "ここで待つ理由",
+          "gemini": "なぜここなのか",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "アプリのカードのタイトルとして「ここで待つ理由」は適切。"
+        },
+        "zh-Hans": {
+          "current": "为什么在这里",
+          "gemini": "为什么是这里",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "「为什么在这里」で「なぜここにいるのか」という意味が伝わる。"
+        },
+        "ko": {
+          "current": "여기서 기다리는 이유",
+          "gemini": "왜 이곳인가",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "「ここで待つ理由」という文脈に合致した自然な翻訳。"
+        },
+        "ar": {
+          "current": "لماذا هنا",
+          "gemini": "لماذا هنا",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": "「なぜここなのか」という簡潔な表現で問題ない。"
+        }
+      }
+    },
+    {
+      "key": "cardDict.approx",
+      "file": "apps/ar_guide/lib/app/i18n/guide_strings.dart",
+      "where": "S06 の「ここで待つ理由」カード",
+      "en": "Location approximate",
+      "langs": {
+        "ja": {
+          "current": "現在地はおおまか",
+          "gemini": "おおよその位置",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "minor",
+          "better": "gemini",
+          "reason": "「現在地はおおまか」より「おおよその位置」の方が自然で簡潔です。"
+        },
+        "zh-Hans": {
+          "current": "位置为大致位置",
+          "gemini": "大致位置",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "gemini",
+          "reason": "どちらも正しいですが、geminiの方が簡潔でカード表示に適しています。"
+        },
+        "ko": {
+          "current": "위치가 대략적입니다",
+          "gemini": "대략적인 위치",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "gemini",
+          "reason": "どちらも意味は通じますが、geminiの方が簡潔で名詞句として自然です。"
+        },
+        "ar": {
+          "current": "الموقع تقريبي",
+          "gemini": "الموقع تقريبي",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "cardDict.elevation",
+      "file": "apps/ar_guide/lib/app/i18n/guide_strings.dart",
+      "where": "S06 の「ここで待つ理由」カード",
+      "en": "Elevation {v}",
+      "langs": {
+        "ja": {
+          "current": "標高 {v}",
+          "gemini": "標高 {v}",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "海拔 {v}",
+          "gemini": "海拔 {v}",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "해발 {v}",
+          "gemini": "해발 {v}",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "الارتفاع {v}",
+          "gemini": "الارتفاع {v}",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "cardDict.elevUnknown",
+      "file": "apps/ar_guide/lib/app/i18n/guide_strings.dart",
+      "where": "S06 の「ここで待つ理由」カード",
+      "en": "Elevation unknown",
+      "langs": {
+        "ja": {
+          "current": "標高は不明",
+          "gemini": "標高不明",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "gemini",
+          "reason": "geminiの方が「標高不明」と簡潔でカード表示に適しています。"
+        },
+        "zh-Hans": {
+          "current": "海拔未知",
+          "gemini": "海拔未知",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "해발 알 수 없음",
+          "gemini": "해발 불명",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "gemini",
+          "reason": "geminiの「해발 불명（海抜不明）」の方が簡潔で自然です。"
+        },
+        "ar": {
+          "current": "الارتفاع غير معروف",
+          "gemini": "الارتفاع غير معروف",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "cardDict.expected",
+      "file": "apps/ar_guide/lib/app/i18n/guide_strings.dart",
+      "where": "S06 の「ここで待つ理由」カード",
+      "en": "Expected tsunami {h}",
+      "langs": {
+        "ja": {
+          "current": "予想される津波 {h}",
+          "gemini": "予想される津波 {h}",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "预计海啸 {h}",
+          "gemini": "预测海啸 {h}",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "「预计」のほうが津波の予測値として自然。"
+        },
+        "ko": {
+          "current": "예상 쓰나미 {h}",
+          "gemini": "예상되는 쓰나미 {h}",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "簡潔な「예상」のほうがカードの表示として適している。"
+        },
+        "ar": {
+          "current": "التسونامي المتوقع {h}",
+          "gemini": "تسونامي المتوقع {h}",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "currentのほうが定冠詞の使い方が自然。"
+        }
+      }
+    },
+    {
+      "key": "cardDict.highest",
+      "file": "apps/ar_guide/lib/app/i18n/guide_strings.dart",
+      "where": "S06 の「ここで待つ理由」カード",
+      "en": "(highest announced)",
+      "langs": {
+        "ja": {
+          "current": "（これまでの最大）",
+          "gemini": "(発表された最大値)",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "minor",
+          "better": "gemini",
+          "reason": "「これまでの最大」より「発表された最大値」の方が正確。"
+        },
+        "zh-Hans": {
+          "current": "（已发布的最高值）",
+          "gemini": "(已发布的最高值)",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "(지금까지 최고)",
+          "gemini": "(발표된 최대치)",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "minor",
+          "better": "gemini",
+          "reason": "currentは「これまで」だが、geminiの「発表された最大値」が正確。"
+        },
+        "ar": {
+          "current": "(الأعلى المُعلن)",
+          "gemini": "(أعلى قيمة معلنة)",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "cardDict.above",
+      "file": "apps/ar_guide/lib/app/i18n/guide_strings.dart",
+      "where": "S06 の「ここで待つ理由」カード",
+      "en": "{n} m above forecast",
+      "langs": {
+        "ja": {
+          "current": "予想より {n} m 高い",
+          "gemini": "予測より{n}m高い",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "比预计高 {n} 米",
+          "gemini": "比预测高{n}米",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "예상보다 {n}m 높음",
+          "gemini": "예상보다 {n}m 높음",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "أعلى من المتوقع بـ {n} م",
+          "gemini": "أعلى بـ {n} م من المتوقع",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "cardDict.below",
+      "file": "apps/ar_guide/lib/app/i18n/guide_strings.dart",
+      "where": "S06 の「ここで待つ理由」カード",
+      "en": "{n} m below forecast",
+      "langs": {
+        "ja": {
+          "current": "予想より {n} m 低い",
+          "gemini": "予想より{n}m低い",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "比预计低 {n} 米",
+          "gemini": "比预测低{n}米",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "예상보다 {n}m 낮음",
+          "gemini": "예상보다 {n}m 낮음",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "أدنى من المتوقع بـ {n} م",
+          "gemini": "أقل من المتوقع بـ {n} م",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "cardDict.stayUntil",
+      "file": "apps/ar_guide/lib/app/i18n/guide_strings.dart",
+      "where": "S06 の「ここで待つ理由」カード",
+      "en": "Stay until the warning is lifted",
+      "langs": {
+        "ja": {
+          "current": "警報が解除されるまで待機",
+          "gemini": "警報が解除されるまで待機してください",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "簡潔でアプリのカード表示に適している。"
+        },
+        "zh-Hans": {
+          "current": "请等到警报解除",
+          "gemini": "警报解除前请留在原地",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "gemini",
+          "reason": "geminiの「留在原地（その場に留まる）」の方が具体的で分かりやすい。"
+        },
+        "ko": {
+          "current": "경보가 해제될 때까지 머무르세요",
+          "gemini": "경보가 해제될 때까지 머무르십시오",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": "どちらも正確で自然な表現。"
+        },
+        "ar": {
+          "current": "ابقَ حتى يُرفع التحذير",
+          "gemini": "ابقَ في مكانك حتى يتم رفع التحذير",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "gemini",
+          "reason": "geminiの「في مكانك（その場所に）」を加えた表現の方がより明確。"
+        }
+      }
+    },
+    {
+      "key": "cardDict.staff",
+      "file": "apps/ar_guide/lib/app/i18n/guide_strings.dart",
+      "where": "S06 の「ここで待つ理由」カード",
+      "en": "Follow staff instructions",
+      "langs": {
+        "ja": {
+          "current": "係員の指示に従う",
+          "gemini": "係員の指示に従ってください",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "簡潔な体言止め・辞書形がアプリのカード表示に適しています。"
+        },
+        "zh-Hans": {
+          "current": "请听从工作人员的指示",
+          "gemini": "听从工作人员指示",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "gemini",
+          "reason": "geminiの方が簡潔で、緊急時の指示としてより適しています。"
+        },
+        "ko": {
+          "current": "직원의 안내에 따르세요",
+          "gemini": "직원의 지시에 따르십시오",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "gemini",
+          "reason": "「지시(指示)」の方が「instructions」の訳としてより正確です。"
+        },
+        "ar": {
+          "current": "اتبع تعليمات الموظفين",
+          "gemini": "اتبع تعليمات الموظفين",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "heightDict.over10",
+      "file": "apps/ar_guide/lib/app/i18n/guide_strings.dart",
+      "where": "予想される津波の高さ（定性的な表現。JMA の用語）",
+      "en": "over 10 m",
+      "langs": {
+        "ja": {
+          "current": "10 m 超",
+          "gemini": "10m超",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "超过 10 米",
+          "gemini": "超过10m",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": ""
+        },
+        "ko": {
+          "current": "10m 초과",
+          "gemini": "10m 초과",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "أكثر من 10 م",
+          "gemini": "أكثر من 10 م",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "heightDict.huge",
+      "file": "apps/ar_guide/lib/app/i18n/guide_strings.dart",
+      "where": "予想される津波の高さ（定性的な表現。JMA の用語）",
+      "en": "huge",
+      "langs": {
+        "ja": {
+          "current": "巨大",
+          "gemini": "巨大",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "巨大",
+          "gemini": "巨大",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "거대",
+          "gemini": "거대",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "هائل",
+          "gemini": "ضخم",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "気象庁の公式対訳（هائل）と一致しているため。"
+        }
+      }
+    },
+    {
+      "key": "heightDict.high",
+      "file": "apps/ar_guide/lib/app/i18n/guide_strings.dart",
+      "where": "予想される津波の高さ（定性的な表現。JMA の用語）",
+      "en": "high",
+      "langs": {
+        "ja": {
+          "current": "高い",
+          "gemini": "高い",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "高",
+          "gemini": "高",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "높음",
+          "gemini": "높음",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "مرتفع",
+          "gemini": "مرتفع",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "notifyBodyDict.upgrade",
+      "file": "apps/ar_guide/lib/app/logic/effect_strings.dart",
+      "where": "警報が変わったときの再通知の本文",
+      "en": "Tsunami alert upgraded",
+      "langs": {
+        "ja": {
+          "current": "津波の警報が格上げされました",
+          "gemini": "津波警報が引き上げられました。",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "gemini",
+          "reason": "「格上げ」より「引き上げ」の方が気象情報の表現として自然。"
+        },
+        "zh-Hans": {
+          "current": "海啸警报已升级",
+          "gemini": "海啸预警已升级。",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "쓰나미 경보가 격상되었습니다",
+          "gemini": "쓰나미 경보가 격상되었습니다.",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "تم رفع مستوى تنبيه التسونامي",
+          "gemini": "تم رفع درجة إنذار التسونامي.",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "notifyBodyDict.raise",
+      "file": "apps/ar_guide/lib/app/logic/effect_strings.dart",
+      "where": "警報が変わったときの再通知の本文",
+      "en": "Expected tsunami height raised",
+      "langs": {
+        "ja": {
+          "current": "予想される津波の高さが引き上げられました",
+          "gemini": "予想される津波の高さが引き上げられました",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "预计海啸高度已上调",
+          "gemini": "预计海啸高度已调高",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "예상 쓰나미 높이가 상향되었습니다",
+          "gemini": "예상되는 쓰나미 높이가 상향되었습니다",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "currentの方が簡潔でアプリの通知に適しています。"
+        },
+        "ar": {
+          "current": "تم رفع الارتفاع المتوقع للتسونامي",
+          "gemini": "تم رفع الارتفاع المتوقع للتسونامي",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "turnSpeechDict.right",
+      "file": "apps/ar_guide/lib/app/logic/effect_strings.dart",
+      "where": "経路案内の読み上げ（{n} は数値）",
+      "en": "Turn right in {n} meters.",
+      "langs": {
+        "ja": {
+          "current": "{n}メートル先、右です。",
+          "gemini": "{n}メートル先、右です。",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "前方{n}米右转。",
+          "gemini": "{n}米后右转。",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "{n}미터 앞에서 오른쪽입니다.",
+          "gemini": "{n}미터 앞에서 우회전하세요.",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "gemini",
+          "reason": "geminiの「우회전하세요（右折してください）」の方がより明確な指示です。"
+        },
+        "ar": {
+          "current": "انعطف يمينًا بعد {n} متر.",
+          "gemini": "انعطف يمينًا بعد {n} متر.",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "turnSpeechDict.left",
+      "file": "apps/ar_guide/lib/app/logic/effect_strings.dart",
+      "where": "経路案内の読み上げ（{n} は数値）",
+      "en": "Turn left in {n} meters.",
+      "langs": {
+        "ja": {
+          "current": "{n}メートル先、左です。",
+          "gemini": "{n}メートル先、左です。",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "前方{n}米左转。",
+          "gemini": "{n}米后左转。",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "{n}미터 앞에서 왼쪽입니다.",
+          "gemini": "{n}미터 앞에서 좌회전하십시오.",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "現行訳は簡潔で聞き取りやすく、音声案内に適している。"
+        },
+        "ar": {
+          "current": "انعطف يسارًا بعد {n} متر.",
+          "gemini": "انعطف يسارًا بعد {n} متر.",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "turnSpeechDict.straight",
+      "file": "apps/ar_guide/lib/app/logic/effect_strings.dart",
+      "where": "経路案内の読み上げ（{n} は数値）",
+      "en": "Go straight for {n} meters.",
+      "langs": {
+        "ja": {
+          "current": "このまま{n}メートル直進です。",
+          "gemini": "{n}メートル直進。",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "直行{n}米。",
+          "gemini": "直行{n}米。",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "{n}미터 직진하세요.",
+          "gemini": "{n}미터 직진하세요.",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "تابع إلى الأمام لمسافة {n} متر.",
+          "gemini": "سر مستقيمًا لمسافة {n} متر.",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "push.major-tsunami-warning",
+      "file": "apps/ar_guide/lib/app/live/push_text.dart",
+      "where": "警報のプッシュ通知（警報名は JMA の用語）",
+      "en": "Major Tsunami Warning",
+      "langs": {
+        "ja": {
+          "current": "大津波警報",
+          "gemini": "大津波警報",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "大海啸警报",
+          "gemini": "大海啸警报",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "대쓰나미 경보",
+          "gemini": "대쓰나미 경보",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "تحذير من تسونامي كبير",
+          "gemini": "تحذير من تسونامي عارم",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "気象庁の公式訳（تحذير من تسونامي كبير）と一致しています。"
+        }
+      }
+    },
+    {
+      "key": "push.tsunami-warning",
+      "file": "apps/ar_guide/lib/app/live/push_text.dart",
+      "where": "警報のプッシュ通知（警報名は JMA の用語）",
+      "en": "Tsunami Warning",
+      "langs": {
+        "ja": {
+          "current": "津波警報",
+          "gemini": "津波警報",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "海啸警报",
+          "gemini": "海啸警报",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "쓰나미 경보",
+          "gemini": "쓰나미경보",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "気象庁の公式訳（分かち書きあり）と一致しているため。"
+        },
+        "ar": {
+          "current": "تحذير من تسونامي",
+          "gemini": "تحذير من تسونامي",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "push.tsunami-advisory",
+      "file": "apps/ar_guide/lib/app/live/push_text.dart",
+      "where": "警報のプッシュ通知（警報名は JMA の用語）",
+      "en": "Tsunami Advisory",
+      "langs": {
+        "ja": {
+          "current": "津波注意報",
+          "gemini": "津波注意報",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "海啸注意报",
+          "gemini": "海啸注意报",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "쓰나미 주의보",
+          "gemini": "쓰나미 주의보",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "إشعار تسونامي",
+          "gemini": "تنبيه من تسونامي",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "minor",
+          "better": "gemini",
+          "reason": "気象庁の公式対訳では「تنبيه من تسونامي」が使われています。"
+        }
+      }
+    },
+    {
+      "key": "push.cleared",
+      "file": "apps/ar_guide/lib/app/live/push_text.dart",
+      "where": "警報のプッシュ通知（警報名は JMA の用語）",
+      "en": "Tsunami alert lifted",
+      "langs": {
+        "ja": {
+          "current": "津波の警報・注意報は解除されました",
+          "gemini": "津波警報・注意報は解除されました",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "gemini",
+          "reason": "geminiの「津波警報・注意報」の方が簡潔で自然です。"
+        },
+        "zh-Hans": {
+          "current": "海啸警报已解除",
+          "gemini": "海啸警报・注意报已解除",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "currentの訳で十分に意味が伝わり、簡潔です。"
+        },
+        "ko": {
+          "current": "쓰나미 경보가 해제되었습니다",
+          "gemini": "쓰나미 경보·주의보가 해제되었습니다",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "currentの訳で自然かつ正確に伝わります。"
+        },
+        "ar": {
+          "current": "تم رفع تنبيه التسونامي",
+          "gemini": "تم إلغاء إنذار التسونامي",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": "どちらも「津波警報が解除されました」を正しく表現しています。"
+        }
+      }
+    },
+    {
+      "key": "push.cancelled",
+      "file": "apps/ar_guide/lib/app/live/push_text.dart",
+      "where": "警報のプッシュ通知（警報名は JMA の用語）",
+      "en": "Tsunami alert cancelled",
+      "langs": {
+        "ja": {
+          "current": "津波の情報は取り消されました",
+          "gemini": "津波警報・注意報は解除されました",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "minor",
+          "better": "gemini",
+          "reason": "「津波警報・注意報は解除されました」の方が気象庁の表現に近く適切。"
+        },
+        "zh-Hans": {
+          "current": "海啸信息已取消",
+          "gemini": "海啸警报已解除",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "minor",
+          "better": "gemini",
+          "reason": "「海啸警报已解除」の方が気象庁の公式訳（警报解除）に近く適切。"
+        },
+        "ko": {
+          "current": "쓰나미 정보가 취소되었습니다",
+          "gemini": "쓰나미 경보·주의보가 해제되었습니다",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "minor",
+          "better": "gemini",
+          "reason": "「쓰나미 경보·주의보가 해제되었습니다」が気象庁の表現に近く適切。"
+        },
+        "ar": {
+          "current": "تم إلغاء تنبيه التسونامي",
+          "gemini": "تم إلغاء إنذار التسونامي",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "push.goNow",
+      "file": "apps/ar_guide/lib/app/live/push_text.dart",
+      "where": "警報のプッシュ通知（警報名は JMA の用語）",
+      "en": "Go uphill NOW",
+      "langs": {
+        "ja": {
+          "current": "今すぐ高台へ",
+          "gemini": "今すぐ高台へ避難してください！",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "簡潔で緊急性が高く、プッシュ通知に最適です。"
+        },
+        "zh-Hans": {
+          "current": "立即去高处",
+          "gemini": "立刻往高处避难！",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "簡潔で「今すぐ」の緊急性が十分に伝わります。"
+        },
+        "ko": {
+          "current": "지금 바로 높은 곳으로",
+          "gemini": "지금 즉시 높은 곳으로 대피하십시오!",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "体言止めで簡潔であり、プッシュ通知として適しています。"
+        },
+        "ar": {
+          "current": "اصعد إلى مكان مرتفع الآن",
+          "gemini": "اذهب إلى مكان مرتفع الآن!",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "「今すぐ高いところへ登れ」と正しく翻訳されています。"
+        }
+      }
+    },
+    {
+      "key": "push.advisory",
+      "file": "apps/ar_guide/lib/app/live/push_text.dart",
+      "where": "警報のプッシュ通知（警報名は JMA の用語）",
+      "en": "Get out of the water and away from the coast",
+      "langs": {
+        "ja": {
+          "current": "海から上がって、海岸から離れて",
+          "gemini": "海から上がり、海岸から離れてください。",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "アプリの通知として、より簡潔で緊急性が伝わる表現であるため。"
+        },
+        "zh-Hans": {
+          "current": "离开水中，远离海岸",
+          "gemini": "立即离开水域并远离海岸。",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "물에서 나와 해안에서 떨어지세요",
+          "gemini": "바다에서 나와 해안에서 멀리 떨어지십시오.",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "gemini",
+          "reason": "「水」より「海（바다）」とする方が津波避難として自然。"
+        },
+        "ar": {
+          "current": "اخرج من الماء وابتعد عن الساحل",
+          "gemini": "اخرجوا من المياه وابتعدوا عن الساحل.",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "push.clearedBody",
+      "file": "apps/ar_guide/lib/app/live/push_text.dart",
+      "where": "警報のプッシュ通知（警報名は JMA の用語）",
+      "en": "Stay alert. Check official updates.",
+      "langs": {
+        "ja": {
+          "current": "引き続き注意してください。公式の情報を確認してください。",
+          "gemini": "引き続き警戒し、公式情報を確認してください。",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "gemini",
+          "reason": "geminiの方が簡潔で、一文にまとまっていて読みやすい。"
+        },
+        "zh-Hans": {
+          "current": "请继续保持警惕，查看官方信息。",
+          "gemini": "保持警惕。请关注官方信息。",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "계속 주의하고 공식 정보를 확인하세요.",
+          "gemini": "계속 경계하십시오. 공식 정보를 확인하십시오.",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "ابقَ متيقظًا وتحقق من التحديثات الرسمية.",
+          "gemini": "ابقَ متيقظًا. تابع التحديثات الرسمية.",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "push.upgrade",
+      "file": "apps/ar_guide/lib/app/live/push_text.dart",
+      "where": "警報のプッシュ通知（警報名は JMA の用語）",
+      "en": "Upgraded",
+      "langs": {
+        "ja": {
+          "current": "格上げ",
+          "gemini": "引き上げ",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "已升级",
+          "gemini": "升级",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "currentの「已升级」（アップグレードされた）の方が状態が明確。"
+        },
+        "ko": {
+          "current": "격상",
+          "gemini": "격상",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "تم الرفع",
+          "gemini": "تمت الترقية",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "currentの「引き上げられた」の方が気象警報の文脈に適している。"
+        }
+      }
+    },
+    {
+      "key": "push.raise",
+      "file": "apps/ar_guide/lib/app/live/push_text.dart",
+      "where": "警報のプッシュ通知（警報名は JMA の用語）",
+      "en": "Height raised",
+      "langs": {
+        "ja": {
+          "current": "高さの引き上げ",
+          "gemini": "高さ引き上げ",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "高度已上调",
+          "gemini": "高度上调",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "높이 상향",
+          "gemini": "높이 상향",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "تم رفع الارتفاع",
+          "gemini": "تم رفع الارتفاع",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "push.height",
+      "file": "apps/ar_guide/lib/app/live/push_text.dart",
+      "where": "警報のプッシュ通知（警報名は JMA の用語）",
+      "en": "Expected height",
+      "langs": {
+        "ja": {
+          "current": "予想される高さ",
+          "gemini": "予想される高さ",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "预计高度",
+          "gemini": "预测高度",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "예상 높이",
+          "gemini": "예상 높이",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "الارتفاع المتوقع",
+          "gemini": "الارتفاع المتوقع",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "push.huge",
+      "file": "apps/ar_guide/lib/app/live/push_text.dart",
+      "where": "警報のプッシュ通知（警報名は JMA の用語）",
+      "en": "Huge",
+      "langs": {
+        "ja": {
+          "current": "巨大",
+          "gemini": "巨大",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "巨大",
+          "gemini": "巨大",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "거대",
+          "gemini": "거대",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "هائل",
+          "gemini": "ضخمة",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "currentの「هائل」は気象庁公式対訳に合致しています。"
+        }
+      }
+    },
+    {
+      "key": "push.high",
+      "file": "apps/ar_guide/lib/app/live/push_text.dart",
+      "where": "警報のプッシュ通知（警報名は JMA の用語）",
+      "en": "High",
+      "langs": {
+        "ja": {
+          "current": "高い",
+          "gemini": "高い",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "高",
+          "gemini": "高",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "높음",
+          "gemini": "높음",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "مرتفع",
+          "gemini": "مرتفع",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "commonStrings.simulatedAlert",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "共通の語（警報名のバッジ・警報の段階・状態表示）",
+      "en": "SIMULATED ALERT",
+      "langs": {
+        "ja": {
+          "current": "模擬アラート",
+          "gemini": "訓練警報",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "minor",
+          "better": "gemini",
+          "reason": "「訓練警報」の方が防災アプリの表現として自然で分かりやすい。"
+        },
+        "zh-Hans": {
+          "current": "模拟警报",
+          "gemini": "模拟警报",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "모의 경보",
+          "gemini": "훈련 경보",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "تنبيه تجريبي",
+          "gemini": "إنذار محاكاة",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "currentの「デモ用警告」を意味する表現で問題ない。"
+        }
+      }
+    },
+    {
+      "key": "commonStrings.onHighGround",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "共通の語（警報名のバッジ・警報の段階・状態表示）",
+      "en": "On high ground",
+      "langs": {
+        "ja": {
+          "current": "高台に着いた",
+          "gemini": "高台に避難中",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "minor",
+          "better": "gemini",
+          "reason": "「高台に着いた」より「高台に避難中」や「高台にいる」が適切。"
+        },
+        "zh-Hans": {
+          "current": "已到高处",
+          "gemini": "已在高处",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "minor",
+          "better": "gemini",
+          "reason": "「已到高处」は到着した動作を指すが、状態としてはgeminiが自然。"
+        },
+        "ko": {
+          "current": "고지대 도착",
+          "gemini": "고지대에 있음",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "minor",
+          "better": "gemini",
+          "reason": "「고지대 도착（到着）」より「고지대에 있음（いる）」が状態を示す。"
+        },
+        "ar": {
+          "current": "وصلت إلى مكان مرتفع",
+          "gemini": "على أرض مرتفعة",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "minor",
+          "better": "gemini",
+          "reason": "currentは「到着した」という動詞表現。状態を示すgeminiが良い。"
+        }
+      }
+    },
+    {
+      "key": "commonStrings.shakingStopped",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "共通の語（警報名のバッジ・警報の段階・状態表示）",
+      "en": "Shaking stopped",
+      "langs": {
+        "ja": {
+          "current": "揺れがおさまった",
+          "gemini": "揺れが収まりました",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "アプリの短い状態表示として、常体（おさまった）のcurrentが適している。"
+        },
+        "zh-Hans": {
+          "current": "摇晃已停止",
+          "gemini": "摇晃已停止",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "흔들림 멈춤",
+          "gemini": "흔들림 멈춤",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "توقف الاهتزاز",
+          "gemini": "توقف الاهتزاز",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "commonStrings.emergencyCall",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "共通の語（警報名のバッジ・警報の段階・状態表示）",
+      "en": "Emergency call",
+      "langs": {
+        "ja": {
+          "current": "緊急通報",
+          "gemini": "緊急通報",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "紧急电话",
+          "gemini": "紧急呼叫",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "긴급 전화",
+          "gemini": "긴급 전화",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "اتصال طوارئ",
+          "gemini": "اتصال طوارئ",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "commonStrings.evacuationMap",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "共通の語（警報名のバッジ・警報の段階・状態表示）",
+      "en": "Evacuation map",
+      "langs": {
+        "ja": {
+          "current": "避難マップ",
+          "gemini": "避難マップ",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "避难地图",
+          "gemini": "避难地图",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "대피 지도",
+          "gemini": "대피 지도",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "خريطة الإخلاء",
+          "gemini": "خريطة الإخلاء",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "commonStrings.badgeEarthquake",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "共通の語（警報名のバッジ・警報の段階・状態表示）",
+      "en": "EARTHQUAKE",
+      "langs": {
+        "ja": {
+          "current": "地震",
+          "gemini": "地震",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "地震",
+          "gemini": "地震",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "지진",
+          "gemini": "지진",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "زلزال",
+          "gemini": "زلزال",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "commonStrings.badgeTsunami",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "共通の語（警報名のバッジ・警報の段階・状態表示）",
+      "en": "TSUNAMI",
+      "langs": {
+        "ja": {
+          "current": "津波",
+          "gemini": "津波",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "海啸",
+          "gemini": "海啸",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "쓰나미",
+          "gemini": "쓰나미",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "تسونامي",
+          "gemini": "تسونامي",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "commonStrings.badgeTsunamiAdvisory",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "共通の語（警報名のバッジ・警報の段階・状態表示）",
+      "en": "TSUNAMI ADVISORY",
+      "langs": {
+        "ja": {
+          "current": "津波注意報",
+          "gemini": "津波注意報",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "海啸注意报",
+          "gemini": "海啸注意报",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "쓰나미 주의보",
+          "gemini": "지진해일주의보",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "minor",
+          "better": "gemini",
+          "reason": "気象庁の公式訳は「지진해일주의보」です。"
+        },
+        "ar": {
+          "current": "إشعار تسونامي",
+          "gemini": "تنبيه من تسونامي",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "minor",
+          "better": "gemini",
+          "reason": "気象庁の公式訳は「تنبيه من تسونامي」です。"
+        }
+      }
+    },
+    {
+      "key": "commonStrings.badgeTsunamiWarning",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "共通の語（警報名のバッジ・警報の段階・状態表示）",
+      "en": "TSUNAMI WARNING",
+      "langs": {
+        "ja": {
+          "current": "津波警報",
+          "gemini": "津波警報",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "海啸警报",
+          "gemini": "海啸警报",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "쓰나미 경보",
+          "gemini": "지진해일 경보",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "minor",
+          "better": "gemini",
+          "reason": "気象庁の公式訳語は「지진해일 경보」です。"
+        },
+        "ar": {
+          "current": "تحذير تسونامي",
+          "gemini": "إنذار من التسونامي",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "commonStrings.badgeMajorTsunamiWarning",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "共通の語（警報名のバッジ・警報の段階・状態表示）",
+      "en": "MAJOR TSUNAMI WARNING",
+      "langs": {
+        "ja": {
+          "current": "大津波警報",
+          "gemini": "大津波警報",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "大海啸警报",
+          "gemini": "大海啸警报",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "대형 쓰나미 경보",
+          "gemini": "대쓰나미경보",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "minor",
+          "better": "gemini",
+          "reason": "気象庁の公式対訳は「대쓰나미경보（大津波警報）」です。"
+        },
+        "ar": {
+          "current": "تحذير تسونامي كبير",
+          "gemini": "تحذير من تسونامي عارم",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "気象庁の公式対訳（تحذير تسونامي كبير）と一致しています。"
+        }
+      }
+    },
+    {
+      "key": "commonStrings.badgeTsunamiWarningActive",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "共通の語（警報名のバッジ・警報の段階・状態表示）",
+      "en": "TSUNAMI WARNING ACTIVE",
+      "langs": {
+        "ja": {
+          "current": "津波警報 発表中",
+          "gemini": "津波警報発表中",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "海啸警报生效中",
+          "gemini": "海啸警报生效中",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "쓰나미 경보 발령 중",
+          "gemini": "쓰나미 경보 발령 중",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "تحذير تسونامي ساري",
+          "gemini": "تحذير من تسونامي نشط",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "currentのほうが簡潔で「発令中」の表現として自然。"
+        }
+      }
+    },
+    {
+      "key": "commonStrings.badgeIndoors",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "共通の語（警報名のバッジ・警報の段階・状態表示）",
+      "en": "INDOORS",
+      "langs": {
+        "ja": {
+          "current": "屋内",
+          "gemini": "屋内",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "室内",
+          "gemini": "室内",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "실내",
+          "gemini": "실내",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "في الداخل",
+          "gemini": "داخل المبنى",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "currentの「屋内（で）」という表現で問題ありません。"
+        }
+      }
+    },
+    {
+      "key": "commonStrings.badgeOutdoors",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "共通の語（警報名のバッジ・警報の段階・状態表示）",
+      "en": "OUTDOORS",
+      "langs": {
+        "ja": {
+          "current": "屋外",
+          "gemini": "屋外",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "室外",
+          "gemini": "户外",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "실외",
+          "gemini": "야외",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "في الخارج",
+          "gemini": "في الخارج",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "commonStrings.badgeInCar",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "共通の語（警報名のバッジ・警報の段階・状態表示）",
+      "en": "IN CAR",
+      "langs": {
+        "ja": {
+          "current": "車内",
+          "gemini": "車内",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "车内",
+          "gemini": "车内",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "차 안",
+          "gemini": "차량 내",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "「차 안」が簡潔で分かりやすい。"
+        },
+        "ar": {
+          "current": "في السيارة",
+          "gemini": "داخل السيارة",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "commonStrings.badgeLocationUncertain",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "共通の語（警報名のバッジ・警報の段階・状態表示）",
+      "en": "LOCATION UNCERTAIN",
+      "langs": {
+        "ja": {
+          "current": "位置が不確か",
+          "gemini": "位置不明",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "gemini",
+          "reason": "「位置不明」の方が簡潔でバッジ表示に適しています。"
+        },
+        "zh-Hans": {
+          "current": "位置不确定",
+          "gemini": "位置不明",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "gemini",
+          "reason": "「位置不明」の方が簡潔でバッジ表示に適しています。"
+        },
+        "ko": {
+          "current": "위치 불확실",
+          "gemini": "위치 불확실",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "الموقع غير مؤكد",
+          "gemini": "الموقع غير محدد",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "currentの方が「不確実（uncertain）」のニュアンスを正確に表しています。"
+        }
+      }
+    },
+    {
+      "key": "commonStrings.levelAdvisory",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "共通の語（警報名のバッジ・警報の段階・状態表示）",
+      "en": "Advisory",
+      "langs": {
+        "ja": {
+          "current": "注意報",
+          "gemini": "注意報",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "注意报",
+          "gemini": "注意报",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "주의보",
+          "gemini": "주의보",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "إشعار",
+          "gemini": "تحذير",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "minor",
+          "better": "current",
+          "reason": "気象庁対訳は「إرشاد」ですが、geminiの「تحذير」は警報（Warning）を意味するため現行がより適切です。"
+        }
+      }
+    },
+    {
+      "key": "commonStrings.levelWarning",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "共通の語（警報名のバッジ・警報の段階・状態表示）",
+      "en": "Warning",
+      "langs": {
+        "ja": {
+          "current": "警報",
+          "gemini": "警報",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "警报",
+          "gemini": "警报",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "경보",
+          "gemini": "경보",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "تحذير",
+          "gemini": "تحذير",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "commonStrings.levelEmergency",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "共通の語（警報名のバッジ・警報の段階・状態表示）",
+      "en": "Emergency warning",
+      "langs": {
+        "ja": {
+          "current": "特別警報",
+          "gemini": "特別警報",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "特别警报",
+          "gemini": "特别警报",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "특별경보",
+          "gemini": "특별경보",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "تحذير طارئ",
+          "gemini": "تحذير طوارئ",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "currentの「تحذير طارئ」の方が気象庁の特別警報の訳語としてより適切です。"
+        }
+      }
+    },
+    {
+      "key": "commonStrings.warningActive",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "共通の語（警報名のバッジ・警報の段階・状態表示）",
+      "en": "Warning active",
+      "langs": {
+        "ja": {
+          "current": "警報 発表中",
+          "gemini": "警報発表中",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "警报生效中",
+          "gemini": "警报生效中",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "경보 발령 중",
+          "gemini": "경보 발령 중",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "التحذير ساري",
+          "gemini": "التحذير نشط",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "currentの方が「警報が有効・発令中」として自然。"
+        }
+      }
+    },
+    {
+      "key": "commonStrings.routeGuidancePaused",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "共通の語（警報名のバッジ・警報の段階・状態表示）",
+      "en": "Route guidance paused",
+      "langs": {
+        "ja": {
+          "current": "ルート案内を一時停止中",
+          "gemini": "ルート案内一時停止中",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "路线导航已暂停",
+          "gemini": "路线导航已暂停",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "경로 안내 일시정지",
+          "gemini": "경로 안내 일시 중지",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "إرشاد المسار متوقف مؤقتًا",
+          "gemini": "إيقاف إرشاد الطريق مؤقتًا",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "currentは状態を表し、geminiは動作を表すためcurrentが適切。"
+        }
+      }
+    },
+    {
+      "key": "commonStrings.routeUnverified",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "共通の語（警報名のバッジ・警報の段階・状態表示）",
+      "en": "Route unverified",
+      "langs": {
+        "ja": {
+          "current": "ルート未確認",
+          "gemini": "ルート未確認",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "路线未确认",
+          "gemini": "路线未确认",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "경로 미확인",
+          "gemini": "경로 미확인",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "المسار غير مؤكد",
+          "gemini": "مسار غير مؤكد",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "currentの定冠詞付きの表現のほうが状態表示として自然。"
+        }
+      }
+    },
+    {
+      "key": "commonStrings.liveRoadUnavailable",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "共通の語（警報名のバッジ・警報の段階・状態表示）",
+      "en": "Live road status unavailable",
+      "langs": {
+        "ja": {
+          "current": "道路の最新状況は取得できません",
+          "gemini": "リアルタイムの道路状況は利用できません",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "gemini",
+          "reason": "geminiの方が簡潔で「利用不可」のニュアンスが伝わりやすい。"
+        },
+        "zh-Hans": {
+          "current": "无法获取实时路况",
+          "gemini": "实时路况不可用",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": "どちらも正確で自然な翻訳です。"
+        },
+        "ko": {
+          "current": "실시간 도로 정보 없음",
+          "gemini": "실시간 도로 상황 이용 불가",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "currentの方が短く、状態表示として視認性が高い。"
+        },
+        "ar": {
+          "current": "حالة الطرق المباشرة غير متاحة",
+          "gemini": "حالة الطرق المباشرة غير متوفرة",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": "どちらも正確で、意味の違いはほとんどありません。"
+        }
+      }
+    },
+    {
+      "key": "commonStrings.highGround",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "共通の語（警報名のバッジ・警報の段階・状態表示）",
+      "en": "HIGH GROUND",
+      "langs": {
+        "ja": {
+          "current": "高台",
+          "gemini": "高台",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "高地",
+          "gemini": "高地",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "고지대",
+          "gemini": "고지대",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "مكان مرتفع",
+          "gemini": "أرض مرتفعة",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "currentの「高い場所」の方が避難指示として直感的で分かりやすい。"
+        }
+      }
+    },
+    {
+      "key": "commonStrings.left",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "S04 経路案内の大きな矢印の下に出る、曲がる方向のラベル（左 / 右 / 直進）",
+      "en": "Left",
+      "langs": {
+        "ja": {
+          "current": "左",
+          "gemini": "左",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "左转",
+          "gemini": "左",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "「左転（左折）」の方が方向指示のラベルとして分かりやすい。"
+        },
+        "ko": {
+          "current": "왼쪽",
+          "gemini": "왼쪽",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "يسار",
+          "gemini": "يسار",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "commonStrings.right",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "S04 経路案内の大きな矢印の下に出る、曲がる方向のラベル（左 / 右 / 直進）",
+      "en": "Right",
+      "langs": {
+        "ja": {
+          "current": "右",
+          "gemini": "右",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "右转",
+          "gemini": "右",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "経路案内ラベルとして「右转（右折）」は適切です。"
+        },
+        "ko": {
+          "current": "오른쪽",
+          "gemini": "오른쪽",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "يمين",
+          "gemini": "يمين",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    },
+    {
+      "key": "commonStrings.straight",
+      "file": "apps/ar_guide/lib/app/i18n/common_strings.dart",
+      "where": "S04 経路案内の大きな矢印の下に出る、曲がる方向のラベル（左 / 右 / 直進）",
+      "en": "Straight",
+      "langs": {
+        "ja": {
+          "current": "直進",
+          "gemini": "直進",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "直行",
+          "gemini": "直行",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ko": {
+          "current": "직진",
+          "gemini": "직진",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "إلى الأمام",
+          "gemini": "مستقيم",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": "currentの「前方へ」の方が案内表示として自然。"
+        }
+      }
+    },
+    {
+      "key": "s11.turnAround",
+      "file": "apps/ar_guide/lib/src/strings.dart",
+      "where": "S11 AR 案内（スマホのカメラ画面）。進む向きと逆を向いているときに出す指示",
+      "en": "Turn around",
+      "langs": {
+        "ja": {
+          "current": "後ろを向いてください",
+          "gemini": "後ろを向いて",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": ""
+        },
+        "zh-Hans": {
+          "current": "请向后转",
+          "gemini": "向后转",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "current",
+          "reason": ""
+        },
+        "ko": {
+          "current": "뒤로 도세요",
+          "gemini": "뒤로 도세요",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        },
+        "ar": {
+          "current": "استدر للخلف",
+          "gemini": "استدر للخلف",
+          "backCurrent": null,
+          "backGemini": null,
+          "flag": "ok",
+          "better": "same",
+          "reason": ""
+        }
+      }
+    }
+  ]
+}

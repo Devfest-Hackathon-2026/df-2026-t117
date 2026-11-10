@@ -1,0 +1,24 @@
+{
+  "parameters": {
+    "rules_version": {
+      "defaultValue": { "value": "2026-11-10.1" },
+      "valueType": "STRING",
+      "description": "TASUKU 行動ルールの版。アプリのデモパネルに表示する。しきい値を変えたら上げる"
+    },
+    "margin_ample_m": {
+      "defaultValue": { "value": "10" },
+      "valueType": "NUMBER",
+      "description": "余裕ありとする差（m）。現在地の標高 − 判定に使う津波の高さ がこれ以上なら余裕あり。0〜30、範囲外はアプリ内の既定値 10"
+    },
+    "huge_min_elev_m": {
+      "defaultValue": { "value": "20" },
+      "valueType": "NUMBER",
+      "description": "予想される高さが 10 m 超（巨大）のときに必要な標高（m）。0〜40、範囲外はアプリ内の既定値 20"
+    },
+    "stale_threshold_min": {
+      "defaultValue": { "value": "10" },
+      "valueType": "NUMBER",
+      "description": "鮮度しきい値（分）。最終取得からこれを超えると Stale 表示。1〜30、範囲外はアプリ内の既定値 10"
+    }
+  }
+}

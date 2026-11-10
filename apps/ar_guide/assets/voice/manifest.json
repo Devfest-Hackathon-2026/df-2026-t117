@@ -1,0 +1,752 @@
+{
+  "version": 1,
+  "note": "tools/voice/generate.mjs が生成。手で編集しない。",
+  "audio": {
+    "audioEncoding": "MP3",
+    "sampleRateHertz": 24000
+  },
+  "langs": {
+    "en": {
+      "languageCode": "en-US",
+      "voice": "en-US-Chirp3-HD-Kore"
+    },
+    "ja": {
+      "languageCode": "ja-JP",
+      "voice": "ja-JP-Chirp3-HD-Kore"
+    },
+    "zh-Hans": {
+      "languageCode": "cmn-CN",
+      "voice": "cmn-CN-Chirp3-HD-Kore"
+    },
+    "ko": {
+      "languageCode": "ko-KR",
+      "voice": "ko-KR-Chirp3-HD-Kore"
+    },
+    "ar": {
+      "languageCode": "ar-XA",
+      "voice": "ar-XA-Chirp3-HD-Kore"
+    }
+  },
+  "clips": {
+    "en": {
+      "s01.protect": {
+        "file": "en/s01.protect.mp3",
+        "text": "Protect your head",
+        "reading": "Protect your head",
+        "voice": "en-US-Chirp3-HD-Kore",
+        "hash": "70c430898a7b910d",
+        "alsoFrom": [
+          "s02.protect"
+        ]
+      },
+      "s01.car": {
+        "file": "en/s01.car.mp3",
+        "text": "Pull over. Stay inside.",
+        "reading": "Pull over. Stay inside.",
+        "voice": "en-US-Chirp3-HD-Kore",
+        "hash": "3c6cdca430cee9dd",
+        "alsoFrom": [
+          "s02.car"
+        ]
+      },
+      "s01.goNow": {
+        "file": "en/s01.goNow.mp3",
+        "text": "Go uphill NOW",
+        "reading": "Go uphill Now",
+        "voice": "en-US-Chirp3-HD-Kore",
+        "hash": "3a2169bddccb2d26"
+      },
+      "s01.go": {
+        "file": "en/s01.go.mp3",
+        "text": "Go uphill",
+        "reading": "Go uphill",
+        "voice": "en-US-Chirp3-HD-Kore",
+        "hash": "52a3e5cea9253d4c",
+        "alsoFrom": [
+          "s03.goUphill",
+          "s05.goUphill"
+        ]
+      },
+      "s01.stay": {
+        "file": "en/s01.stay.mp3",
+        "text": "Stay here",
+        "reading": "Stay here",
+        "voice": "en-US-Chirp3-HD-Kore",
+        "hash": "e751809d82025622",
+        "alsoFrom": [
+          "s06.stayHere"
+        ]
+      },
+      "s01.check": {
+        "file": "en/s01.check.mp3",
+        "text": "Check updates",
+        "reading": "Check updates",
+        "voice": "en-US-Chirp3-HD-Kore",
+        "hash": "482d9b326486aa4a"
+      },
+      "common.earthquake": {
+        "file": "en/common.earthquake.mp3",
+        "text": "EARTHQUAKE",
+        "reading": "Earthquake",
+        "voice": "en-US-Chirp3-HD-Kore",
+        "hash": "f900e0366b6354f2"
+      },
+      "common.tsunami": {
+        "file": "en/common.tsunami.mp3",
+        "text": "TSUNAMI",
+        "reading": "Tsunami",
+        "voice": "en-US-Chirp3-HD-Kore",
+        "hash": "3dbd91a5861b3e9b"
+      },
+      "common.simulatedAlert": {
+        "file": "en/common.simulatedAlert.mp3",
+        "text": "SIMULATED ALERT",
+        "reading": "Simulated Alert",
+        "voice": "en-US-Chirp3-HD-Kore",
+        "hash": "1b28739c668a722c"
+      },
+      "s02.outdoorsSub": {
+        "file": "en/s02.outdoorsSub.mp3",
+        "text": "Stay away from buildings",
+        "reading": "Stay away from buildings",
+        "voice": "en-US-Chirp3-HD-Kore",
+        "hash": "75af4adecb062241"
+      },
+      "s02.carSub": {
+        "file": "en/s02.carSub.mp3",
+        "text": "Wait until the shaking stops",
+        "reading": "Wait until the shaking stops",
+        "voice": "en-US-Chirp3-HD-Kore",
+        "hash": "86718a16df9ffff2"
+      },
+      "s03.now": {
+        "file": "en/s03.now.mp3",
+        "text": "NOW",
+        "reading": "Now",
+        "voice": "en-US-Chirp3-HD-Kore",
+        "hash": "7c32e5fbf61e2515"
+      },
+      "s03.leaveCar": {
+        "file": "en/s03.leaveCar.mp3",
+        "text": "Leave the car. Go on foot.",
+        "reading": "Leave the car. Go on foot.",
+        "voice": "en-US-Chirp3-HD-Kore",
+        "hash": "60a78b9327ccd947",
+        "alsoFrom": [
+          "s05.leaveCar"
+        ]
+      },
+      "guide.goHigher": {
+        "file": "en/guide.goHigher.mp3",
+        "text": "Go higher.",
+        "reading": "Go higher.",
+        "voice": "en-US-Chirp3-HD-Kore",
+        "hash": "ce298704887c31ee"
+      },
+      "guide.followSigns": {
+        "file": "en/guide.followSigns.mp3",
+        "text": "Follow the blue evacuation signs",
+        "reading": "Follow the blue evacuation signs",
+        "voice": "en-US-Chirp3-HD-Kore",
+        "hash": "168bb35ef87c5284"
+      },
+      "common.highGround": {
+        "file": "en/common.highGround.mp3",
+        "text": "HIGH GROUND",
+        "reading": "High Ground",
+        "voice": "en-US-Chirp3-HD-Kore",
+        "hash": "53538a67bb1e166a"
+      },
+      "margin.staff": {
+        "file": "en/margin.staff.mp3",
+        "text": "Follow staff instructions",
+        "reading": "Follow staff instructions",
+        "voice": "en-US-Chirp3-HD-Kore",
+        "hash": "a9d7ac5f476cec99"
+      },
+      "s11.turnAround": {
+        "file": "en/s11.turnAround.mp3",
+        "text": "Turn around",
+        "reading": "Turn around",
+        "voice": "en-US-Chirp3-HD-Kore",
+        "hash": "4e686b4dfabb1a34"
+      }
+    },
+    "ja": {
+      "s01.protect": {
+        "file": "ja/s01.protect.mp3",
+        "text": "頭を守れ",
+        "reading": "頭を守れ",
+        "voice": "ja-JP-Chirp3-HD-Kore",
+        "hash": "f25b29b6dc18f1b9",
+        "alsoFrom": [
+          "s02.protect"
+        ]
+      },
+      "s01.car": {
+        "file": "ja/s01.car.mp3",
+        "text": "停車。車内で待つ。",
+        "reading": "停車。車内で待つ。",
+        "voice": "ja-JP-Chirp3-HD-Kore",
+        "hash": "32ccd2d50f5a581f",
+        "alsoFrom": [
+          "s02.car"
+        ]
+      },
+      "s01.goNow": {
+        "file": "ja/s01.goNow.mp3",
+        "text": "今すぐ高台へ",
+        "reading": "今すぐたかだいへ",
+        "voice": "ja-JP-Chirp3-HD-Kore",
+        "hash": "0a55078c649dc17e"
+      },
+      "s01.go": {
+        "file": "ja/s01.go.mp3",
+        "text": "高台へ",
+        "reading": "たかだいへ",
+        "voice": "ja-JP-Chirp3-HD-Kore",
+        "hash": "2902745a32083a4b",
+        "alsoFrom": [
+          "s03.goUphill",
+          "s05.goUphill"
+        ]
+      },
+      "s01.stay": {
+        "file": "ja/s01.stay.mp3",
+        "text": "ここで待機",
+        "reading": "ここで待機",
+        "voice": "ja-JP-Chirp3-HD-Kore",
+        "hash": "e97739e731a5bd8b",
+        "alsoFrom": [
+          "s06.stayHere"
+        ]
+      },
+      "s01.check": {
+        "file": "ja/s01.check.mp3",
+        "text": "情報を確認",
+        "reading": "情報を確認",
+        "voice": "ja-JP-Chirp3-HD-Kore",
+        "hash": "bf77f70c44225789"
+      },
+      "common.earthquake": {
+        "file": "ja/common.earthquake.mp3",
+        "text": "地震",
+        "reading": "地震",
+        "voice": "ja-JP-Chirp3-HD-Kore",
+        "hash": "17a7f24653b909e2"
+      },
+      "common.tsunami": {
+        "file": "ja/common.tsunami.mp3",
+        "text": "津波",
+        "reading": "津波",
+        "voice": "ja-JP-Chirp3-HD-Kore",
+        "hash": "28a979f4bb292b8e"
+      },
+      "common.simulatedAlert": {
+        "file": "ja/common.simulatedAlert.mp3",
+        "text": "模擬アラート",
+        "reading": "模擬アラート",
+        "voice": "ja-JP-Chirp3-HD-Kore",
+        "hash": "9cd528cf982ac63b"
+      },
+      "s02.outdoorsSub": {
+        "file": "ja/s02.outdoorsSub.mp3",
+        "text": "建物から離れる",
+        "reading": "建物から離れる",
+        "voice": "ja-JP-Chirp3-HD-Kore",
+        "hash": "0dc857aec42306c0"
+      },
+      "s02.carSub": {
+        "file": "ja/s02.carSub.mp3",
+        "text": "揺れがおさまるまで",
+        "reading": "揺れがおさまるまで",
+        "voice": "ja-JP-Chirp3-HD-Kore",
+        "hash": "5daf4e292f4bb0e5"
+      },
+      "s03.now": {
+        "file": "ja/s03.now.mp3",
+        "text": "今すぐ",
+        "reading": "今すぐ",
+        "voice": "ja-JP-Chirp3-HD-Kore",
+        "hash": "d784156d744cde35"
+      },
+      "s03.leaveCar": {
+        "file": "ja/s03.leaveCar.mp3",
+        "text": "車を降りて、歩いて避難。",
+        "reading": "車を降りて、歩いて避難。",
+        "voice": "ja-JP-Chirp3-HD-Kore",
+        "hash": "dfc3be1bc00f850e",
+        "alsoFrom": [
+          "s05.leaveCar"
+        ]
+      },
+      "guide.goHigher": {
+        "file": "ja/guide.goHigher.mp3",
+        "text": "もっと高い所へ。",
+        "reading": "もっと高い所へ。",
+        "voice": "ja-JP-Chirp3-HD-Kore",
+        "hash": "51e7293388b04077"
+      },
+      "guide.followSigns": {
+        "file": "ja/guide.followSigns.mp3",
+        "text": "青い津波避難の標識に従う",
+        "reading": "青い津波避難の標識に従う",
+        "voice": "ja-JP-Chirp3-HD-Kore",
+        "hash": "792189c2ee5da85c"
+      },
+      "common.highGround": {
+        "file": "ja/common.highGround.mp3",
+        "text": "高台",
+        "reading": "たかだい",
+        "voice": "ja-JP-Chirp3-HD-Kore",
+        "hash": "97851fc4c62a2f6f"
+      },
+      "margin.staff": {
+        "file": "ja/margin.staff.mp3",
+        "text": "係員の指示に従う",
+        "reading": "係員の指示に従う",
+        "voice": "ja-JP-Chirp3-HD-Kore",
+        "hash": "7616c524fd52efd7"
+      },
+      "s11.turnAround": {
+        "file": "ja/s11.turnAround.mp3",
+        "text": "後ろを向いてください",
+        "reading": "後ろを向いてください",
+        "voice": "ja-JP-Chirp3-HD-Kore",
+        "hash": "44df303fccf4fe1e"
+      }
+    },
+    "zh-Hans": {
+      "s01.protect": {
+        "file": "zh-Hans/s01.protect.mp3",
+        "text": "保护头部",
+        "reading": "保护头部",
+        "voice": "cmn-CN-Chirp3-HD-Kore",
+        "hash": "1a5acb19c877ca62",
+        "alsoFrom": [
+          "s02.protect"
+        ]
+      },
+      "s01.car": {
+        "file": "zh-Hans/s01.car.mp3",
+        "text": "靠边停车，留在车内",
+        "reading": "靠边停车，留在车内",
+        "voice": "cmn-CN-Chirp3-HD-Kore",
+        "hash": "eb939d5fd53cda68",
+        "alsoFrom": [
+          "s02.car"
+        ]
+      },
+      "s01.goNow": {
+        "file": "zh-Hans/s01.goNow.mp3",
+        "text": "立即去高处",
+        "reading": "立即去高处",
+        "voice": "cmn-CN-Chirp3-HD-Kore",
+        "hash": "96af599b195e45ce"
+      },
+      "s01.go": {
+        "file": "zh-Hans/s01.go.mp3",
+        "text": "去高处",
+        "reading": "去高处",
+        "voice": "cmn-CN-Chirp3-HD-Kore",
+        "hash": "be15f7300f358122",
+        "alsoFrom": [
+          "s03.goUphill",
+          "s05.goUphill"
+        ]
+      },
+      "s01.stay": {
+        "file": "zh-Hans/s01.stay.mp3",
+        "text": "留在这里",
+        "reading": "留在这里",
+        "voice": "cmn-CN-Chirp3-HD-Kore",
+        "hash": "9045ca24c4163748",
+        "alsoFrom": [
+          "s06.stayHere"
+        ]
+      },
+      "s01.check": {
+        "file": "zh-Hans/s01.check.mp3",
+        "text": "查看最新信息",
+        "reading": "查看最新信息",
+        "voice": "cmn-CN-Chirp3-HD-Kore",
+        "hash": "18b47822cd2a3b4f"
+      },
+      "common.earthquake": {
+        "file": "zh-Hans/common.earthquake.mp3",
+        "text": "地震",
+        "reading": "地震",
+        "voice": "cmn-CN-Chirp3-HD-Kore",
+        "hash": "cb26c09159bf5c8a"
+      },
+      "common.tsunami": {
+        "file": "zh-Hans/common.tsunami.mp3",
+        "text": "海啸",
+        "reading": "海啸",
+        "voice": "cmn-CN-Chirp3-HD-Kore",
+        "hash": "97a61c1b66bccb43"
+      },
+      "common.simulatedAlert": {
+        "file": "zh-Hans/common.simulatedAlert.mp3",
+        "text": "模拟警报",
+        "reading": "模拟警报",
+        "voice": "cmn-CN-Chirp3-HD-Kore",
+        "hash": "867bf9eb6ed25f5d"
+      },
+      "s02.outdoorsSub": {
+        "file": "zh-Hans/s02.outdoorsSub.mp3",
+        "text": "远离建筑物",
+        "reading": "远离建筑物",
+        "voice": "cmn-CN-Chirp3-HD-Kore",
+        "hash": "20bc16fc415bd83a"
+      },
+      "s02.carSub": {
+        "file": "zh-Hans/s02.carSub.mp3",
+        "text": "等到摇晃停止",
+        "reading": "等到摇晃停止",
+        "voice": "cmn-CN-Chirp3-HD-Kore",
+        "hash": "35f6e364599d067b"
+      },
+      "s03.now": {
+        "file": "zh-Hans/s03.now.mp3",
+        "text": "立即",
+        "reading": "立即",
+        "voice": "cmn-CN-Chirp3-HD-Kore",
+        "hash": "39fb086aa9aa3c94"
+      },
+      "s03.leaveCar": {
+        "file": "zh-Hans/s03.leaveCar.mp3",
+        "text": "下车，步行避难。",
+        "reading": "下车，步行避难。",
+        "voice": "cmn-CN-Chirp3-HD-Kore",
+        "hash": "8d2c13da10bf9ab5",
+        "alsoFrom": [
+          "s05.leaveCar"
+        ]
+      },
+      "guide.goHigher": {
+        "file": "zh-Hans/guide.goHigher.mp3",
+        "text": "去更高处。",
+        "reading": "去更高处。",
+        "voice": "cmn-CN-Chirp3-HD-Kore",
+        "hash": "964ece8fda434799"
+      },
+      "guide.followSigns": {
+        "file": "zh-Hans/guide.followSigns.mp3",
+        "text": "跟随蓝色海啸避难标志",
+        "reading": "跟随蓝色海啸避难标志",
+        "voice": "cmn-CN-Chirp3-HD-Kore",
+        "hash": "c0ccab15c015be74"
+      },
+      "common.highGround": {
+        "file": "zh-Hans/common.highGround.mp3",
+        "text": "高地",
+        "reading": "高地",
+        "voice": "cmn-CN-Chirp3-HD-Kore",
+        "hash": "e7939f86c4087238"
+      },
+      "margin.staff": {
+        "file": "zh-Hans/margin.staff.mp3",
+        "text": "请听从工作人员的指示",
+        "reading": "请听从工作人员的指示",
+        "voice": "cmn-CN-Chirp3-HD-Kore",
+        "hash": "3b57c220c5719cb7"
+      },
+      "s11.turnAround": {
+        "file": "zh-Hans/s11.turnAround.mp3",
+        "text": "请向后转",
+        "reading": "请向后转",
+        "voice": "cmn-CN-Chirp3-HD-Kore",
+        "hash": "8cd4a7e0770f035b"
+      }
+    },
+    "ko": {
+      "s01.protect": {
+        "file": "ko/s01.protect.mp3",
+        "text": "머리를 보호하세요",
+        "reading": "머리를 보호하세요",
+        "voice": "ko-KR-Chirp3-HD-Kore",
+        "hash": "be7a971ec7ca5739",
+        "alsoFrom": [
+          "s02.protect"
+        ]
+      },
+      "s01.car": {
+        "file": "ko/s01.car.mp3",
+        "text": "정차하고 차 안에 머무르세요",
+        "reading": "정차하고 차 안에 머무르세요",
+        "voice": "ko-KR-Chirp3-HD-Kore",
+        "hash": "e7ec94ca438374ab",
+        "alsoFrom": [
+          "s02.car"
+        ]
+      },
+      "s01.goNow": {
+        "file": "ko/s01.goNow.mp3",
+        "text": "지금 바로 높은 곳으로",
+        "reading": "지금 바로 높은 곳으로",
+        "voice": "ko-KR-Chirp3-HD-Kore",
+        "hash": "13ce08c842595a01"
+      },
+      "s01.go": {
+        "file": "ko/s01.go.mp3",
+        "text": "높은 곳으로",
+        "reading": "높은 곳으로",
+        "voice": "ko-KR-Chirp3-HD-Kore",
+        "hash": "c39efa576050324f",
+        "alsoFrom": [
+          "s03.goUphill",
+          "s05.goUphill"
+        ]
+      },
+      "s01.stay": {
+        "file": "ko/s01.stay.mp3",
+        "text": "여기에 머무르세요",
+        "reading": "여기에 머무르세요",
+        "voice": "ko-KR-Chirp3-HD-Kore",
+        "hash": "6129e4135dff5f4c",
+        "alsoFrom": [
+          "s06.stayHere"
+        ]
+      },
+      "s01.check": {
+        "file": "ko/s01.check.mp3",
+        "text": "정보를 확인하세요",
+        "reading": "정보를 확인하세요",
+        "voice": "ko-KR-Chirp3-HD-Kore",
+        "hash": "e2d7bf71629da6b8"
+      },
+      "common.earthquake": {
+        "file": "ko/common.earthquake.mp3",
+        "text": "지진",
+        "reading": "지진",
+        "voice": "ko-KR-Chirp3-HD-Kore",
+        "hash": "f8a97eea6c95e08f"
+      },
+      "common.tsunami": {
+        "file": "ko/common.tsunami.mp3",
+        "text": "쓰나미",
+        "reading": "쓰나미",
+        "voice": "ko-KR-Chirp3-HD-Kore",
+        "hash": "31d79dfdabd2d341"
+      },
+      "common.simulatedAlert": {
+        "file": "ko/common.simulatedAlert.mp3",
+        "text": "모의 경보",
+        "reading": "모의 경보",
+        "voice": "ko-KR-Chirp3-HD-Kore",
+        "hash": "d77a0fcb37785743"
+      },
+      "s02.outdoorsSub": {
+        "file": "ko/s02.outdoorsSub.mp3",
+        "text": "건물에서 떨어지세요",
+        "reading": "건물에서 떨어지세요",
+        "voice": "ko-KR-Chirp3-HD-Kore",
+        "hash": "168a24816bf1c1ba"
+      },
+      "s02.carSub": {
+        "file": "ko/s02.carSub.mp3",
+        "text": "흔들림이 멈출 때까지",
+        "reading": "흔들림이 멈출 때까지",
+        "voice": "ko-KR-Chirp3-HD-Kore",
+        "hash": "8b20f0f2ecac6f69"
+      },
+      "s03.now": {
+        "file": "ko/s03.now.mp3",
+        "text": "지금 바로",
+        "reading": "지금 바로",
+        "voice": "ko-KR-Chirp3-HD-Kore",
+        "hash": "dca56c07bceb5ec0"
+      },
+      "s03.leaveCar": {
+        "file": "ko/s03.leaveCar.mp3",
+        "text": "차에서 내려 걸어서 대피하세요.",
+        "reading": "차에서 내려 걸어서 대피하세요.",
+        "voice": "ko-KR-Chirp3-HD-Kore",
+        "hash": "2fdae2ea1e50f374",
+        "alsoFrom": [
+          "s05.leaveCar"
+        ]
+      },
+      "guide.goHigher": {
+        "file": "ko/guide.goHigher.mp3",
+        "text": "더 높은 곳으로.",
+        "reading": "더 높은 곳으로.",
+        "voice": "ko-KR-Chirp3-HD-Kore",
+        "hash": "05ab0e8b98b950ee"
+      },
+      "guide.followSigns": {
+        "file": "ko/guide.followSigns.mp3",
+        "text": "파란색 쓰나미 대피 표지판을 따라가세요",
+        "reading": "파란색 쓰나미 대피 표지판을 따라가세요",
+        "voice": "ko-KR-Chirp3-HD-Kore",
+        "hash": "a9a4aa0b38405ee3"
+      },
+      "common.highGround": {
+        "file": "ko/common.highGround.mp3",
+        "text": "고지대",
+        "reading": "고지대",
+        "voice": "ko-KR-Chirp3-HD-Kore",
+        "hash": "0175168965cc5cde"
+      },
+      "margin.staff": {
+        "file": "ko/margin.staff.mp3",
+        "text": "직원의 안내에 따르세요",
+        "reading": "직원의 안내에 따르세요",
+        "voice": "ko-KR-Chirp3-HD-Kore",
+        "hash": "ac1eccf68286ad8d"
+      },
+      "s11.turnAround": {
+        "file": "ko/s11.turnAround.mp3",
+        "text": "뒤로 도세요",
+        "reading": "뒤로 도세요",
+        "voice": "ko-KR-Chirp3-HD-Kore",
+        "hash": "a406247a7da88826"
+      }
+    },
+    "ar": {
+      "s01.protect": {
+        "file": "ar/s01.protect.mp3",
+        "text": "احمِ رأسك",
+        "reading": "احمِ رأسك",
+        "voice": "ar-XA-Chirp3-HD-Kore",
+        "hash": "4b15062e7fe72c63",
+        "alsoFrom": [
+          "s02.protect"
+        ]
+      },
+      "s01.car": {
+        "file": "ar/s01.car.mp3",
+        "text": "توقف وابقَ في السيارة",
+        "reading": "توقف وابقَ في السيارة",
+        "voice": "ar-XA-Chirp3-HD-Kore",
+        "hash": "c1f9f2d1da906273",
+        "alsoFrom": [
+          "s02.car"
+        ]
+      },
+      "s01.goNow": {
+        "file": "ar/s01.goNow.mp3",
+        "text": "اصعد إلى مكان مرتفع الآن",
+        "reading": "اصعد إلى مكان مرتفع الآن",
+        "voice": "ar-XA-Chirp3-HD-Kore",
+        "hash": "5d310da2b8edbadc"
+      },
+      "s01.go": {
+        "file": "ar/s01.go.mp3",
+        "text": "اصعد إلى مكان مرتفع",
+        "reading": "اصعد إلى مكان مرتفع",
+        "voice": "ar-XA-Chirp3-HD-Kore",
+        "hash": "7861ca76dfd3c223",
+        "alsoFrom": [
+          "s03.goUphill",
+          "s05.goUphill"
+        ]
+      },
+      "s01.stay": {
+        "file": "ar/s01.stay.mp3",
+        "text": "ابقَ هنا",
+        "reading": "ابقَ هنا",
+        "voice": "ar-XA-Chirp3-HD-Kore",
+        "hash": "74ff7164a4f1ff52",
+        "alsoFrom": [
+          "s06.stayHere"
+        ]
+      },
+      "s01.check": {
+        "file": "ar/s01.check.mp3",
+        "text": "تحقق من التحديثات",
+        "reading": "تحقق من التحديثات",
+        "voice": "ar-XA-Chirp3-HD-Kore",
+        "hash": "9c88ebc34ad455ee"
+      },
+      "common.earthquake": {
+        "file": "ar/common.earthquake.mp3",
+        "text": "زلزال",
+        "reading": "زلزال",
+        "voice": "ar-XA-Chirp3-HD-Kore",
+        "hash": "b161b3f4dbc7c18d"
+      },
+      "common.tsunami": {
+        "file": "ar/common.tsunami.mp3",
+        "text": "تسونامي",
+        "reading": "تسونامي",
+        "voice": "ar-XA-Chirp3-HD-Kore",
+        "hash": "baa43f4f2c2269f4"
+      },
+      "common.simulatedAlert": {
+        "file": "ar/common.simulatedAlert.mp3",
+        "text": "تنبيه تجريبي",
+        "reading": "تنبيه تجريبي",
+        "voice": "ar-XA-Chirp3-HD-Kore",
+        "hash": "38af751557231884"
+      },
+      "s02.outdoorsSub": {
+        "file": "ar/s02.outdoorsSub.mp3",
+        "text": "ابتعد عن المباني",
+        "reading": "ابتعد عن المباني",
+        "voice": "ar-XA-Chirp3-HD-Kore",
+        "hash": "b94efed5edb0f43f"
+      },
+      "s02.carSub": {
+        "file": "ar/s02.carSub.mp3",
+        "text": "حتى يتوقف الاهتزاز",
+        "reading": "حتى يتوقف الاهتزاز",
+        "voice": "ar-XA-Chirp3-HD-Kore",
+        "hash": "b1b88b6dbbcba05c"
+      },
+      "s03.now": {
+        "file": "ar/s03.now.mp3",
+        "text": "الآن",
+        "reading": "الآن",
+        "voice": "ar-XA-Chirp3-HD-Kore",
+        "hash": "272d0431a0d36f00"
+      },
+      "s03.leaveCar": {
+        "file": "ar/s03.leaveCar.mp3",
+        "text": "اترك السيارة وامشِ.",
+        "reading": "اترك السيارة وامشِ.",
+        "voice": "ar-XA-Chirp3-HD-Kore",
+        "hash": "48ea75cd2620702d",
+        "alsoFrom": [
+          "s05.leaveCar"
+        ]
+      },
+      "guide.goHigher": {
+        "file": "ar/guide.goHigher.mp3",
+        "text": "اصعد إلى مكان أعلى.",
+        "reading": "اصعد إلى مكان أعلى.",
+        "voice": "ar-XA-Chirp3-HD-Kore",
+        "hash": "30a263edd4977f26"
+      },
+      "guide.followSigns": {
+        "file": "ar/guide.followSigns.mp3",
+        "text": "اتبع لافتات الإخلاء الزرقاء",
+        "reading": "اتبع لافتات الإخلاء الزرقاء",
+        "voice": "ar-XA-Chirp3-HD-Kore",
+        "hash": "aca6bc1160648d03"
+      },
+      "common.highGround": {
+        "file": "ar/common.highGround.mp3",
+        "text": "مكان مرتفع",
+        "reading": "مكان مرتفع",
+        "voice": "ar-XA-Chirp3-HD-Kore",
+        "hash": "1c79e57fcd86d8ae"
+      },
+      "margin.staff": {
+        "file": "ar/margin.staff.mp3",
+        "text": "اتبع تعليمات الموظفين",
+        "reading": "اتبع تعليمات الموظفين",
+        "voice": "ar-XA-Chirp3-HD-Kore",
+        "hash": "2c710d3a7260a79e"
+      },
+      "s11.turnAround": {
+        "file": "ar/s11.turnAround.mp3",
+        "text": "استدر للخلف",
+        "reading": "استدر للخلف",
+        "voice": "ar-XA-Chirp3-HD-Kore",
+        "hash": "07a96fe75d385df8"
+      }
+    }
+  }
+}

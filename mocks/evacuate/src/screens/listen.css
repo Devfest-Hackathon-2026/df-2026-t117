@@ -1,0 +1,34 @@
+/* Fixed Listen button (F80-F82): same size, shape and place on every guidance screen.
+   The bar sits right above the source line; the button hugs the inline-start edge (left, right in RTL). */
+.tk-listenbar {
+  display: flex;
+  justify-content: flex-start;
+  padding: 14px var(--tk-gutter) 0;
+}
+.tk-listen {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 132px;
+  min-height: var(--tk-btn-h);
+  padding: 8px 22px 8px 18px;
+  border-radius: var(--tk-radius-pill);
+  background: var(--tk-btn-dark);
+  color: var(--tk-text-on-dark);
+  box-shadow: inset 0 0 0 2px var(--tk-outline-on-dark);
+  font-family: var(--tk-font-body);
+  font-weight: 800;
+  font-size: var(--tk-fs-button);
+  line-height: 1.15;
+}
+.tk-listen:active {
+  filter: brightness(0.92);
+}
+.tk-listen--speaking {
+  background: var(--tk-yellow);
+  color: var(--tk-text-on-light);
+  box-shadow: none;
+}
+.tk-listen__label {
+  white-space: nowrap;
+}

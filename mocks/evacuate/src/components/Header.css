@@ -1,0 +1,61 @@
+.tk-header {
+  flex: 0 0 auto;
+}
+.tk-header__row {
+  height: var(--tk-header-h);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 calc(var(--tk-gutter) - 2px);
+}
+.tk-header--dark {
+  background: var(--tk-bg-dark);
+  color: var(--tk-text-on-dark);
+}
+.tk-header--light {
+  background: var(--tk-light-bg);
+  color: var(--tk-text-on-light);
+}
+.tk-header--accent-yellow {
+  border-bottom: 5px solid var(--tk-yellow);
+}
+.tk-header--accent-red {
+  border-bottom: 5px solid var(--tk-red);
+}
+.tk-header__logo {
+  font-size: 25px;
+  letter-spacing: 0.01em;
+  padding-inline-start: 2px;
+}
+.tk-header__title {
+  font-size: 21px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+.tk-header__actions {
+  margin-inline-start: auto;
+  display: flex;
+  gap: 6px;
+}
+.tk-header__round {
+  width: var(--tk-round-btn);
+  height: var(--tk-round-btn);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+.tk-header--dark .tk-header__round {
+  background: var(--tk-btn-dark);
+  color: var(--tk-text-on-dark);
+}
+.tk-header--light .tk-header__round {
+  background: var(--tk-light-card);
+  color: var(--tk-text-on-light);
+}
+.tk-header__round:active {
+  filter: brightness(1.2);
+}

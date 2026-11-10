@@ -1,0 +1,193 @@
+/* ---------- Stage ---------- */
+.tk-stage {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: #0e0d10;
+}
+.tk-stage--wide {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 24px;
+}
+
+/* ---------- Phone ---------- */
+.tk-phone {
+  position: relative;
+}
+.tk-stage--wide .tk-phone {
+  flex: 0 0 auto;
+  width: calc(var(--tk-phone-w) + 20px);
+  height: min(calc(var(--tk-phone-h) + 20px), calc(100dvh - 48px));
+  min-height: 600px;
+  padding: 10px;
+  border-radius: 56px;
+  background: #050506;
+  box-shadow:
+    0 0 0 2px #3a363c,
+    0 30px 60px rgba(0, 0, 0, 0.55);
+}
+.tk-phone__screen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+.tk-stage--wide .tk-phone__screen {
+  border-radius: 46px;
+}
+.tk-phone__screen--dark {
+  background: var(--tk-bg-dark);
+  color: var(--tk-text-on-dark);
+}
+.tk-phone__screen--light {
+  background: var(--tk-light-bg);
+  color: var(--tk-text-on-light);
+}
+.tk-stage--wide .tk-phone__screen .tk-statusbar {
+  padding-top: 6px;
+  flex-basis: calc(var(--tk-status-h) + 6px);
+  height: calc(var(--tk-status-h) + 6px);
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.tk-stage--narrow .tk-phone {
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+}
+
+.tk-phone__content {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  display: flex;
+  flex-direction: column;
+}
+/* The screen root fills the viewport and grows (scrolls) if its content is taller. */
+.tk-phone__content > * {
+  flex: 1 0 auto;
+}
+.tk-stage--wide .tk-phone__content {
+  padding-bottom: 14px;
+}
+.tk-stage--wide .tk-phone__screen--dark .tk-phone__content {
+  background: var(--tk-bg-dark);
+}
+.tk-stage--wide .tk-phone__screen--light .tk-phone__content {
+  background: var(--tk-light-bg);
+}
+
+/* Home indicator (decorative, wide only) */
+.tk-phone__home {
+  position: absolute;
+  left: 50%;
+  bottom: 7px;
+  width: 128px;
+  height: 5px;
+  border-radius: 3px;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 30;
+}
+.tk-phone__home--dark {
+  background: #e7dfe3;
+}
+.tk-phone__home--light {
+  background: #57505a;
+}
+
+/* Screen-off blackout (F34). Walk simulation, voice and vibration keep running underneath. */
+.tk-phone__off {
+  position: absolute;
+  inset: 0;
+  z-index: 60;
+  background: #000;
+  color: #3d3a40;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 40px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ---------- Demo panel slot (wide) ---------- */
+.tk-demo-slot {
+  flex: 0 1 380px;
+  min-width: 280px;
+  max-height: calc(100dvh - 48px);
+  overflow-y: auto;
+  position: sticky;
+  top: 24px;
+  border-radius: 18px;
+  background: #f6f3f1;
+  color: #17151a;
+  font-size: 14px;
+}
+
+/* ---------- Demo panel (narrow): floating tab + bottom sheet ---------- */
+.tk-demo-fab {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 70;
+  width: 26px;
+  height: 52px;
+  border-radius: 12px 0 0 12px;
+  background: rgba(255, 255, 255, 0.82);
+  color: #17151a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+.tk-demo-sheet {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+}
+.tk-demo-sheet__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.tk-demo-sheet__panel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 80dvh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 18px 18px 0 0;
+  background: #f6f3f1;
+  color: #17151a;
+  font-size: 14px;
+}
+.tk-demo-sheet__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px 6px 16px;
+  font-weight: 800;
+}
+.tk-demo-sheet__close {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.tk-demo-sheet__body {
+  overflow-y: auto;
+  padding-bottom: env(safe-area-inset-bottom);
+}

@@ -1,0 +1,24 @@
+.tk-demo { padding: 14px 14px 24px; display: flex; flex-direction: column; gap: 10px; font-family: var(--tk-font-body); color: #1f2328; background: #f4f5f7; font-size: 13px; }
+.tk-demo__title { font-size: 16px; font-weight: 800; }
+.tk-demo__readout { background: #fff; border: 1px solid #d0d4da; border-radius: 8px; padding: 8px 10px; display: grid; grid-template-columns: auto 1fr; gap: 2px 10px; font-size: 12px; margin: 0; }
+.tk-demo__readout dt { color: #656d76; }
+.tk-demo__readout dd { margin: 0; font-weight: 700; word-break: break-word; }
+.tk-demo__sec { background: #fff; border: 1px solid #d0d4da; border-radius: 8px; padding: 0; }
+.tk-demo__sec > summary { cursor: pointer; padding: 8px 10px; font-weight: 800; font-size: 13px; }
+.tk-demo__body { padding: 2px 10px 10px; display: flex; flex-direction: column; gap: 6px; }
+.tk-demo__row { display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 28px; }
+.tk-demo__row > span { flex: 1; }
+.tk-demo__row select { max-width: 55%; padding: 3px; font-size: 13px; }
+.tk-demo__row input[type='checkbox'] { width: 18px; height: 18px; }
+.tk-demo__row input[type='range'] { flex: 1; max-width: 50%; }
+.tk-demo__btns { display: flex; flex-wrap: wrap; gap: 6px; }
+.tk-demo__btn { padding: 5px 10px; border-radius: 6px; border: 1px solid #b6bcc4; background: #fff; color: #1f2328; font-weight: 700; font-size: 12px; cursor: pointer; }
+.tk-demo__btn:hover { background: #eceff2; }
+.tk-demo__btn:disabled { opacity: 0.45; cursor: default; }
+.tk-demo__btn--on, .tk-demo__btn--on:hover { background: #1f2328; color: #fff; border-color: #1f2328; }
+.tk-demo__btn--danger { border-color: #c0392b; color: #c0392b; }
+.tk-demo__hint { font-size: 11px; color: #656d76; }
+.tk-demo__warn { font-size: 11px; color: #9a3412; background: #fff1e6; border-radius: 6px; padding: 5px 8px; }
+.tk-demo__scn { display: flex; gap: 8px; align-items: flex-start; text-align: left; width: 100%; }
+.tk-demo__scn b { min-width: 24px; }
+.tk-demo__scn span { font-weight: 400; }

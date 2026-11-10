@@ -1,0 +1,45 @@
+/* Styles for T3 sub-screens (S09, S10, A01-A04). Light theme, RTL-safe (logical properties). */
+.t3-list { display: flex; flex-direction: column; gap: 14px; }
+.t3-row {
+  display: flex; align-items: center; gap: 14px; width: 100%; min-height: 72px;
+  padding: 14px 20px; border-radius: 999px; background: var(--tk-light-card);
+  color: var(--tk-text-on-light); font-size: 28px; text-align: start;
+}
+.t3-row--sel { background: var(--tk-yellow); font-weight: 800; }
+.t3-row__label { flex: 1 1 auto; min-width: 0; }
+.t3-row--call { font-size: 26px; font-weight: 800; padding-inline-start: 14px; }
+.t3-row__icon {
+  width: 46px; height: 46px; border-radius: 50%; background: var(--tk-white);
+  display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto;
+}
+.t3-row__num { font-size: 32px; font-weight: 900; font-family: var(--tk-font-heading); }
+.t3-card {
+  background: var(--tk-light-card-pink); border-radius: var(--tk-radius-card);
+  padding: 18px 20px; display: flex; flex-direction: column; gap: 8px;
+}
+.t3-card--plain { background: var(--tk-light-card); }
+.t3-card__head { display: flex; align-items: center; gap: 12px; font-size: 20px; font-weight: 800; line-height: 1.3; }
+.t3-card__big { font-size: 24px; font-weight: 800; }
+.t3-card__sub { font-size: 20px; color: var(--tk-text-muted-on-light); }
+.t3-p { font-size: 18px; line-height: 1.5; font-weight: 500; }
+.t3-h { font-size: 20px; font-weight: 800; line-height: 1.25; }
+.t3-meta { font-size: 14px; font-weight: 700; color: var(--tk-text-muted-on-light); }
+.t3-seg { display: flex; gap: 10px; }
+.t3-seg > button {
+  flex: 1 1 0; min-height: 52px; border-radius: 999px; background: var(--tk-light-card);
+  font-size: 18px; font-weight: 800; color: var(--tk-text-on-light);
+}
+.t3-seg > button[aria-pressed='true'] { background: var(--tk-black); color: var(--tk-white); }
+.t3-picto { width: 72px; height: 72px; flex: 0 0 auto; border-radius: 16px; background: var(--tk-picto-bg);
+  display: inline-flex; align-items: center; justify-content: center; overflow: hidden; }
+.t3-picto > svg { width: 100%; height: 100%; }
+.t3-item { display: flex; gap: 14px; align-items: center; }
+.t3-item__body { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.t3-timeline { list-style: none; display: flex; flex-direction: column; gap: 12px; margin: 0;
+  border-inline-start: 3px solid var(--tk-yellow); padding: 0; padding-inline-start: 14px; }
+.t3-note { font-size: 14px; font-weight: 700; color: var(--tk-text-muted-on-light); text-align: center; }
+.t3-art { text-align: start; width: 100%; display: flex; flex-direction: column; gap: 4px;
+  background: var(--tk-light-card); border-radius: var(--tk-radius-card); padding: 16px 20px; color: var(--tk-text-on-light); }
+.t3-art__title { font-size: 20px; font-weight: 800; }
+.t3-art__sum { font-size: 16px; color: var(--tk-text-muted-on-light); }
+.t3-sign { width: 96px; height: 96px; align-self: center; }
