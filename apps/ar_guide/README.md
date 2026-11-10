@@ -82,7 +82,7 @@ class S03Screen extends StatelessWidget {
 | 通知の言語 | アプリの現在の言語 | Service Worker は端末の言語だが、アプリは言語を選べる |
 | 端末の傾き → `deviceRaised`（F36） | タップでの許可なしで、S04 / S11 / S12 を表示中かつ AR に入れるときだけ聞く（`logic/device_raise.dart`、Android 側の `TiltStream`）。前後の傾き 60° 以上で持ち上げ、30° 未満で下ろした（Web は 45° 未満。実機で床の矢印を見るときに地図へ戻らないよう下げた）。加えて 300 ms 続いたときだけ切り替える | Android ではこのセンサーに許可が要らない。手ぶれで S04 と S11 を行き来しないため |
 
-フォントは Noto の可変フォントを `assets/fonts/` に同梱している（`docs/third-party.md` 3.1）。
+フォントは Noto の可変フォントを `assets/fonts/` に同梱している（ライセンス文も同じフォルダ）。
 
 Web の `useLiveAlerts()` は `context.live`（`live/live_alerts.dart`。H00 の通知ボタンは `context.live.enablePush`）。
 
