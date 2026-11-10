@@ -1,7 +1,7 @@
 name: ar_guide
 description: "Safe Japan AR guidance (S11 only, Android): turn arrow on the camera view, opened from the web mock by a deep link."
 publish_to: 'none'
-version: 1.0.2+9
+version: 1.0.4+11
 
 environment:
   sdk: ^3.13.3
