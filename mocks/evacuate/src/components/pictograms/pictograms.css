@@ -1,0 +1,2 @@
+.tk-picto { display: block; }
+.tk-picto--flip-rtl:dir(rtl) { transform: scaleX(-1); }

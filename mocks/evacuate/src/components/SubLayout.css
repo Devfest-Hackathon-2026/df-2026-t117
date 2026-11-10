@@ -1,0 +1,39 @@
+.tk-sub__body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 18px var(--tk-gutter) 0;
+  gap: 18px;
+}
+.tk-sub__badge {
+  display: flex;
+}
+.tk-sub__title {
+  font-size: var(--tk-fs-title);
+  line-height: 1.05;
+}
+.tk-sub__subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: -6px;
+}
+.tk-screen--dark .tk-sub__subtitle {
+  color: var(--tk-text-muted-on-dark);
+}
+.tk-screen--light .tk-sub__subtitle {
+  color: var(--tk-text-muted-on-light);
+}
+.tk-sub__content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.tk-sub__spacer {
+  flex: 1 1 auto;
+  min-height: 8px;
+}
+.tk-sub__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: var(--tk-font-body);
+  font-size: var(--tk-fs-body);
+  color: var(--tk-text-on-dark);
+  background: #0e0d10;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior: none;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  border: 0;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--tk-yellow);
+  outline-offset: 2px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+/* Heading font helper */
+.tk-heading {
+  font-family: var(--tk-font-heading);
+  font-weight: var(--tk-fw-heading);
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+}
+
+/* Mirror directional glyphs (arrows) in RTL. Apply to an element that should flip. */
+.tk-flip-rtl:dir(rtl) {
+  transform: scaleX(-1);
+}
+
+/* Visually hidden but readable by screen readers */
+.tk-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/*
+ * Generic screen container. Every screen's root element should use this class
+ * (GuidanceLayout and SubLayout already do). It fills the phone viewport below the status bar.
+ */
+.tk-screen {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.tk-screen--dark {
+  background: var(--tk-bg-dark);
+  color: var(--tk-text-on-dark);
+}
+.tk-screen--light {
+  background: var(--tk-light-bg);
+  color: var(--tk-text-on-light);
+}
+
+/* Standard horizontal padding */
+.tk-pad {
+  padding-left: var(--tk-gutter);
+  padding-right: var(--tk-gutter);
+}

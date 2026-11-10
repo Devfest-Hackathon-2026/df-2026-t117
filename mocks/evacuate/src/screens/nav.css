@@ -1,0 +1,421 @@
+/* Navigation / AR screens S04 S07 S08 S11 S12 (T5). */
+
+/* ---------- S04 route navigation ---------- */
+.tk-nav__top {
+  background: var(--tk-red);
+  color: var(--tk-text-on-dark);
+  padding: 14px var(--tk-gutter) 14px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+.tk-nav__badge {
+  display: flex;
+}
+.tk-nav__arrow {
+  flex: 1 1 150px;
+  min-height: 110px;
+  max-height: 200px;
+  display: flex;
+  justify-content: center;
+  padding: 14px 0 4px;
+  color: var(--tk-white);
+}
+.tk-nav__arrow > svg {
+  height: 100%;
+  width: auto;
+  max-width: 70%;
+  overflow: visible;
+}
+.tk-nav__dir {
+  text-align: center;
+  font-size: 64px;
+  line-height: 1;
+  margin-top: 4px;
+  overflow-wrap: anywhere;
+}
+:lang(ar) .tk-nav__dir,
+:lang(ja) .tk-nav__dir,
+:lang(zh-Hans) .tk-nav__dir,
+:lang(ko) .tk-nav__dir {
+  font-size: 54px;
+  line-height: 1.15;
+}
+.tk-nav__distrow {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+.tk-nav__dist {
+  color: var(--tk-yellow);
+  font-size: 40px;
+  line-height: 1.1;
+  text-align: center;
+  white-space: nowrap;
+  unicode-bidi: isolate;
+}
+.tk-nav__status {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  justify-self: start;
+  color: var(--tk-white);
+}
+.tk-nav__statusbtn,
+.tk-nav__statusicon {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.tk-nav__statusbtn:active {
+  background: rgba(255, 255, 255, 0.15);
+}
+.tk-nav__status--flash .tk-nav__statusbtn,
+.tk-nav__status--flash .tk-nav__statusicon {
+  animation: tk-nav-pulse 0.6s ease-in-out 4;
+  color: var(--tk-yellow);
+}
+.tk-nav__status--flash .tk-nav__statusicon svg {
+  animation: tk-nav-buzz 0.12s linear 16;
+}
+@keyframes tk-nav-pulse {
+  0%,
+  100% {
+    background: transparent;
+  }
+  50% {
+    background: rgba(255, 255, 255, 0.22);
+  }
+}
+@keyframes tk-nav-buzz {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-1.5px);
+  }
+  75% {
+    transform: translateX(1.5px);
+  }
+}
+.tk-nav__aside {
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+/* demo shortcut: simulates raising the phone (deviceRaised) */
+.tk-nav__arbtn {
+  min-height: 44px;
+  min-width: 44px;
+  max-width: 104px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--tk-yellow);
+  color: var(--tk-bg-dark);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.15;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+.tk-nav__arbtn:active {
+  filter: brightness(0.9);
+}
+.tk-nav__tilt {
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.15;
+  padding: 7px 10px;
+  min-height: 32px;
+  border-radius: 999px;
+  color: var(--tk-white);
+  box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.7);
+  max-width: 96px;
+}
+
+/* map straddles the red panel and the dark bottom */
+.tk-nav__mapband {
+  flex: 0 0 auto;
+  padding: 0 var(--tk-gutter);
+  background: linear-gradient(var(--tk-red) 0 66%, var(--tk-bg-dark) 66%);
+}
+.tk-nav__bottom {
+  flex: 0 0 auto;
+  background: var(--tk-bg-dark);
+}
+.tk-nav__legend {
+  color: var(--tk-text-muted-on-dark);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px var(--tk-gutter) 0;
+}
+.tk-nav__legend--sub {
+  padding: 0;
+  margin-top: -4px;
+}
+.tk-nav__dot {
+  margin: 0 0.6em;
+}
+.tk-nav__actions {
+  padding: 16px var(--tk-gutter) 0;
+}
+
+/* S07 accuracy value */
+.tk-nav__acc {
+  margin-inline-start: 0.6em;
+  unicode-bidi: isolate;
+}
+
+/* ---------- S11 AR guidance ---------- */
+.tk-ar {
+  background: var(--tk-bg-dark);
+}
+.tk-ar__camera {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 300px;
+  overflow: hidden;
+  background: #6b6b6d;
+}
+.tk-ar__scene,
+.tk-ar__layer,
+.tk-ar__photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.tk-ar__layer {
+  display: block;
+}
+.tk-ar__photo {
+  object-fit: cover;
+  object-position: 50% 100%;
+  opacity: 0;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.tk-ar__photo--ok {
+  opacity: 1;
+}
+.tk-ar__photo--mirror {
+  transform: scaleX(-1);
+}
+.tk-ar__photo + .tk-ar__layer,
+.tk-ar__layer--top {
+  z-index: 1;
+}
+/* Rear camera (H5): covers the still street; the arrow layer stays on top. */
+.tk-ar__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #000;
+}
+.tk-ar__arrow {
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35));
+}
+.tk-ar__detect {
+  animation: tk-ar-detect 1.6s ease-in-out infinite;
+}
+@keyframes tk-ar-detect {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.55;
+  }
+}
+.tk-ar__overlay {
+  position: absolute;
+  inset-block-start: 12px;
+  inset-inline-start: 14px;
+  inset-inline-end: 14px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  pointer-events: none;
+}
+.tk-ar__card {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 28px;
+  padding: 12px 22px 14px;
+  border-radius: 18px;
+  background: rgba(22, 20, 26, 0.94);
+  color: var(--tk-white);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+.tk-ar__card-dir {
+  font-size: 34px;
+  line-height: 1;
+}
+.tk-ar__card-dist {
+  color: var(--tk-yellow);
+  font-weight: 800;
+  font-size: 19px;
+  white-space: nowrap;
+  unicode-bidi: isolate;
+}
+.tk-ar__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  max-width: 100%;
+  padding: 6px 11px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--tk-white);
+  background: rgba(22, 20, 26, 0.82);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+.tk-ar__chip--ok {
+  box-shadow:
+    inset 0 0 0 1.5px var(--tk-yellow),
+    0 2px 8px rgba(0, 0, 0, 0.25);
+}
+.tk-ar__chip--ok .tk-icon {
+  color: var(--tk-yellow);
+  flex: 0 0 auto;
+}
+.tk-ar__chip-sub {
+  display: block;
+  font-weight: 600;
+  font-size: 11.5px;
+  color: var(--tk-text-muted-on-dark);
+}
+.tk-ar__spinner {
+  width: 13px;
+  height: 13px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: var(--tk-yellow);
+  animation: tk-ar-spin 0.9s linear infinite;
+}
+@keyframes tk-ar-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* "Compass unavailable" (no compass on the device): small and quiet, the fixed arrow still guides. */
+.tk-ar__chip--note {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--tk-text-muted-on-dark);
+}
+/* Buttons inside the overlay column (which ignores pointer events itself). */
+.tk-ar__chipbtn {
+  pointer-events: auto;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  text-decoration: none;
+  min-height: 36px;
+  box-shadow:
+    inset 0 0 0 1.5px var(--tk-white),
+    0 2px 8px rgba(0, 0, 0, 0.25);
+}
+.tk-ar__chipbtn:focus-visible {
+  outline: 3px solid var(--tk-yellow);
+  outline-offset: 2px;
+}
+/* "AR paused / Calibrate compass" (F3B): shown instead of the arrow when the compass is unreliable. */
+.tk-ar__paused {
+  position: absolute;
+  inset-inline: 24px;
+  inset-block-end: 56px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 16px 16px;
+  border-radius: 18px;
+  background: rgba(22, 20, 26, 0.9);
+  color: var(--tk-white);
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+.tk-ar__paused-title {
+  font-size: 22px;
+  line-height: 1.2;
+}
+.tk-ar__paused-sub {
+  color: var(--tk-text-muted-on-dark);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.tk-ar__sheet {
+  position: relative;
+  z-index: 3;
+  flex: 0 0 auto;
+  margin-top: -22px;
+  padding: 10px 18px 6px;
+  border-radius: 26px 26px 0 0;
+  background: var(--tk-bg-dark);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.tk-ar__sheetrow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px 12px;
+  padding: 0 4px;
+}
+.tk-ar__maptitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+}
+.tk-ar__dest {
+  margin-inline-start: auto;
+  font-weight: 800;
+  font-size: 16px;
+  text-align: end;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.tk-ar__sep {
+  margin: 0 0.5em;
+}
+.tk-ar__sheetfoot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px;
+  color: var(--tk-text-muted-on-dark);
+  font-size: 15px;
+  font-weight: 700;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tk-ar__detect,
+  .tk-ar__spinner,
+  .tk-nav__status--flash .tk-nav__statusbtn,
+  .tk-nav__status--flash .tk-nav__statusicon,
+  .tk-nav__status--flash .tk-nav__statusicon svg {
+    animation: none;
+  }
+}

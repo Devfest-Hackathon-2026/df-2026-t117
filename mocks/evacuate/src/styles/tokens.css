@@ -1,0 +1,80 @@
+/*
+ * TASUKU design tokens (requirements.md section 3, extracted from the screen designs).
+ * Use these variables everywhere instead of raw colors.
+ */
+:root {
+  /* Core palette */
+  --tk-bg-dark: #18161a;          /* dark background (guidance screens) */
+  --tk-btn-dark: #2a272c;         /* dark button / header round buttons */
+  --tk-panel-grey: #2a272c;       /* S05 offline top panel */
+  --tk-red: #ae1428;              /* alert red (S02/S03/S04 top panel) */
+  --tk-maroon: #7a001b;           /* calm red (S06 waiting on high ground) */
+  --tk-yellow: #ffd54f;           /* emphasis yellow (badges, primary button, NOW) */
+  --tk-picto-bg: #fce8e4;         /* pictogram card background */
+  --tk-picto-bg-cream: #fdf6f1;   /* S06 pictogram card (cream) */
+  --tk-picto-line: #1b2b2e;       /* pictogram ink */
+  --tk-light-bg: #fdf6f1;         /* light screens (language, emergency) */
+  --tk-light-card: #f3ecea;       /* light list items / round buttons on light bg */
+  --tk-light-card-pink: #f8e6e3;  /* "Show this location" card */
+  --tk-black: #17151a;            /* black button on light bg (Apply) */
+  --tk-white: #ffffff;
+
+  /* Text */
+  --tk-text-on-dark: #ffffff;
+  --tk-text-muted-on-dark: #d7cfd3;   /* footer meta, secondary lines on dark */
+  --tk-text-on-light: #17151a;
+  --tk-text-muted-on-light: #5c5459;
+  --tk-outline-on-dark: #b9b0b5;      /* outline button border on dark */
+
+  /* Map */
+  --tk-map-sea: #bad3e6;
+  --tk-map-land: #e8e8e0;
+  --tk-map-road: #ffffff;
+  --tk-map-hazard: #f0c4bc;
+  --tk-map-hazard-stripe: #a8323a;
+  --tk-map-route: #1a4f9c;
+  --tk-map-route-ar: #ffd54f;
+  --tk-map-accuracy-fill: #cfe0f0;
+  --tk-map-label-sea: #1a4f9c;
+
+  /* Typography */
+  --tk-font-heading: 'Nunito', 'Noto Sans', 'Noto Sans JP', 'Noto Sans SC', 'Noto Sans KR', 'Noto Sans Arabic', system-ui, sans-serif;
+  --tk-font-body: 'Noto Sans', 'Noto Sans JP', 'Noto Sans SC', 'Noto Sans KR', 'Noto Sans Arabic', system-ui, sans-serif;
+  --tk-fw-heading: 900;
+  --tk-fs-headline: 52px;   /* main instruction (>= 40px bold, requirements 10) */
+  --tk-fs-title: 44px;      /* sub-screen page title (Language, Call for help) */
+  --tk-fs-button: 22px;
+  --tk-fs-badge: 15px;
+  --tk-fs-body: 16px;
+  --tk-fs-meta: 14px;
+
+  /* Sizes */
+  --tk-phone-w: 390px;
+  --tk-phone-h: 844px;
+  --tk-gutter: 24px;
+  --tk-status-h: 32px;
+  --tk-header-h: 64px;
+  --tk-btn-h: 58px;          /* >= 56px tap target */
+  --tk-round-btn: 48px;
+  --tk-radius-card: 22px;
+  --tk-radius-pill: 999px;
+  --tk-radius-badge: 10px;
+}
+
+/* Per-language font priority so Han characters use the right regional glyphs. */
+html[lang='ja'] {
+  --tk-font-body: 'Noto Sans', 'Noto Sans JP', system-ui, sans-serif;
+  --tk-font-heading: 'Nunito', 'Noto Sans JP', system-ui, sans-serif;
+}
+html[lang='zh-Hans'] {
+  --tk-font-body: 'Noto Sans', 'Noto Sans SC', system-ui, sans-serif;
+  --tk-font-heading: 'Nunito', 'Noto Sans SC', system-ui, sans-serif;
+}
+html[lang='ko'] {
+  --tk-font-body: 'Noto Sans', 'Noto Sans KR', system-ui, sans-serif;
+  --tk-font-heading: 'Nunito', 'Noto Sans KR', system-ui, sans-serif;
+}
+html[lang='ar'] {
+  --tk-font-body: 'Noto Sans Arabic', 'Noto Sans', system-ui, sans-serif;
+  --tk-font-heading: 'Noto Sans Arabic', 'Nunito', system-ui, sans-serif;
+}

@@ -1,0 +1,48 @@
+/* TownMap (T1): SVG map of the fictional town. */
+.tk-townmap {
+  position: relative;
+  width: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--tk-map-land);
+  /* The map is geography: never mirror it in RTL */
+  direction: ltr;
+  isolation: isolate;
+}
+
+.tk-townmap--mini {
+  aspect-ratio: 810 / 435;
+}
+
+.tk-townmap--full {
+  aspect-ratio: 810 / 780;
+}
+
+.tk-townmap__svg {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.tk-townmap--editable .tk-townmap__svg {
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.tk-townmap--editable .tk-townmap__svg:focus-visible {
+  outline: 3px solid var(--tk-yellow);
+  outline-offset: -3px;
+}
+
+.tk-townmap__label {
+  font-family: var(--tk-font-body);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  paint-order: stroke;
+  stroke-linejoin: round;
+}

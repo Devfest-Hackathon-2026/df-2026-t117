@@ -1,0 +1,31 @@
+.tk-footermeta {
+  text-align: center;
+  font-size: var(--tk-fs-meta);
+  font-weight: 700;
+  line-height: 1.4;
+  padding: 14px var(--tk-gutter) 18px;
+}
+.tk-footermeta--dark {
+  color: var(--tk-text-muted-on-dark);
+}
+.tk-footermeta--light {
+  color: var(--tk-text-muted-on-light);
+}
+.tk-footermeta__item {
+  white-space: nowrap;
+}
+.tk-footermeta__dot {
+  margin: 0 0.6em;
+}
+.tk-footermeta__link {
+  font-weight: 700;
+  color: inherit;
+  padding: 10px 4px;
+  margin: -10px -4px;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 3px;
+}
+.tk-footermeta__link:hover {
+  text-decoration-color: currentColor;
+}

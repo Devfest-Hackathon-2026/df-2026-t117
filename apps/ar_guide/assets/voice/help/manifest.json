@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "note": "tools/voice/help-ja.mjs が生成。手で編集しない。",
+  "audio": {
+    "audioEncoding": "MP3",
+    "sampleRateHertz": 24000
+  },
+  "langs": {
+    "ja": {
+      "languageCode": "ja-JP",
+      "voice": "ja-JP-Chirp3-HD-Kore"
+    }
+  },
+  "clips": {
+    "ja": {
+      "help": {
+        "file": "help/ja.mp3",
+        "text": "すみません、助けてください。津波から逃げています。高台はどこですか？",
+        "reading": "すみません、助けてください。津波から逃げています。たかだいはどこですか？",
+        "voice": "ja-JP-Chirp3-HD-Kore",
+        "hash": "ccea6a0edaabe820"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "tasuku-alert-ingest",
+  "private": true,
+  "version": "0.1.0",
+  "description": "気象庁の津波警報電文を受け取り、Firestore に記録して FCM で配信する Cloud Run サービス（ハッカソン H1）",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "tsc --noEmit -p tsconfig.json && tsx --test test/*.test.ts",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "fast-xml-parser": "5.12.0",
+    "firebase-admin": "14.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  }
+}

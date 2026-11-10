@@ -1,0 +1,26 @@
+.tk-statusbar {
+  flex: 0 0 var(--tk-status-h);
+  height: var(--tk-status-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--tk-gutter);
+  font-family: var(--tk-font-body);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  user-select: none;
+}
+.tk-statusbar--dark {
+  background: var(--tk-bg-dark);
+  color: var(--tk-text-on-dark);
+}
+.tk-statusbar--light {
+  background: var(--tk-light-bg);
+  color: var(--tk-text-on-light);
+}
+.tk-statusbar__demo {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- テスト用の架空の電文。気象庁の防災情報 XML（VTSE41）の形式に合わせているが、実在の警報ではない。 -->
+<Report xmlns="http://xml.kishou.go.jp/jmaxml1/" xmlns:jmx="http://xml.kishou.go.jp/jmaxml1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Control>
+    <Title>津波警報・注意報・予報a</Title>
+    <DateTime>2026-11-08T00:50:00Z</DateTime>
+    <Status>訓練</Status>
+    <EditorialOffice>気象庁本庁</EditorialOffice>
+    <PublishingOffice>気象庁</PublishingOffice>
+  </Control>
+  <Head xmlns="http://xml.kishou.go.jp/jmaxml1/informationBasis1/">
+    <Title>大津波警報・津波警報・津波注意報・津波予報</Title>
+    <ReportDateTime>2026-11-08T09:50:00+09:00</ReportDateTime>
+    <TargetDateTime>2026-11-08T09:50:00+09:00</TargetDateTime>
+    <EventID>20261108094000</EventID>
+    <InfoType>発表</InfoType>
+    <Serial>2</Serial>
+    <InfoKind>津波警報・注意報・予報</InfoKind>
+    <InfoKindVersion>1.0_1</InfoKindVersion>
+    <Headline>
+      <Text>宮城県に大津波警報を発表しました。</Text>
+      <Information type="津波予報領域表現">
+      <Item>
+        <Kind>
+          <Name>大津波警報：発表</Name>
+          <Code>53</Code>
+        </Kind>
+        <Areas codeType="津波予報区">
+          <Area>
+            <Name>宮城県</Name>
+            <Code>220</Code>
+          </Area>
+        </Areas>
+      </Item>
+      <Item>
+        <Kind>
+          <Name>津波警報</Name>
+          <Code>51</Code>
+        </Kind>
+        <Areas codeType="津波予報区">
+          <Area>
+            <Name>福島県</Name>
+            <Code>250</Code>
+          </Area>
+        </Areas>
+      </Item>
+      </Information>
+    </Headline>
+  </Head>
+  <Body xmlns="http://xml.kishou.go.jp/jmaxml1/body/seismology1/" xmlns:jmx_eb="http://xml.kishou.go.jp/jmaxml1/elementBasis1/">
+    <Tsunami>
+      <Forecast>
+        <CodeDefine>
+          <Type xpath="Item/Area/Code">津波予報区</Type>
+          <Type xpath="Item/Category/Kind/Code">警報等情報要素／津波警報・注意報・予報</Type>
+          <Type xpath="Item/Category/LastKind/Code">警報等情報要素／津波警報・注意報・予報</Type>
+        </CodeDefine>
+        <Item>
+          <Area>
+            <Name>宮城県</Name>
+            <Code>220</Code>
+          </Area>
+          <Category>
+            <Kind>
+              <Name>大津波警報：発表</Name>
+              <Code>53</Code>
+            </Kind>
+            <LastKind>
+              <Name>津波警報</Name>
+              <Code>51</Code>
+            </LastKind>
+          </Category>
+          <FirstHeight>
+            <ArrivalTime>2026-11-08T10:05:00+09:00</ArrivalTime>
+          </FirstHeight>
+          <MaxHeight>
+            <jmx_eb:TsunamiHeight type="津波の高さ" unit="m" description="５ｍ">5</jmx_eb:TsunamiHeight>
+            <Revise>更新</Revise>
+          </MaxHeight>
+        </Item>
+        <Item>
+          <Area>
+            <Name>福島県</Name>
+            <Code>250</Code>
+          </Area>
+          <Category>
+            <Kind>
+              <Name>津波警報</Name>
+              <Code>51</Code>
+            </Kind>
+            <LastKind>
+              <Name>津波注意報</Name>
+              <Code>62</Code>
+            </LastKind>
+          </Category>
+          <FirstHeight>
+            <ArrivalTime>2026-11-08T10:15:00+09:00</ArrivalTime>
+          </FirstHeight>
+          <MaxHeight>
+            <jmx_eb:TsunamiHeight type="津波の高さ" unit="m" description="３ｍ">3</jmx_eb:TsunamiHeight>
+            <Revise>更新</Revise>
+          </MaxHeight>
+        </Item>
+      </Forecast>
+    </Tsunami>
+  </Body>
+</Report>

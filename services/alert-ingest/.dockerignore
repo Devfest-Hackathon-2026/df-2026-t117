@@ -1,0 +1,14 @@
+node_modules
+dist
+test
+scripts
+*.md
+firestore.rules
+.env
+.env.*
+*.pem
+*.key
+*.json.key
+service-account*.json
+credentials*.json
+firebase.json

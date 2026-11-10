@@ -1,0 +1,68 @@
+.tk-s01 {
+  background: var(--tk-bg-dark);
+  color: var(--tk-text-on-dark);
+  align-items: center;
+  padding: 56px var(--tk-gutter) 32px;
+  gap: 0;
+}
+.tk-s01__clock {
+  font-size: 104px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-top: 40px;
+}
+.tk-s01__sim {
+  margin-top: 18px;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  color: var(--tk-text-muted-on-dark);
+  text-transform: uppercase;
+}
+.tk-s01__card {
+  margin-top: 44px;
+  width: 100%;
+  background: var(--tk-white);
+  color: var(--tk-text-on-light);
+  border-radius: 28px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.tk-s01__title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--tk-red);
+  color: var(--tk-white);
+  border-radius: 18px;
+  padding: 14px 16px;
+  font-weight: 800;
+  font-size: 19px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+.tk-s01__picto {
+  background: var(--tk-picto-bg);
+  border-radius: 16px;
+  padding: 8px 12px 0;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--tk-picto-line);
+}
+.tk-s01__picto > svg {
+  width: 100%;
+  height: 100%;
+}
+.tk-s01__instruction {
+  font-size: 32px;
+  text-align: center;
+  padding: 2px 4px;
+  overflow-wrap: anywhere;
+}
+.tk-s01__open {
+  margin-bottom: 6px;
+}

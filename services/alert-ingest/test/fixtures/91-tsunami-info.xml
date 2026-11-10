@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- テスト用の架空の電文。気象庁の防災情報 XML（VTSE41）の形式に合わせているが、実在の警報ではない。 -->
+<Report xmlns="http://xml.kishou.go.jp/jmaxml1/" xmlns:jmx="http://xml.kishou.go.jp/jmaxml1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Control>
+    <Title>津波情報a</Title>
+    <DateTime>2026-11-08T01:30:00Z</DateTime>
+    <Status>訓練</Status>
+    <EditorialOffice>気象庁本庁</EditorialOffice>
+    <PublishingOffice>気象庁</PublishingOffice>
+  </Control>
+  <Head xmlns="http://xml.kishou.go.jp/jmaxml1/informationBasis1/">
+    <Title>各地の満潮時刻・津波到達予想時刻に関する情報</Title>
+    <ReportDateTime>2026-11-08T10:30:00+09:00</ReportDateTime>
+    <TargetDateTime>2026-11-08T10:30:00+09:00</TargetDateTime>
+    <EventID>20261108094000</EventID>
+    <InfoType>発表</InfoType>
+    <Serial>6</Serial>
+    <InfoKind>津波警報・注意報・予報</InfoKind>
+    <InfoKindVersion>1.0_1</InfoKindVersion>
+    <Headline>
+      <Text>各地の満潮時刻と津波の到達予想時刻をお知らせします。</Text>
+    </Headline>
+  </Head>
+  <Body xmlns="http://xml.kishou.go.jp/jmaxml1/body/seismology1/" xmlns:jmx_eb="http://xml.kishou.go.jp/jmaxml1/elementBasis1/">
+    <Text>（このテストでは本文を省略）</Text>
+  </Body>
+</Report>

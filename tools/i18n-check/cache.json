@@ -1,0 +1,2469 @@
+{
+ "note": "tools/i18n-check/check.mjs の応答のキャッシュ。消せば作り直す。",
+ "entries": {
+  "00af99b6c7a2b8c46e44": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "「预计」のほうが津波の予測値として自然。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "簡潔な「예상」のほうがカードの表示として適している。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "currentのほうが定冠詞の使い方が自然。"
+   }
+  },
+  "03b5593c5f32ed0ffbf0": {
+   "ja": "津波警報",
+   "zh_Hans": "海啸警报",
+   "ko": "지진해일 경보",
+   "ar": "إنذار من التسونامي"
+  },
+  "0405afd6243f9be53c3d": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "アプリの帯表示として、簡潔な現行訳が適している。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": "どちらも正確で自然な翻訳。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": "丁寧さの度合いが異なるのみで、どちらも問題ない。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "gemini",
+    "reason_ja": "Geminiの方が「その場にとどまる」という意味が明確。"
+   }
+  },
+  "05a42d3565bb9d4ab5b7": {
+   "ja": "大津波警報",
+   "zh_Hans": "大海啸警报",
+   "ko": "대쓰나미 경보",
+   "ar": "تحذير من تسونامي عارم"
+  },
+  "071bddf107c52703f2ca": {
+   "ja": "直進",
+   "zh_Hans": "直行",
+   "ko": "직진",
+   "ar": "مستقيم"
+  },
+  "072626415d6bf1d49023": {
+   "ja": {
+    "verdict": "minor",
+    "better": "gemini",
+    "reason_ja": "「待つ」などの動詞がないため、geminiの方が明確。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "minor",
+    "better": "gemini",
+    "reason_ja": "「待つ」に相当する動詞が抜けているため、geminiの方が良い。"
+   },
+   "ar": {
+    "verdict": "minor",
+    "better": "gemini",
+    "reason_ja": "「待て」という動詞が抜けており、geminiの方が正確。"
+   }
+  },
+  "084db13ed0743263b3d5": {
+   "ja": "屋内",
+   "zh_Hans": "室内",
+   "ko": "실내",
+   "ar": "داخل المبنى"
+  },
+  "08eb256c6ca2bbd003ea": {
+   "ja": "青い避難標識に従ってください",
+   "zh_Hans": "沿蓝色避难标志前进",
+   "ko": "파란색 대피 표지판을 따라가십시오",
+   "ar": "اتبع لافتات الإخلاء الزرقاء"
+  },
+  "0902d985d2890a1f566c": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "緊急時の命令形として「頭を守れ」は適切。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "0958bb86b94ff343a15c": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "0a74cb2a000f7984ee04": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "0b699e47d29b9710e56b": {
+   "ja": "津波警報・注意報は解除されました",
+   "zh_Hans": "海啸警报已解除",
+   "ko": "쓰나미 경보·주의보가 해제되었습니다",
+   "ar": "تم إلغاء إنذار التسونامي"
+  },
+  "0ba4baabf280cca1a9ff": {
+   "ja": "位置不明",
+   "zh_Hans": "位置不明",
+   "ko": "위치 불확실",
+   "ar": "الموقع غير محدد"
+  },
+  "0e4f2bcb5b98aa3accb3": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "短く緊迫感があり、アプリの帯表示として最適です。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": "どちらも簡潔で意味が正しく伝わります。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "currentの方が簡潔で、緊迫した状況に適しています。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "currentは単数形（命令形）で簡潔に表現されており適切です。"
+   }
+  },
+  "10702b24b0d2542ec72c": {
+   "ja": "高い",
+   "zh_Hans": "高",
+   "ko": "높음",
+   "ar": "مرتفع"
+  },
+  "129d7c89777bee732ce1": {
+   "ja": "予想より{n}m低い",
+   "zh_Hans": "比预测低{n}米",
+   "ko": "예상보다 {n}m 낮음",
+   "ar": "أقل من المتوقع بـ {n} م"
+  },
+  "14ae9cb7cf3b2323a786": {
+   "ja": "さらに高いところへ",
+   "zh_Hans": "往更高处",
+   "ko": "더 높은 곳으로 가십시오",
+   "ar": "اصعد إلى مكان أعلى"
+  },
+  "1563d4428e94942bd9a7": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "158bd3f92297804b30ab": {
+   "ja": "車内",
+   "zh_Hans": "车内",
+   "ko": "차량 내",
+   "ar": "داخل السيارة"
+  },
+  "177117bf2411999ff10a": {
+   "ja": "引き上げ",
+   "zh_Hans": "升级",
+   "ko": "격상",
+   "ar": "تمت الترقية"
+  },
+  "18295004e09e5f8e90ef": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "「ここで待機」は簡潔で、ロック画面の通知として適切です。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": "どちらも「ここに留まる」という意味で、簡潔で分かりやすいです。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "「여기에 머무르세요」は丁寧かつ簡潔で、避難指示として適切です。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "「ابقَ هنا」は簡潔な命令形で、緊急時の指示として最適です。"
+   }
+  },
+  "1ac746562db23415d67b": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "1ce0e7a5b3e925434ddd": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "気象庁の公式訳（تحذير من تسونامي كبير）と一致しています。"
+   }
+  },
+  "1d16444acd82537e16bf": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "currentの「屋内（で）」という表現で問題ありません。"
+   }
+  },
+  "1f0e2a3bcf79166bfdd9": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "currentの「高い場所」の方が避難指示として直感的で分かりやすい。"
+   }
+  },
+  "201d62f3fdbe112e485f": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "23e47ccbdcf26d78fc6d": {
+   "ja": {
+    "verdict": "ok",
+    "better": "gemini",
+    "reason_ja": "geminiの方が簡潔で、一文にまとまっていて読みやすい。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "2469ab0965f48545a9ab": {
+   "ja": "地震",
+   "zh_Hans": "地震",
+   "ko": "지진",
+   "ar": "زلزال"
+  },
+  "26b08b4e4f3f801e5c62": {
+   "ja": {
+    "verdict": "ok",
+    "better": "gemini",
+    "reason_ja": "「格上げ」より「引き上げ」の方が気象情報の表現として自然。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "26b34ca5b34be709dbd7": {
+   "ja": "高台へ",
+   "zh_Hans": "往高处走",
+   "ko": "높은 곳으로 가십시오",
+   "ar": "اصعد إلى مكان مرتفع"
+  },
+  "27000a748b31da7f5948": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "minor",
+    "better": "gemini",
+    "reason_ja": "気象庁の公式対訳では「تنبيه من تسونامي」が使われています。"
+   }
+  },
+  "276ac412514bf87b3b36": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "「頭を守れ」は緊急時の命令形として適切。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "27c883174eb9ac56e654": {
+   "ja": {
+    "verdict": "minor",
+    "better": "gemini",
+    "reason_ja": "「従う」より「従ってください」や「進んでください」が自然。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "「海啸避难标志」は具体的で分かりやすい。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "「쓰나미 대피 표지판」と具体的に訳されており適切。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "2a98a02172780db1ba76": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "2b39f303e24cf1b30a1b": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "簡潔で緊急時に適している。Geminiは少し長い。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": "どちらも正確で、緊急時の指示として適切。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "gemini",
+    "reason_ja": "Geminiの方がより簡潔で命令調（〜십시오）であり、緊迫感が伝わる。"
+   },
+   "ar": {
+    "verdict": "minor",
+    "better": "gemini",
+    "reason_ja": "currentは「Pull over（路肩に寄せる）」のニュアンスが抜けている。"
+   }
+  },
+  "2db7e604ead59947931b": {
+   "ja": "海から上がり、海岸から離れてください。",
+   "zh_Hans": "立即离开水域并远离海岸。",
+   "ko": "바다에서 나와 해안에서 멀리 떨어지십시오.",
+   "ar": "اخرجوا من المياه وابتعدوا عن الساحل."
+  },
+  "2e6023430cf49d73821a": {
+   "ja": "最新情報を確認",
+   "zh_Hans": "查看最新信息",
+   "ko": "업데이트 확인",
+   "ar": "تحقق من التحديثات"
+  },
+  "2f6764db2bb0de08c862": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "minor",
+    "better": "gemini",
+    "reason_ja": "「격하」より「하향 조정（下向調整）」の方が自然です。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "30526058167144d2b9ac": {
+   "ja": {
+    "verdict": "ok",
+    "better": "gemini",
+    "reason_ja": "geminiの方が簡潔で「利用不可」のニュアンスが伝わりやすい。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": "どちらも正確で自然な翻訳です。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "currentの方が短く、状態表示として視認性が高い。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": "どちらも正確で、意味の違いはほとんどありません。"
+   }
+  },
+  "34a75276e4a96022b577": {
+   "ja": "津波ガイド",
+   "zh_Hans": "海啸指南",
+   "ko": "지진해일 가이드",
+   "ar": "دليل التسونامي"
+  },
+  "3610b014e5f561102991": {
+   "ja": "{n}メートル直進。",
+   "zh_Hans": "直行{n}米。",
+   "ko": "{n}미터 직진하세요.",
+   "ar": "سر مستقيمًا لمسافة {n} متر."
+  },
+  "3626e93614e6978a36f5": {
+   "ja": "注意報",
+   "zh_Hans": "注意报",
+   "ko": "주의보",
+   "ar": "تحذير"
+  },
+  "39551fe1a30171294bb4": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "緊急時の命令形として「頭を守れ」は適切。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "丁寧な命令形として「보호하세요」は適切。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "395b000383bb56365668": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "3dd108c8e0556776db93": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "minor",
+    "better": "gemini",
+    "reason_ja": "気象庁の公式訳は「지진해일주의보」です。"
+   },
+   "ar": {
+    "verdict": "minor",
+    "better": "gemini",
+    "reason_ja": "気象庁の公式訳は「تنبيه من تسونامي」です。"
+   }
+  },
+  "401ef8a1ff6c3b5715ba": {
+   "ja": "揺れが収まるまで待つ",
+   "zh_Hans": "等摇晃停止",
+   "ko": "흔들림이 멈출 때까지 기다리십시오",
+   "ar": "انتظر حتى يتوقف الاهتزاز"
+  },
+  "41de1f75d1d14a8c70f2": {
+   "ja": "格上げ",
+   "zh_Hans": "升级",
+   "ko": "격상",
+   "ar": "ترقية"
+  },
+  "451e3af3f1d980a09589": {
+   "ja": "左",
+   "zh_Hans": "左",
+   "ko": "왼쪽",
+   "ar": "يسار"
+  },
+  "45e5222179c14fc52c6c": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "currentの方が簡潔で、ロック画面の通知に適している。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "currentの方が簡潔で、ロック画面の通知に適している。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "gemini",
+    "reason_ja": "geminiの方が「今すぐ（فورًا）」が強調され、より自然。"
+   }
+  },
+  "4794e4b126e37a6b7988": {
+   "ja": "格下げ",
+   "zh_Hans": "降级",
+   "ko": "하향 조정",
+   "ar": "تخفيض الدرجة"
+  },
+  "47c357351fabaea711c3": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "minor",
+    "better": "gemini",
+    "reason_ja": "気象庁の公式対訳は「대쓰나미경보（大津波警報）」です。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "気象庁の公式対訳（تحذير تسونامي كبير）と一致しています。"
+   }
+  },
+  "49b5250576b0323bed7d": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "「已升级」（アップグレードされた）は状態を示し適切。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "「レベルが引き上げられた」を意味する現行訳が適切。"
+   }
+  },
+  "4a02ca66733a4c6414bb": {
+   "ja": "作動中",
+   "zh_Hans": "运行中",
+   "ko": "작동 중",
+   "ar": "نشط"
+  },
+  "4ad7ab9c31cec37f02f8": {
+   "ja": "頭を守って",
+   "zh_Hans": "保护头部",
+   "ko": "머리를 보호하십시오",
+   "ar": "احمِ رأسك"
+  },
+  "4e7ea414484b8fdb0bdd": {
+   "ja": "頭を守って",
+   "zh_Hans": "保护头部",
+   "ko": "머리를 보호하십시오",
+   "ar": "احمِ رأسك"
+  },
+  "4ead530dbb90d8d35fa2": {
+   "ja": "大津波警報",
+   "zh_Hans": "大海啸警报",
+   "ko": "대쓰나미경보",
+   "ar": "تحذير من تسونامي عارم"
+  },
+  "4ebd72d37d2390a8527c": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "簡潔で緊急性が高く、プッシュ通知に最適です。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "簡潔で「今すぐ」の緊急性が十分に伝わります。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "体言止めで簡潔であり、プッシュ通知として適しています。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "「今すぐ高いところへ登れ」と正しく翻訳されています。"
+   }
+  },
+  "500f2111f5d3cbae4111": {
+   "ja": "右",
+   "zh_Hans": "右",
+   "ko": "오른쪽",
+   "ar": "يمين"
+  },
+  "5019dcbd35f414fecab0": {
+   "ja": "おおよその位置",
+   "zh_Hans": "大致位置",
+   "ko": "대략적인 위치",
+   "ar": "الموقع تقريبي"
+  },
+  "518e8ebd36b2daca2e69": {
+   "ja": "高台へ",
+   "zh_Hans": "往高处走",
+   "ko": "높은 곳으로 가십시오.",
+   "ar": "اصعد إلى مكان مرتفع."
+  },
+  "52255fa0c89f1172ca02": {
+   "ja": "その場に留まって",
+   "zh_Hans": "留在原地",
+   "ko": "그 자리에 머무르십시오",
+   "ar": "ابقَ في مكانك"
+  },
+  "534abcb75f27814ad0a3": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "534de7ff58054f63d910": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "「車を降りて」の方が直感的で、体言止めも緊迫感がある。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "gemini",
+    "reason_ja": "Geminiの「弃车步行」の方が簡潔で、緊急時の表示に適している。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "gemini",
+    "reason_ja": "「車を置いて（차를 두고）」の方が「Leave the car」のニュアンスに近い。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "現行訳の方が簡潔で、緊急時の指示として分かりやすい。"
+   }
+  },
+  "560c3e28b1b36f22f0aa": {
+   "ja": "係員の指示に従ってください",
+   "zh_Hans": "听从工作人员指示",
+   "ko": "직원의 지시에 따르십시오",
+   "ar": "اتبع تعليمات الموظفين"
+  },
+  "581c6da1a13f0e748aa6": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "5920b4ab1e53e9c2be43": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "「高さ引き上げ」で簡潔に伝わり問題ありません。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": "「预计高度上调」で意味が正確に伝わります。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": "「예상 높이 상향」で正確に翻訳されています。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "gemini",
+    "reason_ja": "geminiの名詞句（高さの引き上げ）の方が帯の表示として自然です。"
+   }
+  },
+  "5acd61e97ad1e76fb169": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "「現在地を設定」の方がアプリの文脈として自然です。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": "どちらも「位置を設定」を意味し、適切です。"
+   }
+  },
+  "5dd48afacac8a23c8796": {
+   "ja": "高台",
+   "zh_Hans": "高地",
+   "ko": "고지대",
+   "ar": "أرض مرتفعة"
+  },
+  "5e6689e1b8b1879c821a": {
+   "ja": "予想される津波の高さが引き上げられました",
+   "zh_Hans": "预计海啸高度已调高",
+   "ko": "예상되는 쓰나미 높이가 상향되었습니다",
+   "ar": "تم رفع الارتفاع المتوقع للتسونامي"
+  },
+  "5ee0a405b2743059422c": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "currentは状態を表し、geminiは動作を表すためcurrentが適切。"
+   }
+  },
+  "610f06758af6fe054a8b": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "currentの定冠詞付きの表現のほうが状態表示として自然。"
+   }
+  },
+  "611e294eb04f4b8cac5d": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "警報などが「発表中」であることを示すため、currentが適切。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "警報が有効であることを示す「生效中」が適切。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "警報が発令されている状態を示す「발령 중」が適切。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "警報などが有効・発令中であることを示す「ساري」が適切。"
+   }
+  },
+  "61222d443c6088fd6e85": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "アプリの短い状態表示として、常体（おさまった）のcurrentが適している。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "626485437fac0f4c6dd6": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "6648898c31d712fba0b9": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "6893300c63f807bb3630": {
+   "ja": "標高不明",
+   "zh_Hans": "海拔未知",
+   "ko": "해발 불명",
+   "ar": "الارتفاع غير معروف"
+  },
+  "697e2a6806f9f00f5a11": {
+   "ja": "津波警報",
+   "zh_Hans": "海啸警报",
+   "ko": "쓰나미경보",
+   "ar": "تحذير من تسونامي"
+  },
+  "6c90a61877b69d8d62c2": {
+   "ja": "津波",
+   "zh_Hans": "海啸",
+   "ko": "쓰나미",
+   "ar": "تسونامي"
+  },
+  "6d2704b2c733bd7c6410": {
+   "ja": "予想される高さ",
+   "zh_Hans": "预测高度",
+   "ko": "예상 높이",
+   "ar": "الارتفاع المتوقع"
+  },
+  "703a8435ed58fb38b01a": {
+   "ja": "{n}メートル先、右です。",
+   "zh_Hans": "{n}米后右转。",
+   "ko": "{n}미터 앞에서 우회전하세요.",
+   "ar": "انعطف يمينًا بعد {n} متر."
+  },
+  "70702e64b6b6517ac884": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "アプリのカードのタイトルとして「ここで待つ理由」は適切。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "「为什么在这里」で「なぜここにいるのか」という意味が伝わる。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "「ここで待つ理由」という文脈に合致した自然な翻訳。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": "「なぜここなのか」という簡潔な表現で問題ない。"
+   }
+  },
+  "73040e51ddf5c4586979": {
+   "ja": {
+    "verdict": "ok",
+    "better": "gemini",
+    "reason_ja": "geminiの方が「最新」のニュアンスが含まれておりより正確。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "gemini",
+    "reason_ja": "geminiの方が簡潔で、ロック画面の通知として適している。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "73625d2032ed882bc46a": {
+   "ja": {
+    "verdict": "minor",
+    "better": "gemini",
+    "reason_ja": "「高台に着いた」より「高台に避難中」や「高台にいる」が適切。"
+   },
+   "zh_Hans": {
+    "verdict": "minor",
+    "better": "gemini",
+    "reason_ja": "「已到高处」は到着した動作を指すが、状態としてはgeminiが自然。"
+   },
+   "ko": {
+    "verdict": "minor",
+    "better": "gemini",
+    "reason_ja": "「고지대 도착（到着）」より「고지대에 있음（いる）」が状態を示す。"
+   },
+   "ar": {
+    "verdict": "minor",
+    "better": "gemini",
+    "reason_ja": "currentは「到着した」という動詞表現。状態を示すgeminiが良い。"
+   }
+  },
+  "74a27ff94c9d69054e02": {
+   "ja": "今すぐ",
+   "zh_Hans": "立刻",
+   "ko": "지금 당장",
+   "ar": "الآن"
+  },
+  "762441413259830ae985": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "782bef21f1bb841da4eb": {
+   "ja": "今すぐ高台へ避難してください！",
+   "zh_Hans": "立刻往高处避难！",
+   "ko": "지금 즉시 높은 곳으로 대피하십시오!",
+   "ar": "اذهب إلى مكان مرتفع الآن!"
+  },
+  "78820a884ecc50fecf0f": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "788e2c445e385e1dc77c": {
+   "ja": "予想される高さ {h}",
+   "zh_Hans": "预测高度 {h}",
+   "ko": "예상 높이 {h}",
+   "ar": "الارتفاع المتوقع {h}"
+  },
+  "792afa850021a62f5aeb": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "気象庁の公式対訳（هائل）と一致しているため。"
+   }
+  },
+  "79984858c1e69d817ffa": {
+   "ja": "標高 {v}",
+   "zh_Hans": "海拔 {v}",
+   "ko": "해발 {v}",
+   "ar": "الارتفاع {v}"
+  },
+  "7a347e28ef27e642f281": {
+   "ja": "すべての警報が解除されるまでその場にとどまってください",
+   "zh_Hans": "在所有警报解除前，请留在原地",
+   "ko": "모든 경보가 해제될 때까지 머무르십시오",
+   "ar": "ابقَ في مكانك حتى إلغاء جميع التحذيرات"
+  },
+  "7da7125958e687d96ec9": {
+   "ja": "高さ引き上げ",
+   "zh_Hans": "高度上调",
+   "ko": "높이 상향",
+   "ar": "تم رفع الارتفاع"
+  },
+  "7e9796bbd8e9d0377cfd": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "7ee4d6e678a54f11e4ca": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "currentの方が簡潔でアプリの通知に適しています。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "82bae1816c8301bbc580": {
+   "ja": "高台へ",
+   "zh_Hans": "往高处走",
+   "ko": "높은 곳으로 가십시오",
+   "ar": "اتجه إلى مكان مرتفع"
+  },
+  "83fa93dc7ed10bc7be6f": {
+   "ja": "引き続き高台へ避難してください",
+   "zh_Hans": "继续向高处避难",
+   "ko": "계속해서 높은 곳으로 대피하십시오",
+   "ar": "استمروا في التوجه إلى المرتفعات"
+  },
+  "855b6a03fd5b7f03c8cd": {
+   "ja": "高い",
+   "zh_Hans": "高",
+   "ko": "높음",
+   "ar": "مرتفع"
+  },
+  "8664d64058ff148adbdc": {
+   "ja": "位置を設定",
+   "zh_Hans": "设置位置",
+   "ko": "위치 설정",
+   "ar": "تعيين الموقع"
+  },
+  "886daa7052342afdfca2": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "minor",
+    "better": "gemini",
+    "reason_ja": "気象庁の公式訳語は「지진해일 경보」です。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": ""
+   }
+  },
+  "88fe20419d4904fdf200": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "「車を降りて」のほうが直感的で、体言止めも緊急時に適している。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "現行訳は簡潔で分かりやすい。Geminiの「弃车」はやや硬い。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "現行訳は自然で、避難の指示として十分に機能している。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "現行訳は簡潔で、緊急時の指示として非常に分かりやすい。"
+   }
+  },
+  "8956e652db410afcb1cb": {
+   "ja": "ここで待機してください",
+   "zh_Hans": "在此停留",
+   "ko": "이곳에 머무르십시오",
+   "ar": "ابقَ هنا"
+  },
+  "8fbafe76cd055856b9e7": {
+   "ja": "リアルタイムの道路状況は利用できません",
+   "zh_Hans": "实时路况不可用",
+   "ko": "실시간 도로 상황 이용 불가",
+   "ar": "حالة الطرق المباشرة غير متوفرة"
+  },
+  "90c1c166dfdfab8f4d43": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "「ここで待機。」は簡潔で、緊急時の指示として適切です。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": "どちらも「ここに留まる」という意味を正しく伝えています。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": "どちらも適切に翻訳されています。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": "どちらも「ここに留まれ」という命令形を正しく表現しています。"
+   }
+  },
+  "910fb7d299a2cf8381ba": {
+   "ja": "頭を守って",
+   "zh_Hans": "保护头部",
+   "ko": "머리를 보호하세요",
+   "ar": "احمِ رأسك"
+  },
+  "925e8833bf5e2023e2d4": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "「頭を守れ」は緊急時の命令形として適切。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": "どちらも適切だが、currentの丁寧な命令形でも問題ない。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "92a3e98fc0b59ce77952": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "currentの「前方へ」の方が案内表示として自然。"
+   }
+  },
+  "92b7c20b45292fd0e8ea": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "945cfedc1d34506433e5": {
+   "ja": "緊急通報",
+   "zh_Hans": "紧急呼叫",
+   "ko": "긴급 전화",
+   "ar": "اتصال طوارئ"
+  },
+  "9559c4472a2f42579987": {
+   "ja": "状況を変更",
+   "zh_Hans": "更改状况",
+   "ko": "상황 변경",
+   "ar": "تغيير الوضع"
+  },
+  "979d76e719bccb7872d3": {
+   "ja": "引き続き警戒し、公式情報を確認してください。",
+   "zh_Hans": "保持警惕。请关注官方信息。",
+   "ko": "계속 경계하십시오. 공식 정보를 확인하십시오.",
+   "ar": "ابقَ متيقظًا. تابع التحديثات الرسمية."
+  },
+  "98d21d34cbe4e14d9875": {
+   "ja": "高台に避難中",
+   "zh_Hans": "已在高处",
+   "ko": "고지대에 있음",
+   "ar": "على أرض مرتفعة"
+  },
+  "99acf6cf440c75473f22": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "韓国語では쓰나미（津波）も広く使われており、currentで問題ありません。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "9bcedb8438d4fbb6b42b": {
+   "ja": "巨大",
+   "zh_Hans": "巨大",
+   "ko": "거대",
+   "ar": "ضخمة"
+  },
+  "9c66ab7aff5ea418cea9": {
+   "ja": "車を置いて、歩いて避難してください。",
+   "zh_Hans": "弃车步行。",
+   "ko": "차를 두고 걸어서 대피하십시오.",
+   "ar": "اترك السيارة. اذهب سيرًا على الأقدام."
+  },
+  "9c9bc690f1f2fbe503a5": {
+   "ja": {
+    "verdict": "ok",
+    "better": "gemini",
+    "reason_ja": "geminiの「津波警報・注意報」の方が簡潔で自然です。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "currentの訳で十分に意味が伝わり、簡潔です。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "currentの訳で自然かつ正確に伝わります。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": "どちらも「津波警報が解除されました」を正しく表現しています。"
+   }
+  },
+  "9dfa377b4f1f32a55440": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "9e2de446687cafb7cc9b": {
+   "ja": "予想される津波 {h}",
+   "zh_Hans": "预测海啸 {h}",
+   "ko": "예상되는 쓰나미 {h}",
+   "ar": "تسونامي المتوقع {h}"
+  },
+  "9f0578e043ca8bb69ae2": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "「左転（左折）」の方が方向指示のラベルとして分かりやすい。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "a0256fc0744307c2af28": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "簡潔で緊急時に適している。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "体言止めで簡潔であり、緊急時の通知に適している。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "現在の訳で「高い場所へ登れ」と正しく表現されている。"
+   }
+  },
+  "a2efb0d4980af52f7079": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "簡潔でアプリのカード表示に適している。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "gemini",
+    "reason_ja": "geminiの「留在原地（その場に留まる）」の方が具体的で分かりやすい。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": "どちらも正確で自然な表現。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "gemini",
+    "reason_ja": "geminiの「في مكانك（その場所に）」を加えた表現の方がより明確。"
+   }
+  },
+  "a55141fee11c54924ccf": {
+   "ja": "津波警報が引き上げられました。",
+   "zh_Hans": "海啸预警已升级。",
+   "ko": "쓰나미 경보가 격상되었습니다.",
+   "ar": "تم رفع درجة إنذار التسونامي."
+  },
+  "a6621c7e03aecbceef00": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "「予想 {h}」で簡潔かつ十分に意味が伝わる。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "「预计 {h}」で簡潔かつ十分に意味が伝わる。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "「예상 {h}」で簡潔かつ十分に意味が伝わる。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "「المتوقع {h}」で簡潔かつ十分に意味が伝わる。"
+   }
+  },
+  "a66bf58e26a0a10e4e4e": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "アプリの画面切り替え（屋内/屋外等）として「切换场景」は適切。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "a6a0f1ef0a2a8bed2752": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "currentの「تحذير طارئ」の方が気象庁の特別警報の訳語としてより適切です。"
+   }
+  },
+  "a75b40135d8cb823d45e": {
+   "ja": "津波警報・注意報は解除されました",
+   "zh_Hans": "海啸警报・注意报已解除",
+   "ko": "쓰나미 경보·주의보가 해제되었습니다",
+   "ar": "تم إلغاء إنذار التسونامي"
+  },
+  "a7f944b9d8ad7895a910": {
+   "ja": {
+    "verdict": "minor",
+    "better": "gemini",
+    "reason_ja": "「津波警報・注意報は解除されました」の方が気象庁の表現に近く適切。"
+   },
+   "zh_Hans": {
+    "verdict": "minor",
+    "better": "gemini",
+    "reason_ja": "「海啸警报已解除」の方が気象庁の公式訳（警报解除）に近く適切。"
+   },
+   "ko": {
+    "verdict": "minor",
+    "better": "gemini",
+    "reason_ja": "「쓰나미 경보·주의보가 해제되었습니다」が気象庁の表現に近く適切。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "a81fa9a49ebdd7c99137": {
+   "ja": "ルート案内一時停止中",
+   "zh_Hans": "路线导航已暂停",
+   "ko": "경로 안내 일시 중지",
+   "ar": "إيقاف إرشاد الطريق مؤقتًا"
+  },
+  "a91dbc20d6e79ce13e62": {
+   "ja": "避難マップ",
+   "zh_Hans": "避难地图",
+   "ko": "대피 지도",
+   "ar": "خريطة الإخلاء"
+  },
+  "aaab8ca809ab668a02be": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "currentの方が「警報が有効・発令中」として自然。"
+   }
+  },
+  "ab9c4cf626a2f88c012f": {
+   "ja": "{n}メートル先、左です。",
+   "zh_Hans": "{n}米后左转。",
+   "ko": "{n}미터 앞에서 좌회전하십시오.",
+   "ar": "انعطف يسارًا بعد {n} متر."
+  },
+  "ad28e5a3e1690c19605a": {
+   "ja": {
+    "verdict": "ok",
+    "better": "gemini",
+    "reason_ja": "geminiの方が「標高不明」と簡潔でカード表示に適しています。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "gemini",
+    "reason_ja": "geminiの「해발 불명（海抜不明）」の方が簡潔で自然です。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "b3337655168ff5d9907c": {
+   "ja": "特別警報",
+   "zh_Hans": "特别警报",
+   "ko": "특별경보",
+   "ar": "تحذير طوارئ"
+  },
+  "b3f7b251712b23e2c701": {
+   "ja": "予測より{n}m高い",
+   "zh_Hans": "比预测高{n}米",
+   "ko": "예상보다 {n}m 높음",
+   "ar": "أعلى بـ {n} م من المتوقع"
+  },
+  "b503bfd9d6557bc5f68b": {
+   "ja": "警報発表中",
+   "zh_Hans": "警报生效中",
+   "ko": "경보 발령 중",
+   "ar": "التحذير نشط"
+  },
+  "b5d03ac0cbcd07cf6843": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "気象庁の公式訳（分かち書きあり）と一致しているため。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "b63d64fa845f0a35df19": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "b84009b86692e294f3dd": {
+   "ja": "10m超",
+   "zh_Hans": "超过10m",
+   "ko": "10m 초과",
+   "ar": "أكثر من 10 م"
+  },
+  "b9205a197b0d9a027548": {
+   "ja": "津波警報発表中",
+   "zh_Hans": "海啸警报生效中",
+   "ko": "쓰나미 경보 발령 중",
+   "ar": "تحذير من تسونامي نشط"
+  },
+  "b9f6c5c43d9767eded77": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "bac7872bea97d0b87d04": {
+   "ja": "巨大",
+   "zh_Hans": "巨大",
+   "ko": "거대",
+   "ar": "ضخم"
+  },
+  "bb008196a6b88f99c15d": {
+   "ja": "訓練警報",
+   "zh_Hans": "模拟警报",
+   "ko": "훈련 경보",
+   "ar": "إنذار محاكاة"
+  },
+  "bcbbe6886b8b06b7638f": {
+   "ja": "なぜここなのか",
+   "zh_Hans": "为什么是这里",
+   "ko": "왜 이곳인가",
+   "ar": "لماذا هنا"
+  },
+  "c472505af802f1738a86": {
+   "ja": "車を置いて、歩いて避難してください。",
+   "zh_Hans": "弃车步行。",
+   "ko": "차를 두고 걸어서 대피하십시오.",
+   "ar": "اترك السيارة. اذهب سيرًا على الأقدام."
+  },
+  "c64e11d501a4b0914561": {
+   "ja": "今すぐ高台へ！",
+   "zh_Hans": "立刻往高处避难！",
+   "ko": "지금 즉시 고지대로 대피하십시오!",
+   "ar": "اتجه إلى المرتفعات فورًا!"
+  },
+  "c668bdac3f7e36daa189": {
+   "ja": "屋外",
+   "zh_Hans": "户外",
+   "ko": "야외",
+   "ar": "في الخارج"
+  },
+  "c6ccd02012152310507b": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "現行訳は簡潔で聞き取りやすく、音声案内に適している。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "c832058bb52ba5152d59": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "「차 안」が簡潔で分かりやすい。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "ca5590af571ced61e98f": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "経路案内ラベルとして「右转（右折）」は適切です。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "ca7056a7166e9f6751cd": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "gemini",
+    "reason_ja": "geminiの「우회전하세요（右折してください）」の方がより明確な指示です。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "ce913d2233cb6c6b7e78": {
+   "ja": "津波注意報",
+   "zh_Hans": "海啸注意报",
+   "ko": "지진해일주의보",
+   "ar": "تنبيه من تسونامي"
+  },
+  "cf17dd59722bbd16604f": {
+   "ja": "建物から離れて",
+   "zh_Hans": "远离建筑物",
+   "ko": "건물에서 떨어지십시오",
+   "ar": "ابتعد عن المباني"
+  },
+  "d1de5e2e9f7607e6b41c": {
+   "ja": "揺れが収まりました",
+   "zh_Hans": "摇晃已停止",
+   "ko": "흔들림 멈춤",
+   "ar": "توقف الاهتزاز"
+  },
+  "d329589b16540c4b49eb": {
+   "ja": "予想高さ引き上げ",
+   "zh_Hans": "预测高度上调",
+   "ko": "예상 높이 상향",
+   "ar": "زيادة الارتفاع المتوقع"
+  },
+  "d45f26fd5e207dc5709b": {
+   "ja": {
+    "verdict": "ok",
+    "better": "gemini",
+    "reason_ja": "「位置不明」の方が簡潔でバッジ表示に適しています。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "gemini",
+    "reason_ja": "「位置不明」の方が簡潔でバッジ表示に適しています。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "currentの方が「不確実（uncertain）」のニュアンスを正確に表しています。"
+   }
+  },
+  "d64578d5cd026f083363": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "「離れる」の方が体言止めに近く、緊急時の指示として簡潔で良い。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "currentの丁寧な命令形（~세요）は自然で、緊迫した状況でも適切。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "d9da3ee40e39afb43b17": {
+   "ja": "車を左に寄せて停車。車内で待機。",
+   "zh_Hans": "靠边停车。留在车内。",
+   "ko": "차를 세우십시오. 차 안에 머무르십시오.",
+   "ar": "انحز جانباً وتوقف. ابقَ في الداخل."
+  },
+  "e054d107ae7d87d5c159": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "minor",
+    "better": "current",
+    "reason_ja": "気象庁対訳は「إرشاد」ですが、geminiの「تحذير」は警報（Warning）を意味するため現行がより適切です。"
+   }
+  },
+  "e106829990ce95259efb": {
+   "ja": "(発表された最大値)",
+   "zh_Hans": "(已发布的最高值)",
+   "ko": "(발표된 최대치)",
+   "ar": "(أعلى قيمة معلنة)"
+  },
+  "e2d3668309d5051568dc": {
+   "ja": "頭を守って",
+   "zh_Hans": "保护头部",
+   "ko": "머리를 보호하세요",
+   "ar": "احمِ رأسك"
+  },
+  "e935b79de281d8209b57": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "簡潔な体言止め・辞書形がアプリのカード表示に適しています。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "gemini",
+    "reason_ja": "geminiの方が簡潔で、緊急時の指示としてより適しています。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "gemini",
+    "reason_ja": "「지시(指示)」の方が「instructions」の訳としてより正確です。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "e94a5d81474b91e6de44": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "e9f905e0af85bc6cd90f": {
+   "ja": "津波注意報",
+   "zh_Hans": "海啸注意报",
+   "ko": "쓰나미 주의보",
+   "ar": "تنبيه من تسونامي"
+  },
+  "eea8c7f0f89a655b4df2": {
+   "ja": "警報",
+   "zh_Hans": "警报",
+   "ko": "경보",
+   "ar": "تحذير"
+  },
+  "ef42f7a2815a68fba6d0": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "currentの「هائل」は気象庁公式対訳に合致しています。"
+   }
+  },
+  "ef846556deef551942b1": {
+   "ja": {
+    "verdict": "minor",
+    "better": "gemini",
+    "reason_ja": "「現在地はおおまか」より「おおよその位置」の方が自然で簡潔です。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "gemini",
+    "reason_ja": "どちらも正しいですが、geminiの方が簡潔でカード表示に適しています。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "gemini",
+    "reason_ja": "どちらも意味は通じますが、geminiの方が簡潔で名詞句として自然です。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "f1c7ff05ab7f64da11ee": {
+   "ja": {
+    "verdict": "minor",
+    "better": "gemini",
+    "reason_ja": "「これまでの最大」より「発表された最大値」の方が正確。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "minor",
+    "better": "gemini",
+    "reason_ja": "currentは「これまで」だが、geminiの「発表された最大値」が正確。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "f4ec325bc223bfe88f7b": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "currentのほうが簡潔で「発令中」の表現として自然。"
+   }
+  },
+  "f52eb165b59e982410ba": {
+   "ja": "車を左に寄せて停車。車内で待機。",
+   "zh_Hans": "靠边停车。留在车内。",
+   "ko": "차를 길가에 대십시오. 차 안에 머무르십시오.",
+   "ar": "اركن السيارة جانباً. ابقَ في الداخل."
+  },
+  "f5d11c9ef7c01ad76fef": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "アプリの通知として、より簡潔で緊急性が伝わる表現であるため。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "gemini",
+    "reason_ja": "「水」より「海（바다）」とする方が津波避難として自然。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  },
+  "f6433b0574dcf2ea8b84": {
+   "ja": "ルート未確認",
+   "zh_Hans": "路线未确认",
+   "ko": "경로 미확인",
+   "ar": "مسار غير مؤكد"
+  },
+  "f929b12b81371524cf92": {
+   "ja": "後ろを向いて",
+   "zh_Hans": "向后转",
+   "ko": "뒤로 도세요",
+   "ar": "استدر للخلف"
+  },
+  "fa40901d2b01867a5abf": {
+   "ja": "警報が解除されるまで待機してください",
+   "zh_Hans": "警报解除前请留在原地",
+   "ko": "경보가 해제될 때까지 머무르십시오",
+   "ar": "ابقَ في مكانك حتى يتم رفع التحذير"
+  },
+  "fb93eff61140b410f313": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "currentの「已升级」（アップグレードされた）の方が状態が明確。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "currentの「引き上げられた」の方が気象警報の文脈に適している。"
+   }
+  },
+  "fd27368b3b34e764d3ae": {
+   "ja": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "簡潔で緊急時に適した表現になっている。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": "どちらも正確で自然な中国語表現。"
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "自然で分かりやすい表現になっている。"
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "簡潔で分かりやすく、車内にとどまる意味が伝わる。"
+   }
+  },
+  "fd69975c5cc8e533cc70": {
+   "ja": {
+    "verdict": "minor",
+    "better": "gemini",
+    "reason_ja": "「訓練警報」の方が防災アプリの表現として自然で分かりやすい。"
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "current",
+    "reason_ja": "currentの「デモ用警告」を意味する表現で問題ない。"
+   }
+  },
+  "ff3bdc9b73f076a9c6c5": {
+   "ja": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "zh_Hans": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ko": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   },
+   "ar": {
+    "verdict": "ok",
+    "better": "same",
+    "reason_ja": ""
+   }
+  }
+ }
+}

@@ -1,0 +1,49 @@
+rules_version = '2';
+
+// TASUKU ハッカソン版の Firestore ルール案（architecture.md 10.3）。
+// - alerts: モック（Web）が購読する警報の最新状態。誰でも読める。書けるのはサーバーだけ。
+// - sentAlerts: 二重送信を防ぐための記録（D6）。クライアントからは読み書きできない。
+// - fcmTokens: Web のクライアントの FCM トークン（H2）。Web はトピックを直接購読できないので、
+//   モックが自分のトークンを書き、サーバーが全トークンへ multicast する。
+//   クライアントは自分のトークンを新しく作ることだけができる（読む・変える・消すはサーバーだけ）。
+//   誰でも作れるので、登録は 2 日以内に切れる（expireAt と TTL）。
+// サーバー（Cloud Run の firebase-admin）は IAM で認可され、このルールの対象外。
+// そのため、クライアントからの書き込みはすべて拒否すれば「書けるのはサーバーだけ」になる。
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /alerts/{alertId} {
+      allow get, list: if true;
+      allow write: if false;
+    }
+
+    match /sentAlerts/{key} {
+      allow read, write: if false;
+    }
+
+    // ドキュメント ID は自動 ID。同じトークンを登録し直すたびに新しいドキュメントを作る
+    // （update を禁止したまま登録し直せるようにするため。token を ID にすると 2 回目の create が update 扱いで拒否される）。
+    // expireAt は 2 日以内。TTL で消える。サーバーは expireAt が未来のものだけを読む。
+    // クライアントは request.time + 2 日をそのまま書けない（serverTimestamp に時間を足せない）ので、
+    // 「request.time より後、request.time + 2 日以内」を検査する。
+    match /fcmTokens/{docId} {
+      allow create: if request.resource.data.keys().hasOnly(['token', 'createdAt', 'platform', 'expireAt'])
+        && request.resource.data.keys().hasAll(['token', 'createdAt', 'platform', 'expireAt'])
+        && docId.size() <= 40
+        && request.resource.data.token is string
+        && request.resource.data.token.size() >= 20
+        && request.resource.data.token.size() <= 1024
+        && request.resource.data.createdAt == request.time
+        && request.resource.data.expireAt is timestamp
+        && request.resource.data.expireAt > request.time
+        && request.resource.data.expireAt <= request.time + duration.value(2, 'd')
+        && request.resource.data.platform is string
+        && request.resource.data.platform.size() <= 32;
+      allow read, update, delete: if false;
+    }
+
+    // それ以外のコレクションも、明示的に許可するまで拒否する。
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
