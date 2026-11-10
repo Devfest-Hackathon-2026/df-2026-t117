@@ -1,6 +1,6 @@
 rules_version = '2';
 
-// TASUKU ハッカソン版の Firestore ルール案（architecture.md 10.3）。
+// Safe Japan ハッカソン版の Firestore ルール案（architecture.md 10.3）。
 // - alerts: モック（Web）が購読する警報の最新状態。誰でも読める。書けるのはサーバーだけ。
 // - sentAlerts: 二重送信を防ぐための記録（D6）。クライアントからは読み書きできない。
 // - fcmTokens: Web のクライアントの FCM トークン（H2）。Web はトピックを直接購読できないので、

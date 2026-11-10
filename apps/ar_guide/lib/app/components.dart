@@ -253,7 +253,7 @@ enum HeaderVariant { brand, sub }
 
 enum HeaderAccent { yellow, red, none }
 
-/// `brand` = TASUKU logo (guidance screens). `sub` = back arrow + title (sub screens).
+/// `brand` = Safe Japan logo (guidance screens). `sub` = back arrow + title (sub screens).
 /// Globe (-> S09) and phone (-> S10) buttons are always present (requirements 4, common).
 class TkHeader extends StatelessWidget {
   const TkHeader({
@@ -310,7 +310,7 @@ class TkHeader extends StatelessWidget {
                 ? Align(
                     alignment: AlignmentDirectional.centerStart,
                     child: Text(
-                      'TASUKU',
+                      'Safe Japan',
                       textDirection: TextDirection.ltr,
                       style: TkText.heading.copyWith(fontSize: 25, color: color),
                     ),
@@ -668,7 +668,7 @@ enum GuidanceTone { red, maroon, grey }
 enum PictogramBg { pink, cream, none }
 
 /// Common guidance structure (S02, S03, S05, S06; requirements 4):
-///   Header (TASUKU, yellow rule)
+///   Header (Safe Japan, yellow rule)
 ///   Top panel (red / maroon / grey): badge -> pictogram card -> headline -> sub-line -> note
 ///   Dark bottom area: buttons -> fixed Listen button -> source line
 class GuidanceLayout extends StatelessWidget {

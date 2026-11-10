@@ -1,9 +1,11 @@
-# TASUKU — 訪日外国人のための災害時避難誘導
+![Safe Japan — Evacuation & Safety Support](docs/images/safe-japan-banner.png)
+
+# Safe Japan — 訪日外国人のための災害時避難誘導
 
 > DevFest Hackathon 2026 提出作品。
 > 画面に出る警報・地名・住所はすべて架空です（画面に常に `DEMO` / `SIMULATED ALERT` を表示）。舞台の「みなと湾（Minato Bay）」は実在しない町です。
 
-## 1. TASUKU とは
+## 1. Safe Japan とは
 
 日本を訪れた外国人旅行者が、地震・津波に遭ったときに **「母語で」「今やる行動を 1 つだけ」「通信が切れても」** 受け取れるようにする避難誘導アプリです。
 
@@ -11,7 +13,7 @@
 
 ### 解決したい課題
 
-| 旅行者が困ること | 具体的な場面 | TASUKU の対応 |
+| 旅行者が困ること | 具体的な場面 | Safe Japan の対応 |
 |---|---|---|
 | 日本語の警報が読めない | 緊急速報メールは届くが、「大津波警報」「高台へ避難」が読めず、周りの人の動きを見て判断が遅れる | 端末の言語（英・日・簡体中・韓・アラビア）で表示し、音声でも読み上げる。地名は日本語を併記し、助けを求めるときに日本人に見せられる |
 | 何をすればよいか分からない | 地震 → 津波と災害が重なり、情報が多すぎて「今」何をすべきか決められない | 「今やらないと命に関わる順」の優先度で、**1 画面に指示を 1 つ**（ピクトグラム＋3 語程度）だけ出す。揺れている間は「頭を守る」、揺れが止まったら「高台へ」 |
@@ -19,7 +21,7 @@
 | 通信が切れる | 災害時は基地局の停止や混雑で通信できない | 行動案内・地図・ルート計算・音声は端末の中にあり、通信なしで動く。情報が古いときは `Stale` / `Route unverified` と正直に出す |
 | 高台に着いても不安 | 「ここで本当に大丈夫か」が分からず移動してしまう | 標高・予想される津波の高さ・その差を数字で出す（`21 m above forecast`）。警報が格上げされて足りなくなったら `Go higher. NOW` に切り替える |
 
-登録・ログインは不要です。地震・津波の第一報は OS の緊急速報（ETWS）が届けるので、TASUKU は第一報を受けた人が **次に何をするか** を案内する補助のアプリと位置づけています。
+登録・ログインは不要です。地震・津波の第一報は OS の緊急速報（ETWS）が届けるので、Safe Japan は第一報を受けた人が **次に何をするか** を案内する補助のアプリと位置づけています。
 
 詳しくは [要件定義](mocks/evacuate/docs/requirements.md) と [本番の構成](mocks/evacuate/docs/architecture.md) を参照してください。
 
@@ -30,7 +32,7 @@
 1. Android 端末のブラウザで上の Releases のページを開き、最新のリリースの `.apk` をダウンロードする
 2. 「提供元不明のアプリ」のインストールを許可する（設定 → アプリ → 特別なアプリアクセス → 不明なアプリのインストール で、ダウンロードに使ったブラウザやファイルアプリを許可。機種によって名前が少し違う）
 3. ダウンロードした APK を開いてインストールする（Play プロテクトの警告が出たら「インストールする」を選ぶ）
-4. ホーム画面の **TASUKU AR** を開く
+4. ホーム画面の **Safe Japan** を開く
 
 | 項目 | 内容 |
 |---|---|
@@ -55,7 +57,7 @@ sequenceDiagram
   participant RUN as Cloud Run<br>alert-ingest
   participant FS as Firestore
   participant FCM as Cloud Messaging
-  participant APP as TASUKU アプリ<br>（Flutter・Android）
+  participant APP as Safe Japan アプリ<br>（Flutter・Android）
   actor U as 旅行者
 
   OP->>RUN: 気象庁形式の津波警報の電文（XML）<br>ID トークン付きで送る
@@ -103,7 +105,7 @@ sequenceDiagram
 | H00, A01〜A04 | ホームほか | 平常時の災害別ガイド、防災コラム、警報の時系列 |
 | （S04 / S10 から） | 日本語で助けを求める | 近くの日本人に見せる・聞かせるカード。大きな日本語（「すみません、助けてください。」「津波から逃げています。高台はどこですか？」）と、その意味を利用者の言語で表示し、Chirp 3 HD の日本語音声を再生する（オフラインでも鳴る）。コードは `apps/ar_guide/lib/app/help/` |
 
-画面デザインの元資料は [mocks/evacuate/docs/images/](mocks/evacuate/docs/images/) にあります。
+画面デザインの元資料は [mocks/evacuate/docs/images/](mocks/evacuate/docs/images/) にあります（Web のモックは仮の名前「TASUKU」で作ったため、モックの画面には TASUKU と表示されます）。
 
 ## 4. 構成
 
@@ -209,7 +211,7 @@ flowchart LR
   end
 
   subgraph PHONE["Android 端末"]
-    APP["TASUKU アプリ<br>Flutter<br>全画面・ルート計算・誘導の判定は端末内<br>AR はカメラ＋コンパス"]
+    APP["Safe Japan アプリ<br>Flutter<br>全画面・ルート計算・誘導の判定は端末内<br>AR はカメラ＋コンパス"]
   end
 
   subgraph WEBM["試作・Android 以外の端末向け"]
@@ -368,7 +370,7 @@ npm run build      # 型チェック＋ dist/ に出力
 ## 9. リポジトリの構成
 
 ```
-apps/ar_guide/         TASUKU アプリ本体（Flutter、Android）。全画面・デモパネル・音声・Firestore / FCM・AR
+apps/ar_guide/         Safe Japan アプリ本体（Flutter、Android）。全画面・デモパネル・音声・Firestore / FCM・AR
   assets/voice/        Chirp 3 HD の音声ファイル（mocks/evacuate/public/voice/ のコピー）
 services/alert-ingest/ 警報の取り込みと配信（Cloud Run 上のコンテナ）。firestore.rules もここ
 mocks/evacuate/        最初に作った Web のモック（ブラウザで動く）。試作・Android 以外の端末向け

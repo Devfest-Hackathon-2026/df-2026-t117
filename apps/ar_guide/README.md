@@ -1,6 +1,6 @@
-# ar_guide — TASUKU アプリ（Flutter）
+# ar_guide — Safe Japan アプリ（Flutter）
 
-TASUKU の提出物の本体の Android アプリ。Web のモック `mocks/evacuate/` の全画面（S01〜S12・H00・A01〜A04）・デモ操作パネル・シナリオ・音声・Firestore / FCM を移した（PR #18〜#20）。起動すると `lib/app/` のアプリが開き、`tasuku-ar://guide` のディープリンクで開いたときだけ、従来の AR 画面に直接入る。AR 画面そのものの説明は、この節の後ろの「ar_guide — AR 案内アプリ（H4）」以降。
+Safe Japan の提出物の本体の Android アプリ。Web のモック `mocks/evacuate/` の全画面（S01〜S12・H00・A01〜A04）・デモ操作パネル・シナリオ・音声・Firestore / FCM を移した（PR #18〜#20）。起動すると `lib/app/` のアプリが開き、`tasuku-ar://guide` のディープリンクで開いたときだけ、従来の AR 画面に直接入る。AR 画面そのものの説明は、この節の後ろの「ar_guide — AR 案内アプリ（H4）」以降。
 
 ## アプリの土台（`lib/app/`）
 

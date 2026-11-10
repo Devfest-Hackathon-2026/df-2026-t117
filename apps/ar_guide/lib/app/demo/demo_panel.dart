@@ -136,7 +136,8 @@ class DemoPanel extends StatelessWidget {
 
     void fireNotification() {
       patch(const StatePatch(lockScreen: true));
-      store.platform.notify('TASUKU: EARTHQUAKE + TSUNAMI', 'Go uphill NOW');
+      final (title, body) = _quakeNotification[s.lang]!;
+      store.platform.notify(title, body);
     }
 
     final latest = live.latest;
@@ -327,6 +328,15 @@ class DemoPanel extends StatelessWidget {
     );
   }
 }
+
+/// Demo "send notification": an earthquake alert in the app's language (title, body).
+const Map<Lang, (String, String)> _quakeNotification = {
+  Lang.en: ('Safe Japan: EARTHQUAKE', 'Drop, cover, and hold on until the shaking stops.'),
+  Lang.ja: ('Safe Japan: 地震', '身を守ってください。頭を守り、揺れが収まるまで動かないでください。'),
+  Lang.zhHans: ('Safe Japan：地震', '请保护好自己。护住头部，摇晃停止前不要移动。'),
+  Lang.ko: ('Safe Japan: 지진', '몸을 보호하세요. 머리를 보호하고 흔들림이 멈출 때까지 움직이지 마세요.'),
+  Lang.ar: ('Safe Japan: زلزال', 'احمِ نفسك. احمِ رأسك ولا تتحرك حتى يتوقف الاهتزاز.'),
+};
 
 class _Section extends StatelessWidget {
   const _Section({required this.title, required this.children, this.open = false});

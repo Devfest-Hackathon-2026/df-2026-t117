@@ -1,4 +1,4 @@
-// TASUKU: the app (lib/app/app_shell.dart). The deep link from the web mock still opens the AR screen directly:
+// Safe Japan: the app (lib/app/app_shell.dart). The deep link from the web mock still opens the AR screen directly:
 //   tasuku-ar://guide?turn=right&dist=12&dest=Hill%20Park&lang=en&bearing=80
 // See README.md.
 import 'package:flutter/material.dart';
@@ -49,7 +49,7 @@ class _ArGuideAppState extends State<ArGuideApp> {
   Widget build(BuildContext context) {
     final linkParams = _linkParams;
     return MaterialApp(
-      title: 'TASUKU',
+      title: 'Safe Japan',
       debugShowCheckedModeBanner: false,
       theme: tkMaterialTheme(),
       home: linkParams == null
