@@ -6,7 +6,9 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 import '../live/push_text.dart';
 
-const _icon = '@mipmap/ic_launcher';
+// White-on-transparent silhouette (res/drawable-*/ic_stat_notify.png): Android tints the small icon, so a
+// full-colour launcher icon would show as a plain white disc.
+const _icon = '@drawable/ic_stat_notify';
 
 /// Long-short-long, as the service worker: Android takes [wait, on, off, on, ...].
 final Int64List _alertVibration = Int64List.fromList([0, 400, 120, 400, 120, 400]);
@@ -39,7 +41,7 @@ class LocalNotifier {
 
   AndroidNotificationDetails _alertChannel({StyleInformation? style, bool autoCancel = true}) => AndroidNotificationDetails(
         'tasuku_alerts',
-        'TASUKU alerts',
+        'Safe Japan alerts',
         importance: Importance.max,
         priority: Priority.max,
         category: AndroidNotificationCategory.alarm,
@@ -57,7 +59,7 @@ class LocalNotifier {
     final details = c.lifted
         ? AndroidNotificationDetails(
             'tasuku_updates',
-            'TASUKU updates',
+            'Safe Japan updates',
             importance: Importance.defaultImportance,
             priority: Priority.defaultPriority,
             enableVibration: false,

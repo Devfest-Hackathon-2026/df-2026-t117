@@ -136,7 +136,7 @@ class CommonStrings {
 
 const Map<Lang, CommonStrings> commonStrings = {
   Lang.en: CommonStrings(
-    appName: 'TASUKU',
+    appName: 'Safe Japan',
     demo: 'DEMO',
     simulatedAlert: 'SIMULATED ALERT',
     listen: 'Listen',
@@ -201,7 +201,7 @@ const Map<Lang, CommonStrings> commonStrings = {
     translationNote: 'Demo translations (not native-checked)',
   ),
   Lang.ja: CommonStrings(
-    appName: 'TASUKU',
+    appName: 'Safe Japan',
     demo: 'DEMO',
     simulatedAlert: '模擬アラート',
     listen: '読み上げ',
@@ -266,7 +266,7 @@ const Map<Lang, CommonStrings> commonStrings = {
     translationNote: 'デモ用の翻訳です（ネイティブ確認なし）',
   ),
   Lang.zhHans: CommonStrings(
-    appName: 'TASUKU',
+    appName: 'Safe Japan',
     demo: 'DEMO',
     simulatedAlert: '模拟警报',
     listen: '朗读',
@@ -331,7 +331,7 @@ const Map<Lang, CommonStrings> commonStrings = {
     translationNote: '演示用翻译（未经母语审校）',
   ),
   Lang.ko: CommonStrings(
-    appName: 'TASUKU',
+    appName: 'Safe Japan',
     demo: 'DEMO',
     simulatedAlert: '모의 경보',
     listen: '듣기',
@@ -396,7 +396,7 @@ const Map<Lang, CommonStrings> commonStrings = {
     translationNote: '데모용 번역(원어민 검수 없음)',
   ),
   Lang.ar: CommonStrings(
-    appName: 'TASUKU',
+    appName: 'Safe Japan',
     demo: 'DEMO',
     simulatedAlert: 'تنبيه تجريبي',
     listen: 'استمع',

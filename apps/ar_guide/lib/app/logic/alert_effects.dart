@@ -83,7 +83,7 @@ class AlertEffects {
       _firedChange = change;
       if (change != null && change.kind != AlertChangeKind.downgrade && !_pushCovers()) {
         store.platform.vibrate(alertChangePattern);
-        store.platform.notify('TASUKU', notifyBodyDict[state.lang]![change.kind.name]!);
+        store.platform.notify('Safe Japan', notifyBodyDict[state.lang]![change.kind.name]!);
       }
     }
 

@@ -329,7 +329,7 @@ void main() {
       await tester.pumpAndSettle();
       await tester.tap(find.text('通知を出す'));
       expect(store.state.lockScreen, isTrue);
-      expect(platform.notified, ['TASUKU: EARTHQUAKE + TSUNAMI']);
+      expect(platform.notified, ['Safe Japan: EARTHQUAKE']);
     });
   });
 }

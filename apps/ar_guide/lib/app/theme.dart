@@ -1,4 +1,4 @@
-// TASUKU design tokens (requirements.md section 3; mocks/evacuate/src/styles/tokens.css).
+// Safe Japan design tokens (requirements.md section 3; mocks/evacuate/src/styles/tokens.css).
 // Screens import this one file for the tokens and the shared components.
 import 'package:flutter/material.dart';
 
