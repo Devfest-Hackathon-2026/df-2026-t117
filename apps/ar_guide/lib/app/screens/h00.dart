@@ -1,7 +1,9 @@
 // H00 home (normal mode): calm status card, disaster-guide buttons, preparedness column, translation note.
 // The web's push-notification row is left out: push is not ported to the app yet.
+// Extra: the new safety tips (open A04 on that article).
 import 'package:flutter/material.dart';
 
+import '../data/articles.dart';
 import '../i18n/i18n.dart';
 import '../state/derive.dart';
 import '../state/store.dart';
@@ -10,14 +12,18 @@ import '../state/types.dart';
 import '../theme.dart';
 import '_shared.dart';
 import 'a03.dart';
+import 'a04.dart';
 
 const Dict _dict = {
-  Lang.en: {'none': 'No active alerts', 'advisory': 'Advisory in effect', 'warning': 'Warning in effect', 'emergency': 'Emergency warning in effect', 'updated': 'Last updated', 'guides': 'Disaster guides', 'prep': 'Disaster preparedness in Japan'},
-  Lang.ja: {'none': '警報はありません', 'advisory': '注意報が出ています', 'warning': '警報が出ています', 'emergency': '特別警報が出ています', 'updated': '最終更新', 'guides': '災害別ガイド', 'prep': '日本の防災について'},
-  Lang.zhHans: {'none': '当前无警报', 'advisory': '注意报生效中', 'warning': '警报生效中', 'emergency': '特别警报生效中', 'updated': '最近更新', 'guides': '灾害指南', 'prep': '日本防灾知识'},
-  Lang.ko: {'none': '발령 중인 경보 없음', 'advisory': '주의보 발령 중', 'warning': '경보 발령 중', 'emergency': '특별 경보 발령 중', 'updated': '마지막 업데이트', 'guides': '재난별 안내', 'prep': '일본의 방재 안내'},
-  Lang.ar: {'none': 'لا توجد تنبيهات حالية', 'advisory': 'إشعار ساري', 'warning': 'تحذير ساري', 'emergency': 'تحذير طارئ ساري', 'updated': 'آخر تحديث', 'guides': 'أدلة الكوارث', 'prep': 'الاستعداد للكوارث في اليابان'},
+  Lang.en: {'none': 'No active alerts', 'advisory': 'Advisory in effect', 'warning': 'Warning in effect', 'emergency': 'Emergency warning in effect', 'updated': 'Last updated', 'guides': 'Disaster guides', 'prep': 'Disaster preparedness in Japan', 'tips': 'New safety tips'},
+  Lang.ja: {'none': '警報はありません', 'advisory': '注意報が出ています', 'warning': '警報が出ています', 'emergency': '特別警報が出ています', 'updated': '最終更新', 'guides': '災害別ガイド', 'prep': '日本の防災について', 'tips': '新しい防災の知識'},
+  Lang.zhHans: {'none': '当前无警报', 'advisory': '注意报生效中', 'warning': '警报生效中', 'emergency': '特别警报生效中', 'updated': '最近更新', 'guides': '灾害指南', 'prep': '日本防灾知识', 'tips': '新的防灾知识'},
+  Lang.ko: {'none': '발령 중인 경보 없음', 'advisory': '주의보 발령 중', 'warning': '경보 발령 중', 'emergency': '특별 경보 발령 중', 'updated': '마지막 업데이트', 'guides': '재난별 안내', 'prep': '일본의 방재 안내', 'tips': '새 방재 상식'},
+  Lang.ar: {'none': 'لا توجد تنبيهات حالية', 'advisory': 'إشعار ساري', 'warning': 'تحذير ساري', 'emergency': 'تحذير طارئ ساري', 'updated': 'آخر تحديث', 'guides': 'أدلة الكوارث', 'prep': 'الاستعداد للكوارث في اليابان', 'tips': 'نصائح سلامة جديدة'},
 };
+
+/// Exposed for the key-parity test.
+const Dict h00Dict = _dict;
 
 class H00Screen extends StatelessWidget {
   const H00Screen({super.key});
@@ -29,6 +35,7 @@ class H00Screen extends StatelessWidget {
     final c = context.common;
     final t = context.t(_dict);
     final hasAlert = state.alerts.isNotEmpty;
+    final tips = articles.where((a) => a.isNew).toList();
     final statusText = switch (mostSevere(state.alerts)?.level) {
       null => t['none'],
       AlertLevel.advisory => t['advisory'],
@@ -134,6 +141,21 @@ class H00Screen extends StatelessWidget {
                       ],
                     ),
                   ),
+                  if (tips.isNotEmpty)
+                    _TipsCard(
+                      label: t['tips'],
+                      items: [
+                        for (final a in tips)
+                          (
+                            articlePicto[a.id],
+                            a.title[lang],
+                            () {
+                              setA04InitialArticle(a.id);
+                              context.store.navigate(ScreenId.a04);
+                            },
+                          ),
+                      ],
+                    ),
                   const Spacer(),
                   if (hasAlert)
                     BigButton(
@@ -192,6 +214,51 @@ class _Tile extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+class _TipsCard extends StatelessWidget {
+  const _TipsCard({required this.label, required this.items});
+
+  final String label;
+  final List<(PictogramKind?, String, VoidCallback)> items;
+
+  @override
+  Widget build(BuildContext context) {
+    final radius = BorderRadius.circular(TkSizes.radiusCard);
+    return Column(
+      key: const ValueKey('h00-tips'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      spacing: 10,
+      children: [
+        Text(
+          label.toUpperCase(),
+          style: const TextStyle(color: TkColors.textMutedOnDark, fontSize: 15, fontWeight: FontWeight.w800, letterSpacing: 0.6),
+        ),
+        for (final (picto, title, onTap) in items)
+          Material(
+            color: TkColors.pictoBg,
+            borderRadius: radius,
+            child: InkWell(
+              borderRadius: radius,
+              onTap: onTap,
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(12, 10, 12, 10),
+                child: Row(
+                  spacing: 12,
+                  children: [
+                    if (picto != null) SizedBox(width: 52, height: 52, child: ExcludeSemantics(child: Pictogram(picto))),
+                    Expanded(
+                      child: Text(title, style: TkText.heading.copyWith(fontSize: 18, height: 1.25, color: TkColors.textOnLight)),
+                    ),
+                    const Icon(Icons.chevron_right, color: TkColors.textOnLight),
+                  ],
+                ),
+              ),
+            ),
+          ),
+      ],
     );
   }
 }
